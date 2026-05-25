@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sappa Headwear — Catálogo Completo</title>
+<meta name="description" content="Catálogo completo de Sappa Headwear. Explora modelos, líneas, materiales, precios y tallas disponibles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0a0906;
+    --charcoal: #141210;
+    --dark: #1e1b17;
+    --mid: #2e2a25;
+    --sand: #c4a882;
+    --gold: #b8894a;
+    --cream: #f5f0e8;
+    --white: #fdfcf9;
+    --muted: #7a7068;
+    --line: rgba(245,240,232,0.09);
+    --ff-display: 'Playfair Display', Georgia, serif;
+    --ff-cond: 'Barlow Condensed', sans-serif;
+    --ff-body: 'Barlow', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--cream);
+    font-family: var(--ff-body);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    height: 72px;
+    background: linear-gradient(to bottom, rgba(10,9,6,0.94), rgba(10,9,6,0.25), transparent);
+    transition: background 0.35s, height 0.3s, backdrop-filter 0.35s;
+  }
+
+  nav.scrolled {
+    height: 60px;
+    background: rgba(10,9,6,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(184,137,74,0.15);
+  }
+
+  .nav-logo {
+    font-family: var(--ff-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-logo span { color: var(--gold); }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .nav-links a,
+  .nav-cta {
+    font-family: var(--ff-cond);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--cream); }
+
+  .nav-cta {
+    padding: 10px 24px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .nav-cta:hover { background: var(--gold); color: var(--black); }
+
+  .catalog-hero {
+    min-height: 74vh;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    padding: 160px 80px 84px;
+    background:
+      linear-gradient(to bottom, rgba(10,9,6,0.22), rgba(10,9,6,0.78) 62%, var(--black) 100%),
+      radial-gradient(ellipse 70% 80% at 70% 20%, rgba(184,137,74,0.16), transparent 66%),
+      url('https://static.wixstatic.com/media/65fb71_90c48528cc8a48429d7b3b10033e1378~mv2.png') center/cover no-repeat;
+  }
+
+  .hero-noise {
+    position: absolute;
+    inset: 0;
+    opacity: 0.23;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+
+  .catalog-hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 920px;
+  }
+
+  .eyebrow,
+  .section-label {
+    font-family: var(--ff-cond);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .eyebrow::before,
+  .section-label::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  h1 {
+    font-family: var(--ff-display);
+    font-size: clamp(52px, 7vw, 96px);
+    font-weight: 900;
+    line-height: 0.95;
+    color: var(--white);
+    margin-bottom: 28px;
+  }
+
+  h1 em,
+  .section-title em { font-style: italic; color: var(--sand); }
+
+  .hero-copy {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(245,240,232,0.66);
+    max-width: 560px;
+    line-height: 1.75;
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 36px;
+  }
+
+  .meta-pill {
+    border: 1px solid rgba(245,240,232,0.16);
+    background: rgba(10,9,6,0.34);
+    padding: 12px 16px;
+    color: rgba(245,240,232,0.74);
+    font-family: var(--ff-cond);
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .marquee-strip {
+    background: var(--gold);
+    padding: 12px 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .marquee-track {
+    display: inline-flex;
+    animation: marquee 26s linear infinite;
+  }
+
+  .marquee-item {
+    font-family: var(--ff-cond);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--black);
+    padding: 0 40px;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  section { padding: 96px 80px; }
+
+  .section-title {
+    font-family: var(--ff-display);
+    font-size: clamp(36px, 4.5vw, 58px);
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--white);
+    max-width: 760px;
+  }
+
+  .catalog-tools {
+    background: var(--charcoal);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .tool-panel {
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(245,240,232,0.08);
+    padding: 28px;
+  }
+
+  .panel-title {
+    font-family: var(--ff-cond);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cream);
+    margin-bottom: 18px;
+  }
+
+  .search-row {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 12px;
+  }
+
+  input,
+  select {
+    width: 100%;
+    border: 1px solid rgba(245,240,232,0.15);
+    background: rgba(10,9,6,0.45);
+    color: var(--cream);
+    padding: 15px 16px;
+    font-family: var(--ff-body);
+    font-size: 14px;
+    outline: none;
+  }
+
+  input::placeholder { color: rgba(245,240,232,0.35); }
+
+  input:focus,
+  select:focus { border-color: rgba(184,137,74,0.65); }
+
+  .filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .chip {
+    border: 1px solid rgba(245,240,232,0.13);
+    background: transparent;
+    color: rgba(245,240,232,0.6);
+    padding: 8px 12px;
+    font-family: var(--ff-cond);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .chip.active,
+  .chip:hover {
+    border-color: var(--gold);
+    color: var(--black);
+    background: var(--gold);
+  }
+
+  .size-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+  }
+
+  .size-table th,
+  .size-table td {
+    text-align: left;
+    border-bottom: 1px solid rgba(245,240,232,0.08);
+    padding: 10px 0;
+    font-size: 14px;
+    color: rgba(245,240,232,0.66);
+  }
+
+  .size-table th {
+    font-family: var(--ff-cond);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-size: 11px;
+  }
+
+  .catalog-section {
+    background: var(--black);
+  }
+
+  .catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 48px;
+  }
+
+  .catalog-count {
+    font-family: var(--ff-cond);
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.45);
+    white-space: nowrap;
+  }
+
+  .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+
+  .product-card {
+    background: var(--charcoal);
+    border: 1px solid rgba(245,240,232,0.08);
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 0%, rgba(184,137,74,0.12), transparent 34%);
+    opacity: 0;
+    transition: opacity 0.25s;
+    pointer-events: none;
+  }
+
+  .product-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(184,137,74,0.38);
+    background: var(--dark);
+  }
+
+  .product-card:hover::before { opacity: 1; }
+
+  .product-visual {
+    min-height: 104px;
+    background:
+      linear-gradient(145deg, rgba(184,137,74,0.14), transparent),
+      var(--mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(245,240,232,0.06);
+  }
+
+  .hat-icon {
+    width: 82px;
+    height: 48px;
+    opacity: 0.82;
+  }
+
+  .product-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sku-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .sku {
+    font-family: var(--ff-display);
+    font-weight: 900;
+    font-size: 25px;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .price {
+    font-family: var(--ff-cond);
+    color: var(--gold);
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+  }
+
+  .category {
+    font-family: var(--ff-cond);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.58);
+    margin-bottom: 12px;
+  }
+
+  .note {
+    display: inline-block;
+    width: fit-content;
+    font-family: var(--ff-cond);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--black);
+    background: var(--sand);
+    padding: 4px 8px;
+    margin-top: auto;
+  }
+
+  .product-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-ghost {
+    font-family: var(--ff-cond);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s, color 0.2s, border-color 0.2s;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--black);
+  }
+
+  .btn-primary:hover { transform: translateY(-2px); }
+
+  .btn-secondary,
+  .btn-ghost {
+    border-color: rgba(245,240,232,0.24);
+    color: rgba(245,240,232,0.76);
+    background: transparent;
+  }
+
+  .btn-secondary:hover,
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  .empty-state {
+    display: none;
+    padding: 80px 20px;
+    text-align: center;
+    border: 1px solid rgba(245,240,232,0.08);
+    background: var(--charcoal);
+    color: rgba(245,240,232,0.55);
+  }
+
+  .empty-state h3 {
+    font-family: var(--ff-display);
+    font-size: 32px;
+    color: var(--cream);
+    margin-bottom: 12px;
+  }
+
+  .inventory-table-section {
+    background: var(--charcoal);
+    padding-top: 72px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid rgba(245,240,232,0.08);
+    background: rgba(10,9,6,0.34);
+  }
+
+  .inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 760px;
+  }
+
+  .inventory-table th,
+  .inventory-table td {
+    padding: 15px 18px;
+    border-bottom: 1px solid rgba(245,240,232,0.07);
+    text-align: left;
+  }
+
+  .inventory-table th {
+    font-family: var(--ff-cond);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    background: rgba(255,255,255,0.025);
+  }
+
+  .inventory-table td {
+    color: rgba(245,240,232,0.68);
+    font-size: 14px;
+  }
+
+  .inventory-table .table-sku {
+    font-family: var(--ff-display);
+    font-weight: 900;
+    color: var(--white);
+    font-size: 18px;
+  }
+
+  .cta-band {
+    background: var(--gold);
+    color: var(--black);
+    padding: 82px 80px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .cta-band h2 {
+    font-family: var(--ff-display);
+    font-size: clamp(34px, 4vw, 54px);
+    line-height: 1.02;
+    font-weight: 900;
+  }
+
+  .cta-band h2 em { color: rgba(10,9,6,0.48); }
+
+  .cta-band p {
+    color: rgba(10,9,6,0.64);
+    margin-top: 16px;
+    max-width: 540px;
+  }
+
+  .cta-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cta-actions .btn-primary {
+    background: var(--black);
+    color: var(--cream);
+  }
+
+  .cta-actions .btn-secondary {
+    border-color: rgba(10,9,6,0.25);
+    color: var(--black);
+  }
+
+  footer {
+    background: var(--black);
+    padding: 56px 80px 36px;
+    border-top: 1px solid rgba(245,240,232,0.06);
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    color: rgba(245,240,232,0.28);
+    font-family: var(--ff-cond);
+    font-size: 12px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.8s cubic-bezier(.23,1,.32,1), transform 0.8s cubic-bezier(.23,1,.32,1);
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 1180px) {
+    .catalog-grid { grid-template-columns: repeat(3, 1fr); }
+    .tools-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 820px) {
+    nav { padding: 0 24px; }
+    .nav-links, .nav-cta { display: none; }
+    .catalog-hero { padding: 136px 24px 64px; min-height: 68vh; }
+    section { padding: 72px 24px; }
+    .search-row { grid-template-columns: 1fr; }
+    .catalog-header { flex-direction: column; align-items: flex-start; }
+    .catalog-grid { grid-template-columns: repeat(2, 1fr); }
+    .cta-band { grid-template-columns: 1fr; padding: 64px 24px; gap: 36px; }
+    footer { padding: 44px 24px 32px; }
+    .footer-bottom { flex-direction: column; }
+  }
+
+  @media (max-width: 560px) {
+    .catalog-grid { grid-template-columns: 1fr; }
+    .product-card { min-height: auto; }
+    .hero-meta { gap: 8px; }
+    .meta-pill { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="/" class="nav-logo">SAPPA <span>·</span> HEADWEAR</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="#catalogo">Catálogo</a></li>
+    <li><a href="#tallas">Tallas</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="#catalogo" class="nav-cta">Explorar</a>
+</nav>
+
+<header class="catalog-hero">
+  <div class="hero-noise"></div>
+  <div class="catalog-hero-inner reveal visible">
+    <div class="eyebrow">Catálogo Maestro</div>
+    <h1>Inventario<br><em>Sappa.</em></h1>
+    <p class="hero-copy">Un catálogo completo para explorar líneas, materiales, SKUs, tallas y precios base. Diseñado como una página premium para consulta comercial, preventa y navegación hacia tienda.</p>
+    <div class="hero-meta">
+      <span class="meta-pill" id="metaTotal">100 modelos</span>
+      <span class="meta-pill">Tallas S · M · L · XL · XXL</span>
+      <span class="meta-pill">Catálogo 2024 / 2025</span>
+    </div>
+  </div>
+</header>
+
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span class="marquee-item">Panama Style ✦</span>
+    <span class="marquee-item">Linen ✦</span>
+    <span class="marquee-item">Cowboy ✦</span>
+    <span class="marquee-item">Agave Espadin ✦</span>
+    <span class="marquee-item">Palm ✦</span>
+    <span class="marquee-item">Porkpie ✦</span>
+    <span class="marquee-item">Sappa Headwear ✦</span>
+    <span class="marquee-item">Panama Style ✦</span>
+    <span class="marquee-item">Linen ✦</span>
+    <span class="marquee-item">Cowboy ✦</span>
+    <span class="marquee-item">Agave Espadin ✦</span>
+    <span class="marquee-item">Palm ✦</span>
+    <span class="marquee-item">Porkpie ✦</span>
+    <span class="marquee-item">Sappa Headwear ✦</span>
+  </div>
+</div>
+
+<section class="catalog-tools" id="tallas">
+  <div class="tools-grid">
+    <div class="tool-panel reveal">
+      <div class="panel-title">Buscar dentro del inventario</div>
+      <div class="search-row">
+        <input type="search" id="searchInput" placeholder="Buscar por SKU, línea o material. Ej. TPC, Linen, Cowboy...">
+        <select id="categorySelect" aria-label="Filtrar por categoría">
+          <option value="all">Todas las categorías</option>
+        </select>
+      </div>
+      <div class="filter-chips" id="chipWrap"></div>
+    </div>
+
+    <div class="tool-panel reveal">
+      <div class="panel-title">Size chart</div>
+      <table class="size-table">
+        <thead>
+          <tr><th>Size</th><th>CM</th><th>Inches</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>S</td><td>55</td><td>6 7/8</td></tr>
+          <tr><td>M</td><td>56–57</td><td>7 – 7 1/8</td></tr>
+          <tr><td>L</td><td>58–59</td><td>7 1/4 – 7 3/8</td></tr>
+          <tr><td>XL</td><td>60–61</td><td>7 1/2 – 7 5/8</td></tr>
+          <tr><td>XXL</td><td>62–63</td><td>7 3/4 – 7 7/8</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="catalog-section" id="catalogo">
+  <div class="catalog-header reveal">
+    <div>
+      <div class="section-label">Inventario Principal</div>
+      <h2 class="section-title">Cada SKU,<br>con <em>carácter.</em></h2>
+    </div>
+    <div class="catalog-count" id="resultCount">Mostrando 100 productos</div>
+  </div>
+  <div class="catalog-grid" id="catalogGrid"></div>
+  <div class="empty-state" id="emptyState">
+    <h3>Sin resultados</h3>
+    <p>Prueba con otro SKU, material o categoría.</p>
+  </div>
+</section>
+
+<section class="inventory-table-section">
+  <div class="catalog-header reveal">
+    <div>
+      <div class="section-label">Vista Comercial</div>
+      <h2 class="section-title">Tabla rápida<br>para <em>ventas.</em></h2>
+    </div>
+  </div>
+  <div class="table-wrap reveal">
+    <table class="inventory-table">
+      <thead>
+        <tr>
+          <th>SKU</th>
+          <th>Categoría</th>
+          <th>Nota</th>
+          <th>Precio base</th>
+          <th>Tallas</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="cta-band" id="contacto">
+  <div>
+    <h2>Consulta disponibilidad<br><em>antes de comprar.</em></h2>
+    <p>Esta página funciona como inventario visual principal. Para stock real, pedido mayorista o confirmación de talla/color, conecta cada SKU a Wix, WhatsApp o un formulario comercial.</p>
+  </div>
+  <div class="cta-actions">
+    <a class="btn-primary" href="mailto:sappaheadwear@gmail.com?subject=Consulta%20de%20inventario%20Sappa">Contactar por email</a>
+    <a class="btn-secondary" href="https://www.instagram.com/sappa_headwear" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-bottom">
+    <p>© 2025 Sappa Headwear. All rights reserved.</p>
+    <p>Crown Your Character.</p>
+  </div>
+</footer>
+
+<script>
+const inventory = [
+  { sku: 'TPC-1', category: 'Panama Style', note: '', price: 24.50 },
+  { sku: 'TPC-2', category: 'Panama Style', note: '', price: 24.50 },
+  { sku: 'TPC-3', category: 'Panama Style', note: '', price: 24.50 },
+  { sku: 'TPC-4', category: 'Panama Style', note: '', price: 24.50 },
+  { sku: 'TPC-5', category: 'Panama Style', note: '', price: 24.50 },
+  { sku: 'TPC-6', category: 'Panama Style', note: '', price: 24.50 },
+  { sku: 'TPC-7', category: 'Panama Style', note: '', price: 24.50 },
+  { sku: 'TPC-8', category: 'Panama Style', note: '', price: 24.50 },
+  { sku: 'TPI-1', category: 'Panama Style', note: '', price: 24.50 },
+  { sku: 'POI-1', category: 'Original Panama', note: '', price: 38.00 },
+  { sku: 'POC-1', category: 'Original Panama', note: '', price: 38.00 },
+  { sku: 'LC-1', category: 'Linen', note: '', price: 24.50 },
+  { sku: 'LC-2', category: 'Linen', note: '', price: 24.50 },
+  { sku: 'LC-3', category: 'Linen', note: '', price: 24.50 },
+  { sku: 'LC-4', category: 'Linen', note: '', price: 24.50 },
+  { sku: 'LC-5', category: 'Linen', note: '', price: 24.50 },
+  { sku: 'LC-6', category: 'Linen', note: '', price: 24.50 },
+  { sku: 'LC-7', category: 'Linen', note: '', price: 24.50 },
+  { sku: 'LC-8', category: 'Linen', note: '', price: 24.50 },
+  { sku: 'LC-9', category: 'Linen', note: '', price: 24.50 },
+  { sku: 'LC-10', category: 'Linen', note: '', price: 24.50 },
+  { sku: 'LC-11', category: 'Linen', note: '', price: 24.50 },
+  { sku: 'LC-12', category: 'Linen', note: '', price: 24.50 },
+  { sku: 'LI-1', category: 'Linen Indiana', note: '', price: 24.50 },
+  { sku: 'LI-2', category: 'Linen Indiana', note: '', price: 24.50 },
+  { sku: 'LI-3', category: 'Linen Indiana', note: '', price: 24.50 },
+  { sku: 'LI-4', category: 'Linen Indiana', note: '', price: 24.50 },
+  { sku: 'LI-5', category: 'Linen Indiana', note: '', price: 24.50 },
+  { sku: 'LP-1', category: 'Linen Flat', note: '', price: 24.50 },
+  { sku: 'LP-2', category: 'Linen Flat', note: '', price: 24.50 },
+  { sku: 'LP-3', category: 'Linen Flat', note: '', price: 24.50 },
+  { sku: 'LP-4', category: 'Linen Flat', note: 'w/ Red Bottom', price: 24.50 },
+  { sku: 'LM-1', category: 'Linen Cotton', note: '', price: 24.50 },
+  { sku: 'LM-2', category: 'Linen Cotton', note: '', price: 24.50 },
+  { sku: 'LM-3', category: 'Linen Cotton', note: '', price: 24.50 },
+  { sku: 'LM-4', category: 'Linen Cotton', note: '', price: 24.50 },
+  { sku: 'LM-5', category: 'Linen Cotton', note: '', price: 24.50 },
+  { sku: 'LMI-1', category: 'Linen Cotton', note: '', price: 24.50 },
+  { sku: 'H-1', category: 'Cellulose Cotton Hybrid', note: '', price: 24.50 },
+  { sku: 'H-2', category: 'Cellulose Cotton Hybrid', note: '', price: 24.50 },
+  { sku: 'H-3', category: 'Cellulose Cotton Hybrid', note: '', price: 24.50 },
+  { sku: 'H-4', category: 'Cellulose Cotton Hybrid', note: '', price: 24.50 },
+  { sku: 'MMC-1', category: 'Mixed Cotton', note: '', price: 24.50 },
+  { sku: 'MMC-2', category: 'Mixed Cotton', note: '', price: 24.50 },
+  { sku: 'MMC-3', category: 'Mixed Cotton', note: '', price: 24.50 },
+  { sku: 'MMI-1', category: 'Mixed Cotton Indiana', note: '', price: 24.50 },
+  { sku: 'MMI-2', category: 'Mixed Cotton Indiana', note: '', price: 24.50 },
+  { sku: 'MMI-3', category: 'Mixed Cotton Indiana', note: '', price: 24.50 },
+  { sku: 'MMI-4', category: 'Mixed Cotton Indiana', note: '', price: 24.50 },
+  { sku: 'VVC-1', category: 'Cellulose Braid', note: '', price: 24.50 },
+  { sku: 'VVC-2', category: 'Cellulose Braid', note: '', price: 24.50 },
+  { sku: 'VVC-3', category: 'Cellulose Braid', note: '', price: 24.50 },
+  { sku: 'VVC-4', category: 'Cellulose Braid', note: '', price: 24.50 },
+  { sku: 'VVC-5', category: 'Cellulose Braid', note: '', price: 24.50 },
+  { sku: 'VVC-6', category: 'Cellulose Braid', note: '', price: 24.50 },
+  { sku: 'VVC-7', category: 'Cellulose Braid', note: '', price: 24.50 },
+  { sku: 'VVC-8', category: 'Cellulose Braid', note: '', price: 24.50 },
+  { sku: 'VVC-9', category: 'Cellulose Braid', note: '', price: 24.50 },
+  { sku: 'VV-10', category: 'Cellulose Braid', note: '', price: 24.50 },
+  { sku: 'TMC-1', category: 'Wood Texture', note: '', price: 24.50 },
+  { sku: 'TMC-2', category: 'Wood Texture', note: '', price: 24.50 },
+  { sku: 'GP-1', category: 'Suede Fabric', note: '', price: 24.50 },
+  { sku: 'GP-2', category: 'Suede Fabric', note: 'w/ Red Bottom', price: 24.50 },
+  { sku: 'GP-3', category: 'Suede Fabric', note: '', price: 24.50 },
+  { sku: 'GP-4', category: 'Suede Fabric', note: '', price: 24.50 },
+  { sku: 'GP-5', category: 'Suede Fabric', note: '', price: 24.50 },
+  { sku: 'CCN-01', category: 'Palm', note: '', price: 14.00 },
+  { sku: 'CCQ-01', category: 'Palm', note: '', price: 14.00 },
+  { sku: 'CI-01', category: 'Palm', note: '', price: 14.00 },
+  { sku: 'CF-01', category: 'Palm', note: '', price: 14.00 },
+  { sku: 'CPF-01', category: 'Palm', note: '', price: 28.00 },
+  { sku: 'PPL-01', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'PPL-02', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'PPL-03', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'PPL-04', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'PPL-05', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'PPTB-01', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'PPTA-02', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'PPP-01', category: 'Porkpie', note: '', price: 14.00 },
+  { sku: 'PPVV-01', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'PPVV-02', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'PPVV-03', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'PPVV-04', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'PPVV-05', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'PPVV-06', category: 'Porkpie', note: '', price: 20.00 },
+  { sku: 'TCI-1', category: 'Tela', note: '', price: 24.50 },
+  { sku: 'TCC-1', category: 'Tela', note: '', price: 24.50 },
+  { sku: 'TCC-2', category: 'Tela', note: '', price: 24.50 },
+  { sku: 'EC-1', category: 'Agave Espadin', note: '', price: 37.00 },
+  { sku: 'EC-2', category: 'Agave Espadin', note: '', price: 37.00 },
+  { sku: 'EV-1', category: 'Agave Espadin', note: '', price: 37.00 },
+  { sku: 'EV-2', category: 'Agave Espadin', note: '', price: 37.00 },
+  { sku: 'EV-3', category: 'Agave Espadin', note: '', price: 37.00 },
+  { sku: 'EV-4', category: 'Agave Espadin', note: '', price: 37.00 },
+  { sku: 'TVL-1', category: 'Cowboy', note: '', price: 28.50 },
+  { sku: 'TVL-2', category: 'Cowboy', note: '', price: 28.50 },
+  { sku: 'TVM-1', category: 'Cowboy', note: '', price: 28.50 },
+  { sku: 'TVM-2', category: 'Cowboy', note: '', price: 28.50 },
+  { sku: 'TVMM-1', category: 'Cowboy', note: '', price: 28.50 },
+  { sku: 'TVB-1', category: 'Cowboy', note: '', price: 28.50 }
+];
+
+const grid = document.getElementById('catalogGrid');
+const tableBody = document.getElementById('tableBody');
+const searchInput = document.getElementById('searchInput');
+const categorySelect = document.getElementById('categorySelect');
+const chipWrap = document.getElementById('chipWrap');
+const resultCount = document.getElementById('resultCount');
+const emptyState = document.getElementById('emptyState');
+const metaTotal = document.getElementById('metaTotal');
+let currentCategory = 'all';
+
+metaTotal.textContent = `${inventory.length} modelos`;
+
+const categories = [...new Set(inventory.map(item => item.category))].sort();
+
+categories.forEach(category => {
+  const opt = document.createElement('option');
+  opt.value = category;
+  opt.textContent = category;
+  categorySelect.appendChild(opt);
+});
+
+const topChips = ['all', 'Panama Style', 'Linen', 'Porkpie', 'Cowboy', 'Agave Espadin', 'Palm'];
+topChips.forEach(category => {
+  const btn = document.createElement('button');
+  btn.className = 'chip' + (category === 'all' ? ' active' : '');
+  btn.type = 'button';
+  btn.dataset.category = category;
+  btn.textContent = category === 'all' ? 'Todo' : category;
+  btn.addEventListener('click', () => {
+    currentCategory = category;
+    categorySelect.value = category;
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    render();
+  });
+  chipWrap.appendChild(btn);
+});
+
+function hatSvg() {
+  return `
+    <svg class="hat-icon" viewBox="0 0 160 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M39 58C49 47 55 25 78 22C101 19 112 38 118 58" stroke="#c4a882" stroke-width="4" stroke-linecap="round"/>
+      <path d="M18 63C49 54 110 54 142 63C129 74 31 74 18 63Z" fill="rgba(196,168,130,0.22)" stroke="#b8894a" stroke-width="3"/>
+      <path d="M52 51C67 56 93 56 109 51" stroke="#b8894a" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+  `;
+}
+
+function productCard(item) {
+  const query = encodeURIComponent(`Hola, quiero consultar disponibilidad del modelo ${item.sku} (${item.category}).`);
+  return `
+    <article class="product-card reveal visible" data-sku="${item.sku}" data-category="${item.category}">
+      <div class="product-visual">${hatSvg()}</div>
+      <div class="product-body">
+        <div class="sku-row">
+          <div class="sku">${item.sku}</div>
+          <div class="price">$${item.price.toFixed(2)}</div>
+        </div>
+        <div class="category">${item.category}</div>
+        ${item.note ? `<span class="note">${item.note}</span>` : ''}
+        <div class="product-actions">
+          <a class="btn-ghost" href="mailto:sappaheadwear@gmail.com?subject=Consulta%20SKU%20${item.sku}&body=${query}">Consultar SKU</a>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function tableRow(item) {
+  return `
+    <tr>
+      <td class="table-sku">${item.sku}</td>
+      <td>${item.category}</td>
+      <td>${item.note || '—'}</td>
+      <td>$${item.price.toFixed(2)}</td>
+      <td>S · M · L · XL · XXL</td>
+    </tr>
+  `;
+}
+
+function normalize(value) {
+  return value.toString().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function filteredInventory() {
+  const q = normalize(searchInput.value.trim());
+  return inventory.filter(item => {
+    const matchesCategory = currentCategory === 'all' || item.category === currentCategory;
+    const haystack = normalize(`${item.sku} ${item.category} ${item.note} ${item.price}`);
+    const matchesSearch = !q || haystack.includes(q);
+    return matchesCategory && matchesSearch;
+  });
+}
+
+function render() {
+  const items = filteredInventory();
+  grid.innerHTML = items.map(productCard).join('');
+  tableBody.innerHTML = items.map(tableRow).join('');
+  resultCount.textContent = `Mostrando ${items.length} de ${inventory.length} productos`;
+  emptyState.style.display = items.length ? 'none' : 'block';
+}
+
+searchInput.addEventListener('input', render);
+categorySelect.addEventListener('change', () => {
+  currentCategory = categorySelect.value;
+  document.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c.dataset.category === currentCategory));
+  render();
+});
+
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+render();
+</script>
+</body>
+</html>
