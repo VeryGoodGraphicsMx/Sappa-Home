@@ -1,0 +1,9 @@
+# ─── Geo-based redirects ───────────────────────────────────────────
+# LATAM → Spanish version
+/  /es/index.html  302  Country=MX,CO,AR,CL,PE,VE,EC,GT,HN,SV,DO,BO,PY,UY,CU,NI,CR,PA,PR
+
+# English-speaking countries → English version
+/  /en/index.html  302  Country=US,CA,GB,AU,NZ,IE,ZA
+
+# Default fallback (everyone else) → English
+/  /en/index.html  302
