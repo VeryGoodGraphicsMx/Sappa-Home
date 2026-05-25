@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sappa Headwear — Catálogo Completo</title>
+<meta name="description" content="Catálogo completo de Sappa Headwear. Explora todos los modelos, materiales y tallas disponibles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0a0906;
+    --charcoal: #141210;
+    --dark: #1e1b17;
+    --mid: #2e2a25;
+    --sand: #c4a882;
+    --gold: #b8894a;
+    --cream: #f5f0e8;
+    --white: #fdfcf9;
+    --muted: #7a7068;
+    --line: rgba(245,240,232,0.09);
+    --ff-display: 'Playfair Display', Georgia, serif;
+    --ff-cond: 'Barlow Condensed', sans-serif;
+    --ff-body: 'Barlow', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--cream);
+    font-family: var(--ff-body);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    height: 72px;
+    background: rgba(10,9,6,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(184,137,74,0.15);
+    transition: height 0.3s;
+  }
+  .nav-logo {
+    font-family: var(--ff-display);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a {
+    font-family: var(--ff-cond);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--cream); }
+  .nav-cta {
+    font-family: var(--ff-cond);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+  }
+  .nav-cta:hover { background: var(--gold); color: var(--black); }
+
+  /* ── HERO ── */
+  .catalog-hero {
+    padding: 160px 80px 80px;
+    background:
+      linear-gradient(to bottom, rgba(10,9,6,0.3), rgba(10,9,6,0.75) 60%, var(--black) 100%),
+      url('https://static.wixstatic.com/media/65fb71_90c48528cc8a48429d7b3b10033e1378~mv2.png') center/cover no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-noise {
+    position: absolute; inset: 0; opacity: 0.2; pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+  .hero-inner { position: relative; z-index: 2; max-width: 800px; }
+  .eyebrow {
+    font-family: var(--ff-cond);
+    font-size: 12px; font-weight: 600;
+    letter-spacing: 0.32em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 18px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
+  .hero-title {
+    font-family: var(--ff-display);
+    font-size: clamp(48px, 6.5vw, 88px);
+    font-weight: 900; line-height: 0.95;
+    color: var(--white); margin-bottom: 24px;
+  }
+  .hero-title em { font-style: italic; color: var(--sand); }
+  .hero-copy {
+    font-size: 17px; font-weight: 300;
+    color: rgba(245,240,232,0.6);
+    max-width: 520px; line-height: 1.75; margin-bottom: 32px;
+  }
+  .hero-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+  .pill {
+    font-family: var(--ff-cond);
+    font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: rgba(245,240,232,0.65);
+    border: 1px solid rgba(245,240,232,0.15);
+    background: rgba(10,9,6,0.3);
+    padding: 10px 16px;
+  }
+
+  /* ── MARQUEE ── */
+  .marquee-strip { background: var(--gold); padding: 12px 0; overflow: hidden; white-space: nowrap; }
+  .marquee-track { display: inline-flex; animation: marquee 24s linear infinite; }
+  .marquee-item {
+    font-family: var(--ff-cond); font-size: 13px; font-weight: 700;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--black); padding: 0 36px;
+  }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ── FILTER BAR ── */
+  .filter-bar {
+    background: var(--charcoal);
+    padding: 28px 80px;
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 72px;
+    z-index: 90;
+  }
+  .filter-inner {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .search-box {
+    position: relative;
+    flex: 1;
+    min-width: 220px;
+    max-width: 320px;
+  }
+  .search-box input {
+    width: 100%;
+    padding: 11px 16px 11px 38px;
+    background: rgba(10,9,6,0.5);
+    border: 1px solid rgba(245,240,232,0.12);
+    color: var(--cream);
+    font-family: var(--ff-body);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-box input:focus { border-color: rgba(184,137,74,0.5); }
+  .search-box input::placeholder { color: rgba(245,240,232,0.3); }
+  .search-icon {
+    position: absolute; left: 12px; top: 50%;
+    transform: translateY(-50%);
+    color: rgba(245,240,232,0.3);
+    pointer-events: none;
+  }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; flex: 1; }
+  .chip {
+    font-family: var(--ff-cond);
+    font-size: 12px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: rgba(245,240,232,0.55);
+    border: 1px solid rgba(245,240,232,0.12);
+    background: transparent;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .chip:hover { border-color: rgba(184,137,74,0.5); color: var(--sand); }
+  .chip.active { border-color: var(--gold); color: var(--black); background: var(--gold); }
+  .result-count {
+    font-family: var(--ff-cond);
+    font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: rgba(245,240,232,0.35);
+    white-space: nowrap;
+    margin-left: auto;
+  }
+
+  /* ── GRID ── */
+  .catalog-section { padding: 60px 80px 100px; background: var(--black); }
+  .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
+
+  /* ── PRODUCT CARD ── */
+  .product-card {
+    background: var(--charcoal);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.3s;
+  }
+  .product-card:hover { background: var(--dark); }
+
+  .card-image {
+    aspect-ratio: 1;
+    overflow: hidden;
+    background: var(--mid);
+    position: relative;
+  }
+  .card-image img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(.23,1,.32,1);
+    display: block;
+  }
+  .product-card:hover .card-image img { transform: scale(1.07); }
+
+  /* Overlay on hover */
+  .card-image::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: rgba(10,9,6,0.35);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .product-card:hover .card-image::after { opacity: 1; }
+
+  /* Quick action on hover */
+  .card-action {
+    position: absolute;
+    bottom: 16px; left: 16px; right: 16px;
+    z-index: 2;
+    transform: translateY(8px);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(.23,1,.32,1);
+  }
+  .product-card:hover .card-action { opacity: 1; transform: translateY(0); }
+  .card-action a {
+    display: block;
+    font-family: var(--ff-cond);
+    font-size: 12px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    text-align: center;
+    padding: 12px;
+    background: var(--gold);
+    color: var(--black);
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .card-action a:hover { background: var(--sand); }
+
+  .card-body {
+    padding: 18px 20px 20px;
+    border-top: 1px solid rgba(245,240,232,0.06);
+  }
+  .card-category {
+    font-family: var(--ff-cond);
+    font-size: 11px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 5px;
+  }
+  .card-sku {
+    font-family: var(--ff-display);
+    font-size: 22px; font-weight: 900;
+    color: var(--white);
+    line-height: 1;
+  }
+  .card-badge {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: var(--ff-cond);
+    font-size: 10px; font-weight: 600;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--black);
+    background: var(--sand);
+    padding: 3px 8px;
+  }
+
+  /* Empty state */
+  .empty-state {
+    display: none;
+    grid-column: 1/-1;
+    padding: 80px 20px;
+    text-align: center;
+    border: 1px solid rgba(245,240,232,0.08);
+    background: var(--charcoal);
+  }
+  .empty-state h3 {
+    font-family: var(--ff-display);
+    font-size: 28px; color: var(--cream);
+    margin-bottom: 10px;
+  }
+  .empty-state p { font-size: 14px; color: rgba(245,240,232,0.45); }
+
+  /* ── SIZE CHART ── */
+  .size-section {
+    background: var(--charcoal);
+    padding: 80px 80px;
+    border-top: 1px solid var(--line);
+  }
+  .size-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .section-label {
+    font-family: var(--ff-cond);
+    font-size: 11px; font-weight: 600;
+    letter-spacing: 0.32em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .section-label::before { content: ''; width: 24px; height: 1px; background: var(--gold); flex-shrink: 0; }
+  .section-title {
+    font-family: var(--ff-display);
+    font-size: clamp(32px, 4vw, 50px);
+    font-weight: 900; line-height: 1.05;
+    color: var(--white); margin-bottom: 20px;
+  }
+  .section-title em { font-style: italic; color: var(--sand); }
+  .section-body {
+    font-size: 15px; font-weight: 300;
+    color: rgba(245,240,232,0.55);
+    line-height: 1.8; max-width: 440px;
+  }
+  .size-table-wrap {
+    border: 1px solid rgba(245,240,232,0.08);
+    overflow: hidden;
+  }
+  .size-table {
+    width: 100%; border-collapse: collapse;
+  }
+  .size-table th {
+    font-family: var(--ff-cond);
+    font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold);
+    background: rgba(255,255,255,0.03);
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(245,240,232,0.08);
+    text-align: left;
+  }
+  .size-table td {
+    padding: 13px 18px;
+    border-bottom: 1px solid rgba(245,240,232,0.05);
+    font-size: 14px;
+    color: rgba(245,240,232,0.7);
+  }
+  .size-table tr:last-child td { border-bottom: none; }
+  .size-table .size-label {
+    font-family: var(--ff-display);
+    font-weight: 900; font-size: 18px;
+    color: var(--white);
+  }
+
+  /* ── CTA BAND ── */
+  .cta-band {
+    background: var(--gold);
+    padding: 80px;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .cta-band h2 {
+    font-family: var(--ff-display);
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.02; font-weight: 900;
+    color: var(--black);
+  }
+  .cta-band h2 em { color: rgba(10,9,6,0.45); font-style: italic; }
+  .cta-band p {
+    font-size: 15px; color: rgba(10,9,6,0.6);
+    margin-top: 14px; line-height: 1.7;
+  }
+  .cta-actions { display: flex; flex-direction: column; gap: 12px; }
+  .btn-dark {
+    font-family: var(--ff-cond);
+    font-size: 13px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    padding: 15px 32px;
+    background: var(--black); color: var(--cream);
+    text-decoration: none; text-align: center;
+    transition: background 0.2s;
+  }
+  .btn-dark:hover { background: var(--charcoal); }
+  .btn-outline-dark {
+    font-family: var(--ff-cond);
+    font-size: 13px; font-weight: 500;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    padding: 15px 32px;
+    border: 1px solid rgba(10,9,6,0.3);
+    color: var(--black);
+    text-decoration: none; text-align: center;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .btn-outline-dark:hover { border-color: var(--black); background: rgba(10,9,6,0.08); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--black);
+    padding: 48px 80px 32px;
+    border-top: 1px solid rgba(245,240,232,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+  .footer-copy {
+    font-family: var(--ff-cond);
+    font-size: 12px; letter-spacing: 0.1em;
+    color: rgba(245,240,232,0.2);
+  }
+  .footer-tagline {
+    font-family: var(--ff-display);
+    font-size: 14px; font-style: italic;
+    color: rgba(245,240,232,0.15);
+  }
+
+  /* ── REVEAL ── */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s cubic-bezier(.23,1,.32,1), transform 0.8s cubic-bezier(.23,1,.32,1); }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1200px) { .catalog-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 900px) {
+    nav { padding: 0 24px; }
+    .nav-links, .nav-cta { display: none; }
+    .catalog-hero { padding: 120px 24px 60px; }
+    .filter-bar { padding: 20px 24px; top: 60px; }
+    .catalog-section { padding: 40px 24px 72px; }
+    .catalog-grid { grid-template-columns: repeat(2, 1fr); gap: 2px; }
+    .size-section { padding: 64px 24px; }
+    .size-inner { grid-template-columns: 1fr; gap: 40px; }
+    .cta-band { grid-template-columns: 1fr; padding: 60px 24px; gap: 36px; }
+    footer { padding: 36px 24px 24px; flex-direction: column; align-items: flex-start; gap: 8px; }
+  }
+  @media (max-width: 560px) { .catalog-grid { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">SAPPA <span>·</span> HEADWEAR</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="#catalogo">Catálogo</a></li>
+    <li><a href="#tallas">Tallas</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="mailto:sappaheadwear@gmail.com" class="nav-cta">Consultar</a>
+</nav>
+
+<!-- HERO -->
+<header class="catalog-hero">
+  <div class="hero-noise"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">Catálogo Completo 2025</div>
+    <h1 class="hero-title">Cada pieza.<br><em>Su carácter.</em></h1>
+    <p class="hero-copy">53 modelos disponibles. Explora por material, línea o SKU. Para consultas de mayoreo o disponibilidad, escríbenos directamente.</p>
+    <div class="hero-pills">
+      <span class="pill" id="pillTotal">53 modelos</span>
+      <span class="pill">Tallas S · M · L · XL · XXL</span>
+      <span class="pill">Panama · Linen · Cowboy · Porkpie</span>
+    </div>
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span class="marquee-item">Panama Style ✦</span>
+    <span class="marquee-item">Linen ✦</span>
+    <span class="marquee-item">Linen Indiana ✦</span>
+    <span class="marquee-item">Hybrid Cotton ✦</span>
+    <span class="marquee-item">Linen Classic ✦</span>
+    <span class="marquee-item">Tela Cotton ✦</span>
+    <span class="marquee-item">Mixed Cotton ✦</span>
+    <span class="marquee-item">Sappa Headwear ✦</span>
+    <span class="marquee-item">Panama Style ✦</span>
+    <span class="marquee-item">Linen ✦</span>
+    <span class="marquee-item">Linen Indiana ✦</span>
+    <span class="marquee-item">Hybrid Cotton ✦</span>
+    <span class="marquee-item">Linen Classic ✦</span>
+    <span class="marquee-item">Tela Cotton ✦</span>
+    <span class="marquee-item">Mixed Cotton ✦</span>
+    <span class="marquee-item">Sappa Headwear ✦</span>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar" id="filterBar">
+  <div class="filter-inner">
+    <div class="search-box">
+      <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="searchInput" placeholder="Buscar SKU o material...">
+    </div>
+    <div class="chips" id="chipWrap"></div>
+    <div class="result-count" id="resultCount">53 productos</div>
+  </div>
+</div>
+
+<!-- CATALOG GRID -->
+<section class="catalog-section" id="catalogo">
+  <div class="catalog-grid" id="catalogGrid"></div>
+</section>
+
+<!-- SIZE CHART -->
+<section class="size-section" id="tallas">
+  <div class="size-inner">
+    <div class="reveal">
+      <div class="section-label">Guía de Tallas</div>
+      <h2 class="section-title">Tu talla<br>perfecta, <em>siempre.</em></h2>
+      <p class="section-body">Todos los modelos Sappa están disponibles en cinco tallas. Medimos el contorno de la cabeza a la altura de la frente para garantizar un ajuste perfecto y cómodo.</p>
+    </div>
+    <div class="reveal">
+      <div class="size-table-wrap">
+        <table class="size-table">
+          <thead>
+            <tr>
+              <th>Talla</th>
+              <th>Centímetros</th>
+              <th>Pulgadas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="size-label">S</td><td>55 cm</td><td>6 7/8"</td></tr>
+            <tr><td class="size-label">M</td><td>56 – 57 cm</td><td>7" – 7 1/8"</td></tr>
+            <tr><td class="size-label">L</td><td>58 – 59 cm</td><td>7 1/4" – 7 3/8"</td></tr>
+            <tr><td class="size-label">XL</td><td>60 – 61 cm</td><td>7 1/2" – 7 5/8"</td></tr>
+            <tr><td class="size-label">XXL</td><td>62 – 63 cm</td><td>7 3/4" – 7 7/8"</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band" id="contacto">
+  <div class="reveal">
+    <h2>Consulta disponibilidad<br><em>antes de ordenar.</em></h2>
+    <p>Para stock en tiempo real, pedidos al mayoreo, confirmación de talla/color o cotizaciones especiales, contáctanos directamente. Respondemos en menos de 24 horas.</p>
+  </div>
+  <div class="cta-actions reveal">
+    <a class="btn-dark" href="mailto:sappaheadwear@gmail.com?subject=Consulta%20de%20inventario%20Sappa">Contactar por email</a>
+    <a class="btn-outline-dark" href="https://www.instagram.com/sappa_headwear" target="_blank">@sappa_headwear</a>
+    <a class="btn-outline-dark" href="tel:+13058010988">+1 305-801-0988</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-copy">© 2025 Sappa Headwear. All rights reserved.</p>
+  <p class="footer-tagline">Crown Your Character.</p>
+</footer>
+
+<script>
+const inventory = [
+  { sku: 'TCC-3', category: 'Tela Cotton', image: 'https://static.wixstatic.com/media/65fb71_ca5c0f42b47d48559e3093dffe49c1ce~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_ca5c0f42b47d48559e3093dffe49c1ce~mv2.png', inStock: true },
+  { sku: 'TCC-2', category: 'Tela Cotton', image: 'https://static.wixstatic.com/media/65fb71_d1b51f54d8714e2b93e5e705cea14bbf~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_d1b51f54d8714e2b93e5e705cea14bbf~mv2.png', inStock: true },
+  { sku: 'TCC-1', category: 'Tela Cotton', image: 'https://static.wixstatic.com/media/65fb71_2b60a3872b954a869d4cfa03aae0cbf0~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_2b60a3872b954a869d4cfa03aae0cbf0~mv2.png', inStock: true },
+  { sku: 'TCI-3', category: 'Tela Cotton Indiana', image: 'https://static.wixstatic.com/media/65fb71_dab1ce0122244e83ab3c52e7f5f28958~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_dab1ce0122244e83ab3c52e7f5f28958~mv2.png', inStock: true },
+  { sku: 'TCI-2', category: 'Tela Cotton Indiana', image: 'https://static.wixstatic.com/media/65fb71_dd8b9ce3582b4b5d832a3b00cb5afb37~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_dd8b9ce3582b4b5d832a3b00cb5afb37~mv2.png', inStock: true },
+  { sku: 'MMI-3', category: 'Mixed Cotton Indiana', image: 'https://static.wixstatic.com/media/65fb71_ee6c20df87754c7f831b19cd02416e50~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_ee6c20df87754c7f831b19cd02416e50~mv2.png', inStock: true },
+  { sku: 'MMI-2', category: 'Mixed Cotton Indiana', image: 'https://static.wixstatic.com/media/65fb71_a021ecc64d19448fb4cedfc007b3b2b0~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_a021ecc64d19448fb4cedfc007b3b2b0~mv2.png', inStock: true },
+  { sku: 'MMI-1', category: 'Mixed Cotton Indiana', image: 'https://static.wixstatic.com/media/65fb71_616adcc68068484cb986c8d1f360b784~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_616adcc68068484cb986c8d1f360b784~mv2.png', inStock: true },
+  { sku: 'H-3', category: 'Hybrid Cotton', image: 'https://static.wixstatic.com/media/65fb71_b8a782d9ccbd46a2aec063cd3418f733~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_b8a782d9ccbd46a2aec063cd3418f733~mv2.png', inStock: true },
+  { sku: 'H-2', category: 'Hybrid Cotton', image: 'https://static.wixstatic.com/media/65fb71_894a8739c27a4f65bf930dc196234115~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_894a8739c27a4f65bf930dc196234115~mv2.png', inStock: true },
+  { sku: 'H-1', category: 'Hybrid Cotton', image: 'https://static.wixstatic.com/media/65fb71_b374355165b04fb3896070afd144deee~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_b374355165b04fb3896070afd144deee~mv2.png', inStock: true },
+  { sku: 'LMI-2', category: 'Linen Indiana', image: 'https://static.wixstatic.com/media/65fb71_28df3daf303c4ae6bac1934acb112efa~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_28df3daf303c4ae6bac1934acb112efa~mv2.png', inStock: true },
+  { sku: 'LMI-1', category: 'Linen Indiana', image: 'https://static.wixstatic.com/media/65fb71_d3f54433417b471ca7391bb076b2a0ed~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_d3f54433417b471ca7391bb076b2a0ed~mv2.png', inStock: true },
+  { sku: 'LMP-6', category: 'Linen', image: 'https://static.wixstatic.com/media/65fb71_082206c25d6a49198663c1181457cb05~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_082206c25d6a49198663c1181457cb05~mv2.png', inStock: true },
+  { sku: 'LMP-5', category: 'Linen', image: 'https://static.wixstatic.com/media/65fb71_d9765fedbb9645f8a3d04e897c566165~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_d9765fedbb9645f8a3d04e897c566165~mv2.png', inStock: true },
+  { sku: 'LMP-4', category: 'Linen', image: 'https://static.wixstatic.com/media/65fb71_5caf1aab5f534cee901e90723263e725~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_5caf1aab5f534cee901e90723263e725~mv2.png', inStock: true },
+  { sku: 'LMP-3', category: 'Linen', image: 'https://static.wixstatic.com/media/65fb71_b7c109dd108f4c36b041b10e734ffa75~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_b7c109dd108f4c36b041b10e734ffa75~mv2.png', inStock: true },
+  { sku: 'LMP-2', category: 'Linen', image: 'https://static.wixstatic.com/media/65fb71_199a6d47d8f44fd280ee2585786d7b98~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_199a6d47d8f44fd280ee2585786d7b98~mv2.png', inStock: true },
+  { sku: 'LMP-1', category: 'Linen', image: 'https://static.wixstatic.com/media/65fb71_701a0c74449a4e3e901a2b2e0e1e8a55~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_701a0c74449a4e3e901a2b2e0e1e8a55~mv2.png', inStock: true },
+  { sku: 'LP-3', category: 'Linen', image: 'https://static.wixstatic.com/media/65fb71_ccface220cfa4a1fb323faebacacda68~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_ccface220cfa4a1fb323faebacacda68~mv2.png', inStock: true },
+  { sku: 'LP-2', category: 'Linen', image: 'https://static.wixstatic.com/media/65fb71_bdbd771aca864005977116247e732e92~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_bdbd771aca864005977116247e732e92~mv2.png', inStock: true },
+  { sku: 'LP-1', category: 'Linen', image: 'https://static.wixstatic.com/media/65fb71_451af3307259483c84737cc4e23c3955~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_451af3307259483c84737cc4e23c3955~mv2.png', inStock: true },
+  { sku: 'LCZ-4', category: 'Linen Cotton', image: 'https://static.wixstatic.com/media/65fb71_935eee0b15d644c69928584d2243ed8e~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_935eee0b15d644c69928584d2243ed8e~mv2.png', inStock: true },
+  { sku: 'LCZ-3', category: 'Linen Cotton', image: 'https://static.wixstatic.com/media/65fb71_e9edf00ffc9a4048970dc1ea42a6165b~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_e9edf00ffc9a4048970dc1ea42a6165b~mv2.png', inStock: true },
+  { sku: 'LCZ-2', category: 'Linen Cotton', image: 'https://static.wixstatic.com/media/65fb71_ad2fa84e4f054951b20e77bcd7d097a3~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_ad2fa84e4f054951b20e77bcd7d097a3~mv2.png', inStock: true },
+  { sku: 'LCZ-1', category: 'Linen Cotton', image: 'https://static.wixstatic.com/media/65fb71_00b60337017b423faacbd83c9c7fae4b~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_00b60337017b423faacbd83c9c7fae4b~mv2.png', inStock: true },
+  { sku: 'LI-5', category: 'Linen Indiana', image: 'https://static.wixstatic.com/media/65fb71_cab7d243cfb843068b851e293e6ef106~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_cab7d243cfb843068b851e293e6ef106~mv2.png', inStock: true },
+  { sku: 'LI-4', category: 'Linen Indiana', image: 'https://static.wixstatic.com/media/65fb71_57b05e61992648649796c670338b1f93~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_57b05e61992648649796c670338b1f93~mv2.png', inStock: true },
+  { sku: 'LI-3', category: 'Linen Indiana', image: 'https://static.wixstatic.com/media/65fb71_7544c26f37dc4d45aeeac83312c40f33~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_7544c26f37dc4d45aeeac83312c40f33~mv2.png', inStock: true },
+  { sku: 'LI-2', category: 'Linen Indiana', image: 'https://static.wixstatic.com/media/65fb71_2c527f6a637a4fbc89cc4a7500e4b21b~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_2c527f6a637a4fbc89cc4a7500e4b21b~mv2.png', inStock: true },
+  { sku: 'LI-1', category: 'Linen Indiana', image: 'https://static.wixstatic.com/media/65fb71_c58cd7490c7540ffb088a210ae484565~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_c58cd7490c7540ffb088a210ae484565~mv2.png', inStock: true },
+  { sku: 'LC-13', category: 'Linen Classic', image: 'https://static.wixstatic.com/media/65fb71_144b61007fc9403dab69ee50b5fb494a~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_144b61007fc9403dab69ee50b5fb494a~mv2.png', inStock: true },
+  { sku: 'LC-12', category: 'Linen Classic', image: 'https://static.wixstatic.com/media/65fb71_87a59b772cdd44f7acb34f61d6e48d03~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_87a59b772cdd44f7acb34f61d6e48d03~mv2.png', inStock: true },
+  { sku: 'LC-11', category: 'Linen Classic', image: 'https://static.wixstatic.com/media/65fb71_85f68a86e09f44578a9eb7dcee43342b~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_85f68a86e09f44578a9eb7dcee43342b~mv2.png', inStock: true },
+  { sku: 'LC-10', category: 'Linen Classic', image: 'https://static.wixstatic.com/media/65fb71_8c372b55148441699b3c45535b0189b8~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_8c372b55148441699b3c45535b0189b8~mv2.png', inStock: true },
+  { sku: 'LC-9', category: 'Linen Classic', image: 'https://static.wixstatic.com/media/65fb71_b739f142f574436f9695d141f370d45b~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_b739f142f574436f9695d141f370d45b~mv2.png', inStock: true },
+  { sku: 'LC-8', category: 'Linen Classic', image: 'https://static.wixstatic.com/media/65fb71_14fb38c6649d4d989b3ffe1ddc365edb~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_14fb38c6649d4d989b3ffe1ddc365edb~mv2.png', inStock: true },
+  { sku: 'LC-6', category: 'Linen Classic', image: 'https://static.wixstatic.com/media/65fb71_1d3b067dd45843158fc3f8c2b2f94478~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_1d3b067dd45843158fc3f8c2b2f94478~mv2.png', inStock: true },
+  { sku: 'LC-5', category: 'Linen Classic', image: 'https://static.wixstatic.com/media/65fb71_cd4c3cdbbe0d464190426241e63a9c90~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_cd4c3cdbbe0d464190426241e63a9c90~mv2.png', inStock: true },
+  { sku: 'LC-3', category: 'Linen Classic', image: 'https://static.wixstatic.com/media/65fb71_374a6796f1bc4550a3af2d801d4a6462~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_374a6796f1bc4550a3af2d801d4a6462~mv2.png', inStock: true },
+  { sku: 'LC-1', category: 'Linen Classic', image: 'https://static.wixstatic.com/media/65fb71_05e42ac304044f7885f3ec9578da65a4~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_05e42ac304044f7885f3ec9578da65a4~mv2.png', inStock: true },
+  { sku: 'TPC-12', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_c7a25caee7f044fba745ec938e07268d~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_c7a25caee7f044fba745ec938e07268d~mv2.png', inStock: true },
+  { sku: 'TPC-11', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_6db07fbfbc0c44dda8a8f880ccd8ae5f~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_6db07fbfbc0c44dda8a8f880ccd8ae5f~mv2.png', inStock: true },
+  { sku: 'TPC-10', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_4ae666e79502430d8f23b86728e4b662~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_4ae666e79502430d8f23b86728e4b662~mv2.png', inStock: true },
+  { sku: 'TPC-9', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_0ef06cab1a2248a9a5b45cd67c81f816~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_0ef06cab1a2248a9a5b45cd67c81f816~mv2.png', inStock: true },
+  { sku: 'TPC-8', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_a30184a6e1c8478792a08614c27eb85d~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_a30184a6e1c8478792a08614c27eb85d~mv2.png', inStock: true },
+  { sku: 'TPC-7', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_df7d0c84e82749849c177ccfca3cfdad~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_df7d0c84e82749849c177ccfca3cfdad~mv2.png', inStock: true },
+  { sku: 'TPC-6', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_1a58d76e079748ea9c815bc9a78c9421~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_1a58d76e079748ea9c815bc9a78c9421~mv2.png', inStock: true },
+  { sku: 'TPC-5', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_7505d94693b04335a35c2ba88f50c8b2~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_7505d94693b04335a35c2ba88f50c8b2~mv2.png', inStock: true },
+  { sku: 'TPC-4', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_455da7a6044a4c59a7bc035009d2b7d6~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_455da7a6044a4c59a7bc035009d2b7d6~mv2.png', inStock: true },
+  { sku: 'TPC-3', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_df726adc96474f019d2dee78ea00ffd8~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_df726adc96474f019d2dee78ea00ffd8~mv2.png', inStock: true },
+  { sku: 'TPC-2', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_0d73fcaaf3014dfba8137ecc9a963a64~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_0d73fcaaf3014dfba8137ecc9a963a64~mv2.png', inStock: true },
+  { sku: 'TPC-1', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_130f8788953a4f63a85362301307ac88~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_130f8788953a4f63a85362301307ac88~mv2.png', inStock: true }
+];
+
+const grid = document.getElementById('catalogGrid');
+const searchInput = document.getElementById('searchInput');
+const chipWrap = document.getElementById('chipWrap');
+const resultCount = document.getElementById('resultCount');
+let activeCategory = 'all';
+
+// Build chips
+const categories = ['all', ...new Set(inventory.map(i => i.category))];
+categories.forEach(cat => {
+  const btn = document.createElement('button');
+  btn.className = 'chip' + (cat === 'all' ? ' active' : '');
+  btn.type = 'button';
+  btn.textContent = cat === 'all' ? 'Todos' : cat;
+  btn.addEventListener('click', () => {
+    activeCategory = cat;
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    render();
+  });
+  chipWrap.appendChild(btn);
+});
+
+function normalize(str) {
+  return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function filtered() {
+  const q = normalize(searchInput.value.trim());
+  return inventory.filter(item => {
+    const matchCat = activeCategory === 'all' || item.category === activeCategory;
+    const matchSearch = !q || normalize(item.sku + ' ' + item.category).includes(q);
+    return matchCat && matchSearch;
+  });
+}
+
+function render() {
+  const items = filtered();
+  resultCount.textContent = `${items.length} producto${items.length !== 1 ? 's' : ''}`;
+
+  if (!items.length) {
+    grid.innerHTML = `<div class="empty-state" style="display:block; grid-column:1/-1; padding:80px 20px; text-align:center; border:1px solid rgba(245,240,232,0.08); background:var(--charcoal);">
+      <h3 style="font-family:var(--ff-display);font-size:28px;color:var(--cream);margin-bottom:10px;">Sin resultados</h3>
+      <p style="font-size:14px;color:rgba(245,240,232,0.4);">Prueba con otro SKU o categoría.</p>
+    </div>`;
+    return;
+  }
+
+  grid.innerHTML = items.map(item => {
+    const query = encodeURIComponent(`Hola, quiero consultar disponibilidad del modelo ${item.sku} (${item.category}).`);
+    return `
+      <article class="product-card">
+        <div class="card-image">
+          <img
+            src="${item.image}"
+            alt="${item.sku} — ${item.category}"
+            loading="lazy"
+            onerror="this.style.display='none'; this.parentElement.style.background='var(--mid)'"
+          >
+          <div class="card-action">
+            <a href="mailto:sappaheadwear@gmail.com?subject=Consulta%20SKU%20${item.sku}&body=${query}">Consultar disponibilidad</a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-category">${item.category}</div>
+          <div class="card-sku">${item.sku}</div>
+        </div>
+      </article>
+    `;
+  }).join('');
+}
+
+searchInput.addEventListener('input', render);
+
+// Scroll reveal
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+render();
+</script>
+</body>
+</html>
