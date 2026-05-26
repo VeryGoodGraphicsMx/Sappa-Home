@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sappa Headwear — Crown Your Character</title>
+<title>Sappa Headwear — Diseñado para Presencia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
@@ -169,7 +169,7 @@
     inset: 0;
     background:
       radial-gradient(ellipse 60% 80% at 60% 40%, rgba(40,30,18,0.8) 0%, transparent 70%),
-      url('https://static.wixstatic.com/media/65fb71_90c48528cc8a48429d7b3b10033e1378~mv2.png') center/cover no-repeat;
+      url('https://static.wixstatic.com/media/65fb71_eeb3b906c12941a584c75663ccac615a~mv2.png') center/cover no-repeat;
     transform: scale(1.05);
     animation: heroZoom 12s ease-out forwards;
   }
@@ -1027,6 +1027,92 @@
   }
   .footer-legal a:hover { color: rgba(245,240,232,0.5); }
 
+
+
+  /* ─── COMMERCIAL CTA STRIP ─── */
+  .cta-strip {
+    background: #111;
+    border-top: 1px solid rgba(245,240,232,0.06);
+    border-bottom: 1px solid rgba(245,240,232,0.06);
+    padding: 90px 80px;
+  }
+  .cta-strip-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  .cta-copy { max-width: 720px; }
+  .cta-mini {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--ff-cond);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .cta-copy h2 {
+    font-family: var(--ff-display);
+    font-size: clamp(38px, 4vw, 62px);
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--white);
+    margin-bottom: 18px;
+  }
+  .cta-copy h2 em { font-style: italic; color: var(--sand); }
+  .cta-copy p {
+    color: rgba(245,240,232,0.58);
+    line-height: 1.8;
+    max-width: 560px;
+    font-weight: 300;
+  }
+  .cta-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 280px;
+  }
+  .cta-actions .btn-primary,
+  .cta-actions .btn-secondary { text-align: center; }
+
+  /* ─── FEATURED COLLECTION VARIANTS ─── */
+  .featured.reverse .featured-visual { order: 2; }
+  .featured.reverse .featured-content { order: 1; }
+  .featured .featured-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .featured .featured-actions .btn-primary,
+  .featured .featured-actions .btn-secondary { flex: 1; min-width: 190px; text-align: center; }
+
+  /* ─── WHATSAPP FLOAT ─── */
+  .whatsapp-float {
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--sand);
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+    transition: transform 0.25s ease, background 0.25s ease;
+  }
+  .whatsapp-float:hover {
+    transform: translateY(-4px) scale(1.05);
+    background: var(--gold);
+  }
+  .whatsapp-float svg { width: 28px; height: 28px; }
+
   /* ─── MOBILE HAMBURGER (basic) ─── */
   .hamburger {
     display: none;
@@ -1100,6 +1186,14 @@
     .collections { padding: 72px 24px; }
     .collections-header { flex-direction: column; align-items: flex-start; gap: 24px; }
     .gallery-header { flex-direction: column; align-items: flex-start; gap: 20px; }
+
+    .cta-strip { padding: 72px 24px; }
+    .cta-strip-inner { flex-direction: column; align-items: flex-start; }
+    .cta-actions { width: 100%; }
+    .cta-actions a { width: 100%; text-align: center; }
+    .featured.reverse .featured-visual { order: 1; }
+    .featured.reverse .featured-content { order: 2; }
+    .whatsapp-float { width: 56px; height: 56px; right: 18px; bottom: 18px; }
   }
 </style>
 </head>
@@ -1110,14 +1204,17 @@
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="#" class="nav-logo">SAPPA <span>·</span> HEADWEAR</a>
+  <a href="/es/" class="nav-logo">SAPPA <span>·</span> HEADWEAR</a>
   <ul class="nav-links">
+    <li><a href="/">Inicio</a></li>
     <li><a href="#colecciones">Colecciones</a></li>
-    <li><a href="#nosotros">Nuestra Historia</a></li>
+    <li><a href="/Inventory.html">Catálogo</a></li>
+    <li><a href="#nosotros">Historia</a></li>
     <li><a href="#galeria">Lookbook</a></li>
     <li><a href="#contacto">Contacto</a></li>
+    <li><a href="/">EN</a></li>
   </ul>
-  <a href="#colecciones" class="nav-cta">Explorar</a>
+  <a href="/Inventory.html" class="nav-cta">Explorar Inventario</a>
   <div class="hamburger" id="hamburger">
     <span></span><span></span><span></span>
   </div>
@@ -1130,11 +1227,11 @@
   <div class="hero-noise"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Colección 2025</div>
-    <h1 class="hero-title">Crown Your<br><em>Character.</em></h1>
-    <p class="hero-sub">Sombreros premium diseñados para quienes entienden que el estilo es una declaración de identidad. Artesanía sin concesiones.</p>
+    <h1 class="hero-title">Diseñado para<br><em>Presencia.</em></h1>
+    <p class="hero-sub">Sombreros premium inspirados en el lifestyle resort, creados para quienes entienden la elegancia, la confianza y el carácter atemporal.</p>
     <div class="hero-actions">
-      <a href="#colecciones" class="btn-primary">Ver Colecciones</a>
-      <a href="#nosotros" class="btn-secondary">Nuestra Historia</a>
+      <a href="/Inventory.html" class="btn-primary">Explorar Inventario</a>
+      <a href="https://wa.me/13058010988" target="_blank" class="btn-secondary">Concierge WhatsApp</a>
     </div>
   </div>
   <div class="hero-scroll">
@@ -1146,23 +1243,23 @@
 <!-- MARQUEE -->
 <div class="marquee-strip">
   <div class="marquee-track">
-    <span class="marquee-item">Línea A <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Premium Quality <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Línea B <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Handcrafted <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Línea C <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Character Driven <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Colección A <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Calidad Premium <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Colección B <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Hecho con detalle <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Colección C <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Carácter Propio <span class="marquee-dot">✦</span></span>
     <span class="marquee-item">Sappa Headwear <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Since Day One <span class="marquee-dot">✦</span></span>
-    <!-- Duplicate for seamless loop -->
-    <span class="marquee-item">Línea A <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Premium Quality <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Línea B <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Handcrafted <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Línea C <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Character Driven <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Desde el inicio <span class="marquee-dot">✦</span></span>
+    
+    <span class="marquee-item">Colección A <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Calidad Premium <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Colección B <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Hecho con detalle <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Colección C <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Carácter Propio <span class="marquee-dot">✦</span></span>
     <span class="marquee-item">Sappa Headwear <span class="marquee-dot">✦</span></span>
-    <span class="marquee-item">Since Day One <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Desde el inicio <span class="marquee-dot">✦</span></span>
   </div>
 </div>
 
@@ -1170,50 +1267,65 @@
 <section class="collections" id="colecciones">
   <div class="collections-header reveal">
     <div>
-      <div class="section-label">Nuestras Líneas</div>
-      <h2 class="section-title">Tres <em>niveles</em>,<br>un solo estándar.</h2>
+      <div class="section-label">Nuestras Colecciones</div>
+      <h2 class="section-title">Tres <em>líneas</em>,<br>un solo estándar.</h2>
     </div>
-    <a href="#" class="btn-secondary" style="white-space: nowrap;">Ver Catálogo Completo</a>
+    <a href="/Inventory.html" class="btn-secondary" style="white-space: nowrap;">Ver Catálogo Completo</a>
   </div>
   <div class="collections-grid">
-    <!-- Línea A -->
+    <!-- Colección A -->
     <div class="collection-card reveal reveal-delay-1">
       <div class="collection-card-img">
-        <img src="https://static.wixstatic.com/media/65fb71_0f692226f0bb4009ba085426636b51bd~mv2.png" alt="Línea A" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Línea A</div>'">
+        <img src="https://static.wixstatic.com/media/65fb71_0f692226f0bb4009ba085426636b51bd~mv2.png" alt="Colección A" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Colección A</div>'">
       </div>
       <div class="collection-card-overlay"></div>
       <div class="collection-card-body">
         <div class="collection-tag">Exclusiva</div>
-        <div class="collection-name">Línea A</div>
-        <p class="collection-desc">Elaborados con fibras selectas y acabados superiores. Para quienes no aceptan menos que lo mejor.</p>
-        <a href="https://www.sappaheadwear.com/l-nea-a" class="collection-link">Descubrir <span class="arrow-right"></span></a>
+        <div class="collection-name">Colección A</div>
+        <p class="collection-desc">Fibras selectas y acabados superiores. Creada para quienes no aceptan menos que lo mejor.</p>
+        <a href="/Inventory.html" class="collection-link">Descubrir <span class="arrow-right"></span></a>
       </div>
     </div>
-    <!-- Línea B -->
+    <!-- Colección B -->
     <div class="collection-card reveal reveal-delay-2">
       <div class="collection-card-img">
-        <img src="https://static.wixstatic.com/media/65fb71_8fad3c7abdbb4d17884c8d0306266db0~mv2.png" alt="Línea B" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Línea B</div>'">
+        <img src="https://static.wixstatic.com/media/65fb71_8fad3c7abdbb4d17884c8d0306266db0~mv2.png" alt="Colección B" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Colección B</div>'">
       </div>
       <div class="collection-card-overlay"></div>
       <div class="collection-card-body">
         <div class="collection-tag">Versátil</div>
-        <div class="collection-name">Línea B</div>
-        <p class="collection-desc">El equilibrio perfecto entre estilo y funcionalidad. Diseño atemporal para el día a día.</p>
-        <a href="https://www.sappaheadwear.com/copia-de-línea-a" class="collection-link">Descubrir <span class="arrow-right"></span></a>
+        <div class="collection-name">Colección B</div>
+        <p class="collection-desc">El balance perfecto entre estilo y funcionalidad. Diseño atemporal para el día a día.</p>
+        <a href="/Inventory.html" class="collection-link">Descubrir <span class="arrow-right"></span></a>
       </div>
     </div>
-    <!-- Línea C -->
+    <!-- Colección C -->
     <div class="collection-card reveal reveal-delay-3">
       <div class="collection-card-img">
-        <img src="https://static.wixstatic.com/media/65fb71_8d17957583574af189d31d790ba001a4~mv2.png" alt="Línea C" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Línea C</div>'">
+        <img src="https://static.wixstatic.com/media/65fb71_8d17957583574af189d31d790ba001a4~mv2.png" alt="Colección C" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Colección C</div>'">
       </div>
       <div class="collection-card-overlay"></div>
       <div class="collection-card-body">
         <div class="collection-tag">Performance</div>
-        <div class="collection-name">Línea C</div>
-        <p class="collection-desc">Resistencia, ligereza y estilo en entornos activos. Construidos para durar sin sacrificar carácter.</p>
-        <a href="https://www.sappaheadwear.com/copia-de-línea-a-1" class="collection-link">Descubrir <span class="arrow-right"></span></a>
+        <div class="collection-name">Colección C</div>
+        <p class="collection-desc">Resistencia, ligereza y estilo para entornos activos. Construida para durar sin sacrificar carácter.</p>
+        <a href="/Inventory.html" class="collection-link">Descubrir <span class="arrow-right"></span></a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
+  <div class="cta-strip-inner">
+    <div class="cta-copy reveal">
+      <span class="cta-mini">Inventario Premium</span>
+      <h2>Explora el catálogo completo <em>Sappa</em>.</h2>
+      <p>Todas las colecciones llevan ahora a una experiencia de inventario curada. Explora la gama completa hoy; después conectaremos cada pieza a su checkout individual en Wix Store.</p>
+    </div>
+    <div class="cta-actions reveal reveal-delay-2">
+      <a href="/Inventory.html" class="btn-primary">Ver Inventario Completo</a>
+      <a href="https://wa.me/13058010988" target="_blank" class="btn-secondary">Contactar por WhatsApp</a>
     </div>
   </div>
 </section>
@@ -1223,22 +1335,22 @@
   <div class="story-visual reveal">
     <div class="story-accent"></div>
     <div class="story-img-main">
-      <img src="https://static.wixstatic.com/media/65fb71_41e2acb25c744e63b6528c515f666581~mv2.png" alt="Sappa Story" onerror="this.innerHTML='<div class=\'img-placeholder\'>Nuestra Historia</div>'">
+      <img src="https://static.wixstatic.com/media/65fb71_41e2acb25c744e63b6528c515f666581~mv2.png" alt="Sappa Story" onerror="this.innerHTML='<div class=\'img-placeholder\'>Historia</div>'">
     </div>
     <div class="story-badge">
       <div class="story-badge-num">100%</div>
-      <div class="story-badge-text">Premium<br>Craft</div>
+      <div class="story-badge-text">Craft<br>Premium</div>
     </div>
   </div>
   <div class="story-text reveal reveal-delay-2">
-    <div class="section-label">Nuestra Historia</div>
+    <div class="section-label">Historia</div>
     <h2 class="section-title">Más que un <em>sombrero</em>.<br>Una declaración.</h2>
-    <p class="story-body">En Sappa, creemos que lo que llevas encima habla antes de que abras la boca. Cada pieza es un estudio de materiales excepcionales, construcción meticulosa y diseño con propósito. No fabricamos sombreros — creamos expresión.</p>
-    <a href="https://www.sappaheadwear.com/acerca-de" class="btn-primary">Conoce Nuestra Historia</a>
+    <p class="story-body">En Sappa creemos que lo que llevas habla antes de que digas una palabra. Cada pieza combina materiales excepcionales, construcción meticulosa y diseño con intención. No hacemos sombreros; creamos expresión.</p>
+    <a href="#nosotros" class="btn-primary">Conocer la historia</a>
     <div class="story-stats">
       <div class="stat-item">
         <div class="stat-num">3</div>
-        <div class="stat-label">Líneas Exclusivas</div>
+        <div class="stat-label">Colecciones Exclusivas</div>
       </div>
       <div class="stat-item">
         <div class="stat-num">100%</div>
@@ -1250,7 +1362,7 @@
       </div>
       <div class="stat-item">
         <div class="stat-num">∞</div>
-        <div class="stat-label">Estilo Sin Límites</div>
+        <div class="stat-label">Estilo sin límites</div>
       </div>
     </div>
   </div>
@@ -1260,29 +1372,29 @@
 <section class="craft">
   <div class="craft-intro reveal">
     <div class="section-label">Artesanía</div>
-    <h2 class="section-title">El detalle es <em>todo</em>.</h2>
+    <h2 class="section-title">El detalle lo es <em>todo</em>.</h2>
     <p>Cada sombrero Sappa pasa por un proceso riguroso de selección de materiales, construcción y control de calidad. Porque cuando algo se lleva con orgullo, tiene que estar hecho para perdurar.</p>
   </div>
   <div class="craft-pillars">
     <div class="pillar reveal reveal-delay-1">
       <div class="pillar-num">01</div>
-      <div class="pillar-title">Materiales Selectos</div>
+      <div class="pillar-title">Materiales selectos</div>
       <p class="pillar-body">Fibras de primera elección, procesadas y seleccionadas para garantizar suavidad, durabilidad y una caída perfecta.</p>
     </div>
     <div class="pillar reveal reveal-delay-2" style="padding-left: 36px;">
       <div class="pillar-num">02</div>
-      <div class="pillar-title">Construcción Precisa</div>
+      <div class="pillar-title">Construcción precisa</div>
       <p class="pillar-body">Cada costura, cada pliegue y cada acabado responde a un proceso técnico enfocado en la perfección estructural.</p>
     </div>
     <div class="pillar reveal reveal-delay-3" style="padding-left: 36px;">
       <div class="pillar-num">03</div>
-      <div class="pillar-title">Diseño con Propósito</div>
+      <div class="pillar-title">Diseño con intención</div>
       <p class="pillar-body">La estética no es accidental. Cada línea y proporción está calculada para proyectar carácter y distinción.</p>
     </div>
     <div class="pillar reveal reveal-delay-4">
       <div class="pillar-num">04</div>
-      <div class="pillar-title">Control de Calidad</div>
-      <p class="pillar-body">Solo las piezas que superan cada estándar llegan al cliente. Sin atajos. Sin concesiones.</p>
+      <div class="pillar-title">Control de calidad</div>
+      <p class="pillar-body">Sólo las piezas que superan cada estándar llegan al cliente. Sin atajos. Sin concesiones.</p>
     </div>
   </div>
 </section>
@@ -1290,34 +1402,108 @@
 <!-- FEATURED PRODUCT -->
 <div class="featured" id="linea-a">
   <div class="featured-visual reveal">
-    <span class="featured-label-vertical">Línea A — Featured</span>
-    <img src="https://static.wixstatic.com/media/65fb71_8af92e0e977244eeb1ea07a234b268b5~mv2.png" alt="Línea A Featured" onerror="this.innerHTML='<div class=\'img-placeholder\' style=\'height:100%\'>Línea A</div>'">
+    <span class="featured-label-vertical">Colección A — Destacada</span>
+    <img src="https://static.wixstatic.com/media/65fb71_8af92e0e977244eeb1ea07a234b268b5~mv2.png" alt="Colección A Featured" onerror="this.innerHTML='<div class=\'img-placeholder\' style=\'height:100%\'>Colección A</div>'">
   </div>
   <div class="featured-content reveal reveal-delay-2">
-    <div class="featured-tag">Pieza Destacada — 2025</div>
-    <h2 class="featured-title">Línea A.<br><em>Sin igual.</em></h2>
+    <div class="featured-tag">Pieza destacada — 2025</div>
+    <h2 class="featured-title">Colección A.<br><em>Sin igual.</em></h2>
     <p class="featured-body">Nuestra línea más exclusiva. Creada para quienes exigen lo mejor de cada material y cada proceso. Una presencia que se siente antes de verse.</p>
     <div class="featured-specs">
       <div class="spec-item">
         <div class="spec-label">Material</div>
-        <div class="spec-value">Fibras Selectas Premium</div>
+        <div class="spec-value">Fibras premium selectas</div>
       </div>
       <div class="spec-item">
         <div class="spec-label">Categoría</div>
-        <div class="spec-value">Alta Línea</div>
+        <div class="spec-value">Línea superior</div>
       </div>
       <div class="spec-item">
-        <div class="spec-label">Acabados</div>
-        <div class="spec-value">Superiores</div>
+        <div class="spec-label">Acabado</div>
+        <div class="spec-value">Superior</div>
       </div>
       <div class="spec-item">
         <div class="spec-label">Disponibilidad</div>
-        <div class="spec-value">Edición Limitada</div>
+        <div class="spec-value">Edición limitada</div>
       </div>
     </div>
-    <a href="https://www.sappaheadwear.com/l-nea-a" class="btn-primary">Ver Línea A Completa</a>
+    <div class="featured-actions">
+      <a href="/Inventory.html" class="btn-primary">Ver Colección A</a>
+      <a href="https://wa.me/13058010988" target="_blank" class="btn-secondary">Preguntar al concierge</a>
+    </div>
   </div>
 </div>
+
+<!-- FEATURED COLLECTION B -->
+<div class="featured reverse" id="linea-b">
+  <div class="featured-visual reveal">
+    <span class="featured-label-vertical">Colección B — Versátil</span>
+    <img src="https://static.wixstatic.com/media/65fb71_8fad3c7abdbb4d17884c8d0306266db0~mv2.png" alt="Colección B Featured" onerror="this.innerHTML='<div class=&quot;img-placeholder&quot; style=&quot;height:100%&quot;>Colección B</div>'">
+  </div>
+  <div class="featured-content reveal reveal-delay-2">
+    <div class="featured-tag">Elegancia diaria — 2025</div>
+    <h2 class="featured-title">Colección B.<br><em>Natural.</em></h2>
+    <p class="featured-body">Un equilibrio refinado entre comodidad, función y presencia atemporal. Diseñada para el uso diario sin perder el carácter elevado de Sappa.</p>
+    <div class="featured-specs">
+      <div class="spec-item">
+        <div class="spec-label">Material</div>
+        <div class="spec-value">Fibras premium equilibradas</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label">Categoría</div>
+        <div class="spec-value">Línea versátil</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label">Uso</div>
+        <div class="spec-value">Diario / Resort / Viaje</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label">Disponibilidad</div>
+        <div class="spec-value">Selección de catálogo</div>
+      </div>
+    </div>
+    <div class="featured-actions">
+      <a href="/Inventory.html" class="btn-primary">Ver Colección B</a>
+      <a href="https://wa.me/13058010988" target="_blank" class="btn-secondary">Preguntar al concierge</a>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURED COLLECTION C -->
+<div class="featured" id="linea-c">
+  <div class="featured-visual reveal">
+    <span class="featured-label-vertical">Colección C — Activa</span>
+    <img src="https://static.wixstatic.com/media/65fb71_8d17957583574af189d31d790ba001a4~mv2.png" alt="Colección C Featured" onerror="this.innerHTML='<div class=&quot;img-placeholder&quot; style=&quot;height:100%&quot;>Colección C</div>'">
+  </div>
+  <div class="featured-content reveal reveal-delay-2">
+    <div class="featured-tag">Construida para movimiento — 2025</div>
+    <h2 class="featured-title">Colección C.<br><em>Resistente.</em></h2>
+    <p class="featured-body">Ligera, resistente y lista para entornos activos. Una expresión funcional de la estética Sappa.</p>
+    <div class="featured-specs">
+      <div class="spec-item">
+        <div class="spec-label">Material</div>
+        <div class="spec-value">Construcción ligera y durable</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label">Categoría</div>
+        <div class="spec-value">Línea performance</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label">Uso</div>
+        <div class="spec-value">Exterior / Viaje / Activo</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-label">Disponibilidad</div>
+        <div class="spec-value">Selección de catálogo</div>
+      </div>
+    </div>
+    <div class="featured-actions">
+      <a href="/Inventory.html" class="btn-primary">Ver Colección C</a>
+      <a href="https://wa.me/13058010988" target="_blank" class="btn-secondary">Preguntar al concierge</a>
+    </div>
+  </div>
+</div>
+
 
 <!-- GALLERY -->
 <section class="gallery" id="galeria">
@@ -1332,31 +1518,31 @@
     <div class="gallery-item reveal">
       <div class="gallery-item-inner">
         <img src="https://static.wixstatic.com/media/65fb71_90c48528cc8a48429d7b3b10033e1378~mv2.png" alt="Look 1" onerror="this.innerHTML='<div class=\'img-placeholder\'>Lookbook 01</div>'">
-        <div class="gallery-item-caption">Línea A — Estilo Premium</div>
+        <div class="gallery-item-caption">Colección A — Estilo Premium</div>
       </div>
     </div>
     <div class="gallery-item reveal reveal-delay-1">
       <div class="gallery-item-inner">
         <img src="https://static.wixstatic.com/media/65fb71_63f73a092e70432c97d7ee35d96ca772~mv2.png" alt="Look 2" onerror="this.innerHTML='<div class=\'img-placeholder\'>Lookbook 02</div>'">
-        <div class="gallery-item-caption">Línea B — Versatilidad</div>
+        <div class="gallery-item-caption">Colección B — Versatilidad</div>
       </div>
     </div>
     <div class="gallery-item reveal reveal-delay-2">
       <div class="gallery-item-inner">
         <img src="https://static.wixstatic.com/media/65fb71_d718a08feadd45578ae3e947d1c7a156~mv2.png" alt="Look 3" onerror="this.innerHTML='<div class=\'img-placeholder\'>Lookbook 03</div>'">
-        <div class="gallery-item-caption">Línea C — Activo</div>
+        <div class="gallery-item-caption">Colección C — Activa</div>
       </div>
     </div>
     <div class="gallery-item reveal reveal-delay-3">
       <div class="gallery-item-inner">
         <img src="https://static.wixstatic.com/media/65fb71_d190529106e148199c4bbf737ee58964~mv2.png" alt="Look 4" onerror="this.innerHTML='<div class=\'img-placeholder\'>Lookbook 04</div>'">
-        <div class="gallery-item-caption">Character Driven</div>
+        <div class="gallery-item-caption">Carácter Propio</div>
       </div>
     </div>
     <div class="gallery-item reveal reveal-delay-4">
       <div class="gallery-item-inner" style="background: var(--mid);">
         <div class="img-placeholder">Lookbook 05</div>
-        <div class="gallery-item-caption">Sappa — Estilo Propio</div>
+        <div class="gallery-item-caption">Sappa — Estilo propio</div>
       </div>
     </div>
   </div>
@@ -1371,7 +1557,7 @@
   <div class="testimonials-grid">
     <div class="testimonial-card reveal reveal-delay-1">
       <div class="testimonial-quote">"</div>
-      <p class="testimonial-text">Desde que me puse mi Línea A, la gente me pregunta dónde conseguí el sombrero. Es una pieza que genera conversación por sí sola.</p>
+      <p class="testimonial-text">Desde que tengo mi Colección A, la gente me pregunta dónde la conseguí. Es una pieza que inicia conversaciones por sí sola.</p>
       <div class="testimonial-stars">★★★★★</div>
       <div class="testimonial-author">
         <strong>Carlos M.</strong>
@@ -1389,7 +1575,7 @@
     </div>
     <div class="testimonial-card reveal reveal-delay-3">
       <div class="testimonial-quote">"</div>
-      <p class="testimonial-text">Compré la Línea B para el día a día y ahora no salgo sin ella. El equilibrio entre comodidad y estilo es perfecto.</p>
+      <p class="testimonial-text">Compré la Colección B para el día a día y ahora no salgo sin ella. El equilibrio entre comodidad y estilo es perfecto.</p>
       <div class="testimonial-stars">★★★★★</div>
       <div class="testimonial-author">
         <strong>Andrés V.</strong>
@@ -1404,7 +1590,7 @@
   <div class="email-copy reveal">
     <div class="section-label" style="color: rgba(10,9,6,0.55);">
       <span style="display:block; width:24px; height:1px; background: rgba(10,9,6,0.3); flex-shrink:0;"></span>
-      Mantente Conectado
+      Mantente conectado
     </div>
     <h2 class="section-title" style="color: var(--black); max-width: none; font-size: clamp(28px,3.5vw,44px);">Sé el primero en <em style="color:rgba(10,9,6,0.45)">ver</em> lo nuevo.</h2>
     <p>Lanzamientos exclusivos, ediciones limitadas y acceso anticipado para quienes forman parte de la comunidad Sappa.</p>
@@ -1415,7 +1601,7 @@
         <input type="email" class="email-input" placeholder="tu@email.com">
         <button class="email-btn">Suscribirse</button>
       </div>
-      <p class="email-note">Sin spam. Solo lo que vale la pena. Puedes darte de baja cuando quieras.</p>
+      <p class="email-note">Sin spam. Sólo lo que vale la pena. Puedes darte de baja cuando quieras.</p>
     </div>
   </div>
 </div>
@@ -1424,7 +1610,7 @@
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <a href="#" class="nav-logo">SAPPA <span>·</span> HEADWEAR</a>
+      <a href="/es/" class="nav-logo">SAPPA <span>·</span> HEADWEAR</a>
       <p>Sombreros premium diseñados para proyectar carácter, elegancia y autenticidad. Crown your character.</p>
       <div class="footer-social">
         <a href="https://www.instagram.com/sappa_headwear" target="_blank" class="social-link" title="Instagram">
@@ -1441,25 +1627,26 @@
     <div class="footer-col">
       <h4>Colecciones</h4>
       <ul>
-        <li><a href="https://www.sappaheadwear.com/l-nea-a">Línea A</a></li>
-        <li><a href="https://www.sappaheadwear.com/copia-de-línea-a">Línea B</a></li>
-        <li><a href="https://www.sappaheadwear.com/copia-de-línea-a-1">Línea C</a></li>
-        <li><a href="https://www.sappaheadwear.com/fullcatalogue">Catálogo Completo</a></li>
+        <li><a href="/Inventory.html">Colección A</a></li>
+        <li><a href="/Inventory.html">Colección B</a></li>
+        <li><a href="/Inventory.html">Colección C</a></li>
+        <li><a href="/Inventory.html">Full Catalog</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Compañía</h4>
       <ul>
-        <li><a href="https://www.sappaheadwear.com/acerca-de">Acerca de</a></li>
-        <li><a href="https://www.sappaheadwear.com/contacto">Contacto</a></li>
-        <li><a href="#">Mayoreo</a></li>
-        <li><a href="#">Prensa</a></li>
+        <li><a href="#nosotros">Acerca de</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://wa.me/13058010988" target="_blank">Mayoreo</a></li>
+        <li><a href="mailto:sappaheadwear@gmail.com?subject=Prensa%20Inquiry%20Sappa">Prensa</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Contacto</h4>
       <ul>
         <li><a href="tel:+13058010988">+1 305-801-0988</a></li>
+        <li><a href="https://wa.me/13058010988" target="_blank">Concierge WhatsApp</a></li>
         <li><a href="mailto:sappaheadwear@gmail.com">sappaheadwear@gmail.com</a></li>
         <li style="color: rgba(245,240,232,0.2); font-size: 13px; margin-top: 8px;">Instagram</li>
         <li><a href="https://www.instagram.com/sappa_headwear" target="_blank">@sappa_headwear</a></li>
@@ -1467,14 +1654,23 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p class="footer-copy">© 2025 Sappa Headwear. All rights reserved.</p>
+    <p class="footer-copy">© 2025 Sappa Headwear. Todos los derechos reservados.</p>
     <div class="footer-legal">
-      <a href="#">Política de Privacidad</a>
-      <a href="#">Términos de Uso</a>
-      <a href="#">Envíos y Devoluciones</a>
+      <a href="#">Política de privacidad</a>
+      <a href="#">Términos de uso</a>
+      <a href="#">Envíos y devoluciones</a>
     </div>
   </div>
 </footer>
+
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/13058010988" class="whatsapp-float" target="_blank" aria-label="Chatear con Sappa por WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+    <path d="M19.11 17.41c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.15-1.35-.79-.71-1.33-1.59-1.49-1.86-.16-.27-.02-.42.12-.56.13-.13.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.98 2.64 1.11 2.82.14.18 1.92 2.94 4.66 4.12.65.28 1.16.44 1.56.56.66.21 1.27.18 1.74.11.53-.08 1.6-.65 1.82-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z"/>
+    <path d="M16.01 3C8.84 3 3 8.84 3 16c0 2.53.74 4.98 2.13 7.08L3 29l6.09-2.06A12.94 12.94 0 0 0 16.01 29C23.16 29 29 23.16 29 16S23.16 3 16.01 3zm0 23.64c-2.14 0-4.24-.58-6.06-1.68l-.43-.25-3.61 1.22 1.18-3.52-.28-.46A10.59 10.59 0 0 1 5.36 16c0-5.87 4.78-10.65 10.65-10.65S26.66 10.13 26.66 16 21.88 26.64 16.01 26.64z"/>
+  </svg>
+</a>
 
 <script>
   // Custom cursor
