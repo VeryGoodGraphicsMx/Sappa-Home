@@ -231,14 +231,16 @@
   .card-image {
     aspect-ratio: 1;
     overflow: hidden;
-    background: var(--mid);
+    background: #ececec url('/media/product-card-background.png') center / cover no-repeat;
     position: relative;
   }
   .card-image img {
     width: 100%; height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.7s cubic-bezier(.23,1,.32,1);
     display: block;
+    position: relative;
+    z-index: 1;
   }
   .product-card:hover .card-image img { transform: scale(1.07); }
 
@@ -251,6 +253,42 @@
     transition: opacity 0.3s;
   }
   .product-card:hover .card-image::after { opacity: 1; }
+
+  .gallery-control {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(10,9,6,0.18);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.88);
+    color: var(--black);
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.2s, background 0.2s;
+  }
+  .gallery-control:hover { background: var(--white); }
+  .gallery-prev { left: 10px; }
+  .gallery-next { right: 10px; }
+  .product-card:hover .gallery-control,
+  .gallery-control:focus-visible { opacity: 1; }
+  .gallery-count {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    padding: 5px 8px;
+    border-radius: 999px;
+    background: rgba(10,9,6,0.62);
+    color: var(--white);
+    font-family: var(--ff-cond);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
 
   /* Quick action on hover */
   .card-action {
@@ -464,6 +502,10 @@
     footer { padding: 36px 24px 24px; flex-direction: column; align-items: flex-start; gap: 8px; }
   }
   @media (max-width: 560px) { .catalog-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (hover: none) {
+    .gallery-control { opacity: 1; width: 32px; height: 32px; }
+    .card-action { opacity: 1; transform: translateY(0); }
+  }
 </style>
 </head>
 <body>
@@ -684,10 +726,11 @@ async function loadShopifyInventory() {
         query: `query SappaCatalog {
           products(first: 100) {
             nodes {
+              handle
               title
               productType
               availableForSale
-              featuredImage { url altText }
+              images(first: 10) { nodes { url altText } }
               variants(first: 1) { nodes { sku } }
             }
           }
@@ -705,9 +748,14 @@ async function loadShopifyInventory() {
   if (!products.length) return;
 
   inventory = products.map(product => ({
+    key: product.handle,
     sku: product.variants.nodes[0]?.sku || product.title,
     category: product.productType || 'Sappa Headwear',
-    image: product.featuredImage?.url || '',
+    image: product.images.nodes[0]?.url || '',
+    images: product.images.nodes.map(image => ({
+      url: image.url,
+      alt: image.altText || product.title
+    })),
     inStock: product.availableForSale
   }));
   activeCategory = 'all';
@@ -742,15 +790,23 @@ function render() {
 
   grid.innerHTML = items.map(item => {
     const query = encodeURIComponent(`Hola, quiero consultar disponibilidad del modelo ${item.sku} (${item.category}).`);
+    const images = item.images?.length ? item.images : [{ url: item.image, alt: item.sku }];
+    const galleryKey = encodeURIComponent(item.key || item.sku);
+    const galleryControls = images.length > 1 ? `
+          <button class="gallery-control gallery-prev" type="button" data-gallery-key="${galleryKey}" data-direction="-1" aria-label="Imagen anterior de ${item.sku}">‹</button>
+          <button class="gallery-control gallery-next" type="button" data-gallery-key="${galleryKey}" data-direction="1" aria-label="Imagen siguiente de ${item.sku}">›</button>
+          <span class="gallery-count" aria-live="polite">1 / ${images.length}</span>` : '';
     return `
-      <article class="product-card">
+      <article class="product-card" data-product-key="${galleryKey}">
         <div class="card-image">
           <img
-            src="${item.image}"
+            src="${images[0].url}"
             alt="${item.sku} — ${item.category}"
+            data-image-index="0"
             loading="lazy"
-            onerror="this.style.display='none'; this.parentElement.style.background='var(--mid)'"
+            onerror="this.style.display='none'"
           >
+          ${galleryControls}
           <div class="card-action">
             <a href="mailto:sappaheadwear@gmail.com?subject=Consulta%20SKU%20${item.sku}&body=${query}">Consultar disponibilidad</a>
           </div>
@@ -765,6 +821,31 @@ function render() {
 }
 
 searchInput.addEventListener('input', render);
+
+grid.addEventListener('click', event => {
+  const control = event.target.closest('.gallery-control');
+  if (!control) return;
+
+  event.preventDefault();
+  event.stopPropagation();
+
+  const key = decodeURIComponent(control.dataset.galleryKey);
+  const item = inventory.find(product => (product.key || product.sku) === key);
+  if (!item?.images || item.images.length < 2) return;
+
+  const card = control.closest('.product-card');
+  const image = card.querySelector('.card-image img');
+  const count = card.querySelector('.gallery-count');
+  const current = Number(image.dataset.imageIndex || 0);
+  const direction = Number(control.dataset.direction);
+  const next = (current + direction + item.images.length) % item.images.length;
+
+  image.src = item.images[next].url;
+  image.alt = item.images[next].alt;
+  image.dataset.imageIndex = String(next);
+  image.style.display = 'block';
+  count.textContent = `${next + 1} / ${item.images.length}`;
+});
 
 // Scroll reveal
 const observer = new IntersectionObserver(entries => {
