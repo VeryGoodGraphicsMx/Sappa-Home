@@ -244,16 +244,6 @@
   }
   .product-card:hover .card-image img { transform: scale(1.07); }
 
-  /* Overlay on hover */
-  .card-image::after {
-    content: '';
-    position: absolute; inset: 0;
-    background: rgba(10,9,6,0.35);
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  .product-card:hover .card-image::after { opacity: 1; }
-
   .gallery-control {
     position: absolute;
     top: 50%;
