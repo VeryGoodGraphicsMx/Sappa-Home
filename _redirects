@@ -7,3 +7,7 @@
 
 # Default fallback (everyone else) → English
 /  /en/index.html  302
+
+# Preserve legacy catalog URLs while the public frontend moves off Wix.
+/fullcatalogue  /sappa-catalogo.html  301
+/catalogo       /sappa-catalogo.html  301

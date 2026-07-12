@@ -584,8 +584,9 @@
   <p class="footer-tagline">Crown Your Character.</p>
 </footer>
 
+<script src="/shopify-config.js"></script>
 <script>
-const inventory = [
+const legacyInventory = [
   { sku: 'TCC-3', category: 'Tela Cotton', image: 'https://static.wixstatic.com/media/65fb71_ca5c0f42b47d48559e3093dffe49c1ce~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_ca5c0f42b47d48559e3093dffe49c1ce~mv2.png', inStock: true },
   { sku: 'TCC-2', category: 'Tela Cotton', image: 'https://static.wixstatic.com/media/65fb71_d1b51f54d8714e2b93e5e705cea14bbf~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_d1b51f54d8714e2b93e5e705cea14bbf~mv2.png', inStock: true },
   { sku: 'TCC-1', category: 'Tela Cotton', image: 'https://static.wixstatic.com/media/65fb71_2b60a3872b954a869d4cfa03aae0cbf0~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_2b60a3872b954a869d4cfa03aae0cbf0~mv2.png', inStock: true },
@@ -641,27 +642,78 @@ const inventory = [
   { sku: 'TPC-1', category: 'Panama Style', image: 'https://static.wixstatic.com/media/65fb71_130f8788953a4f63a85362301307ac88~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_130f8788953a4f63a85362301307ac88~mv2.png', inStock: true }
 ];
 
+let inventory = legacyInventory;
+
 const grid = document.getElementById('catalogGrid');
 const searchInput = document.getElementById('searchInput');
 const chipWrap = document.getElementById('chipWrap');
 const resultCount = document.getElementById('resultCount');
 let activeCategory = 'all';
 
-// Build chips
-const categories = ['all', ...new Set(inventory.map(i => i.category))];
-categories.forEach(cat => {
-  const btn = document.createElement('button');
-  btn.className = 'chip' + (cat === 'all' ? ' active' : '');
-  btn.type = 'button';
-  btn.textContent = cat === 'all' ? 'Todos' : cat;
-  btn.addEventListener('click', () => {
-    activeCategory = cat;
-    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-    btn.classList.add('active');
-    render();
+function buildChips() {
+  chipWrap.innerHTML = '';
+  const categories = ['all', ...new Set(inventory.map(i => i.category))];
+  categories.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'chip' + (cat === activeCategory ? ' active' : '');
+    btn.type = 'button';
+    btn.textContent = cat === 'all' ? 'Todos' : cat;
+    btn.addEventListener('click', () => {
+      activeCategory = cat;
+      document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+    });
+    chipWrap.appendChild(btn);
   });
-  chipWrap.appendChild(btn);
-});
+}
+
+async function loadShopifyInventory() {
+  const config = window.SAPPA_SHOPIFY;
+  if (!config) return;
+
+  const response = await fetch(
+    `https://${config.storeDomain}/api/${config.storefrontApiVersion}/graphql.json`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Shopify-Storefront-Access-Token': config.publicStorefrontToken
+      },
+      body: JSON.stringify({
+        query: `query SappaCatalog {
+          products(first: 100) {
+            nodes {
+              title
+              productType
+              availableForSale
+              featuredImage { url altText }
+              variants(first: 1) { nodes { sku } }
+            }
+          }
+        }`
+      })
+    }
+  );
+
+  if (!response.ok) throw new Error(`Shopify request failed: ${response.status}`);
+
+  const payload = await response.json();
+  if (payload.errors) throw new Error(payload.errors.map(error => error.message).join('; '));
+
+  const products = payload.data?.products?.nodes || [];
+  if (!products.length) return;
+
+  inventory = products.map(product => ({
+    sku: product.variants.nodes[0]?.sku || product.title,
+    category: product.productType || 'Sappa Headwear',
+    image: product.featuredImage?.url || '',
+    inStock: product.availableForSale
+  }));
+  activeCategory = 'all';
+  buildChips();
+  render();
+}
 
 function normalize(str) {
   return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -720,7 +772,11 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+buildChips();
 render();
+loadShopifyInventory().catch(error => {
+  console.warn('Shopify catalog unavailable; using legacy catalog.', error);
+});
 </script>
 </body>
 </html>
