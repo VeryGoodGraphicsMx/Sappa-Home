@@ -313,6 +313,7 @@
     transition: background 0.2s;
   }
   .card-action a:hover { background: var(--sand); }
+  .mobile-contact { display: none; }
 
   .card-body {
     padding: 18px 20px 20px;
@@ -504,7 +505,18 @@
   @media (max-width: 560px) { .catalog-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (hover: none) {
     .gallery-control { opacity: 1; width: 32px; height: 32px; }
-    .card-action { opacity: 1; transform: translateY(0); }
+    .card-action { display: none; }
+    .mobile-contact {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--gold);
+      font-family: var(--ff-cond);
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
   }
 </style>
 </head>
@@ -808,12 +820,13 @@ function render() {
           >
           ${galleryControls}
           <div class="card-action">
-            <a href="mailto:sappaheadwear@gmail.com?subject=Consulta%20SKU%20${item.sku}&body=${query}">Consultar disponibilidad</a>
+            <a href="mailto:sappaheadwear@gmail.com?subject=Consulta%20SKU%20${item.sku}&body=${query}">Consultar<span class="availability-label"> disponibilidad</span></a>
           </div>
         </div>
         <div class="card-body">
           <div class="card-category">${item.category}</div>
           <div class="card-sku">${item.sku}</div>
+          <a class="mobile-contact" href="mailto:sappaheadwear@gmail.com?subject=Consulta%20SKU%20${item.sku}&body=${query}">Consultar</a>
         </div>
       </article>
     `;
