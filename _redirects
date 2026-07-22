@@ -11,3 +11,6 @@
 # Preserve legacy catalog URLs while the public frontend moves off Wix.
 /fullcatalogue  /sappa-catalogo.html  301
 /catalogo       /sappa-catalogo.html  301
+
+# Product-detail URLs render the catalog modal without returning a 404.
+/producto/*     /sappa-catalogo.html  200
