@@ -1,0 +1,6 @@
+.venv/
+.models/
+__pycache__/
+reports/preview-products/
+reports/chat-import-staging/
+assets/products-originales/
