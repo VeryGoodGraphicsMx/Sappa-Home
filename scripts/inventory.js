@@ -54,7 +54,9 @@
   }
 
   function isPublicProduct(product) {
-    return Boolean(product?.active) && !PUBLICLY_BLOCKED_SKUS.has(product.sku);
+    return Boolean(product?.active) && (
+      IS_ORIGINAL_PREVIEW || !PUBLICLY_BLOCKED_SKUS.has(product.sku)
+    );
   }
 
   function getActiveProducts(products) {
