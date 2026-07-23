@@ -1,3 +1,6 @@
+# Temporary maintenance mode. Remove this rule to restore the public site.
+/*  /maintenance.html  200!
+
 # ─── Geo-based redirects ───────────────────────────────────────────
 # LATAM → Spanish version
 /  /es/Index.html  302  Country=MX,CO,AR,CL,PE,VE,EC,GT,HN,SV,DO,BO,PY,UY,CU,NI,CR,PA,PR
