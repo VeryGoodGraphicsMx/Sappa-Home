@@ -1,5 +1,7 @@
-# Temporary maintenance mode. Remove this rule to restore the public site.
-/*  /maintenance.html  200!
+# Temporary maintenance mode. Remove these rules to restore the public site.
+/en   /maintenance-en.html  200!
+/en/* /maintenance-en.html  200!
+/*    /maintenance.html     200!
 
 # ─── Geo-based redirects ───────────────────────────────────────────
 # LATAM → Spanish version
