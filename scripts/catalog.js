@@ -105,19 +105,44 @@
           </div>
         </div>
         <div class="card-body">
-          <div class="card-category">${escapeHtml(product.category)}</div>
-          <h2 class="card-name">${escapeHtml(product.name)}</h2>
           <div class="card-sku">${escapeHtml(product.sku)}</div>
-          <p class="card-material">${escapeHtml(product.material)}</p>
-          <a class="card-details" href="${detailUrl}" data-detail-handle="${safeHandle}">Ver detalle</a>
-          <a class="mobile-contact" href="${consultationLink(product)}">Consultar</a>
+          <h3 class="card-name"><a href="${detailUrl}" data-detail-handle="${safeHandle}">${escapeHtml(product.name)}</a></h3>
         </div>
       </article>`;
   }
 
+  function groupedProducts(products) {
+    const groups = new Map();
+    products.forEach(product => {
+      if (!groups.has(product.category)) groups.set(product.category, []);
+      groups.get(product.category).push(product);
+    });
+    return [...groups.entries()];
+  }
+
+  function modelGroup([category, products]) {
+    const materials = [...new Set(products.map(product => product.material).filter(Boolean))];
+    const description = materials.join(' · ');
+    return `
+      <section class="model-group" aria-labelledby="group-${escapeHtml(products[0].handle)}">
+        <header class="model-group-header">
+          <div class="model-group-copy">
+            <div class="model-group-label">Familia de modelos</div>
+            <h2 class="model-group-title" id="group-${escapeHtml(products[0].handle)}">${escapeHtml(category)}</h2>
+            ${description ? `<p class="model-group-description"><strong>Material:</strong> ${escapeHtml(description)}</p>` : ''}
+          </div>
+          <div class="model-group-count">${products.length} variante${products.length === 1 ? '' : 's'}</div>
+        </header>
+        <div class="model-group-grid">
+          ${products.map(productCard).join('')}
+        </div>
+      </section>`;
+  }
+
   function renderCatalog() {
     const products = filteredProducts();
-    resultCount.textContent = `${products.length} producto${products.length === 1 ? '' : 's'}`;
+    const groups = groupedProducts(products);
+    resultCount.textContent = `${products.length} variante${products.length === 1 ? '' : 's'} · ${groups.length} familia${groups.length === 1 ? '' : 's'}`;
 
     if (!products.length) {
       grid.innerHTML = `
@@ -128,7 +153,7 @@
       return;
     }
 
-    grid.innerHTML = products.map(productCard).join('');
+    grid.innerHTML = groups.map(modelGroup).join('');
   }
 
   function renderModal() {
@@ -279,7 +304,7 @@
     try {
       const allProducts = await window.SappaInventory.loadInventory();
       inventory = window.SappaInventory.getActiveProducts(allProducts);
-      pillTotal.textContent = `${inventory.length} modelos`;
+      pillTotal.textContent = `${inventory.length} variantes · ${new Set(inventory.map(product => product.category)).size} familias`;
       buildChips();
       renderCatalog();
 
