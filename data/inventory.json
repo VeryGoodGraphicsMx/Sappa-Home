@@ -1,0 +1,1834 @@
+[
+  {
+    "id": "CCN-1",
+    "sku": "CCN-1",
+    "handle": "costureado-palma-catrin-natural",
+    "name": "Costureado palma catrin natural",
+    "category": "VAQUEROS",
+    "material": "Palma con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/ccn-1-01.png",
+      "/assets/products/ccn-1-02.png",
+      "/assets/products/ccn-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/ccn-1-01.png",
+      "https://sappaheadwear.com/assets/products/ccn-1-02.png",
+      "https://sappaheadwear.com/assets/products/ccn-1-03.png"
+    ]
+  },
+  {
+    "id": "CCQ-1",
+    "sku": "CCQ-1",
+    "handle": "costureado-palma-catrin-quemado",
+    "name": "Costureado palma catrin quemado",
+    "category": "VAQUEROS",
+    "material": "Palma con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/ccq-1-01.png",
+      "/assets/products/ccq-1-02.png",
+      "/assets/products/ccq-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/ccq-1-01.png",
+      "https://sappaheadwear.com/assets/products/ccq-1-02.png",
+      "https://sappaheadwear.com/assets/products/ccq-1-03.png"
+    ]
+  },
+  {
+    "id": "CF-1",
+    "sku": "CF-1",
+    "handle": "costureado-faldon-con-barbiquejo",
+    "name": "Costureado faldón con barbiquejo",
+    "category": "VAQUEROS",
+    "material": "Palma con toquillas de algodón",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/cf-1-01.png",
+      "/assets/products/cf-1-02.png",
+      "/assets/products/cf-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/cf-1-01.png",
+      "https://sappaheadwear.com/assets/products/cf-1-02.png",
+      "https://sappaheadwear.com/assets/products/cf-1-03.png"
+    ]
+  },
+  {
+    "id": "CI-1",
+    "sku": "CI-1",
+    "handle": "costureado-indiana-ala-corta-con-barbiquejo",
+    "name": "Costureado indiana ala corta con barbiquejo",
+    "category": "VAQUEROS",
+    "material": "Palma con toquillas de algodón",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/ci-1-01.png",
+      "/assets/products/ci-1-02.png",
+      "/assets/products/ci-1-03.png",
+      "/assets/products/ci-1-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/ci-1-01.png",
+      "https://sappaheadwear.com/assets/products/ci-1-02.png",
+      "https://sappaheadwear.com/assets/products/ci-1-03.png",
+      "https://sappaheadwear.com/assets/products/ci-1-04.png"
+    ]
+  },
+  {
+    "id": "CPC-1",
+    "sku": "CPC-1",
+    "handle": "costureado-cordovez-con-toquilla-tejida",
+    "name": "Costureado cordovéz con toquilla tejida",
+    "category": "VAQUEROS",
+    "material": "Palma con toquillas de poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "CPF-1",
+    "sku": "CPF-1",
+    "handle": "costureado-plano-fino",
+    "name": "Costureado plano  fino",
+    "category": "VAQUEROS",
+    "material": "Palma con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/cpf-1-01.png",
+      "/assets/products/cpf-1-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/cpf-1-01.png",
+      "https://sappaheadwear.com/assets/products/cpf-1-02.png"
+    ]
+  },
+  {
+    "id": "H-1",
+    "sku": "H-1",
+    "handle": "hibrido-negro",
+    "name": "Híbrido negro",
+    "category": "HIBRIDOS",
+    "material": "Copa de hilo de algodón,falda de cinta de celulosay toquilla poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/h-1-01.png",
+      "/assets/products/h-1-02.png",
+      "/assets/products/h-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/h-1-01.png",
+      "https://sappaheadwear.com/assets/products/h-1-02.png",
+      "https://sappaheadwear.com/assets/products/h-1-03.png"
+    ]
+  },
+  {
+    "id": "H-2",
+    "sku": "H-2",
+    "handle": "hibrido-azul",
+    "name": "Híbrido azul",
+    "category": "HIBRIDOS",
+    "material": "Copa de hilo de algodón,falda de cinta de celulosay toquilla poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/h-2-01.png",
+      "/assets/products/h-2-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/h-2-01.png",
+      "https://sappaheadwear.com/assets/products/h-2-02.png"
+    ]
+  },
+  {
+    "id": "H-3",
+    "sku": "H-3",
+    "handle": "hibrido-beige",
+    "name": "Híbrido beige",
+    "category": "HIBRIDOS",
+    "material": "Copa de hilo de algodón,falda de cinta de celulosay toquilla poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/h-3-01.png",
+      "/assets/products/h-3-02.png",
+      "/assets/products/h-3-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/h-3-01.png",
+      "https://sappaheadwear.com/assets/products/h-3-02.png",
+      "https://sappaheadwear.com/assets/products/h-3-03.png"
+    ]
+  },
+  {
+    "id": "LAC-1",
+    "sku": "LAC-1",
+    "handle": "lino-algodon-catrin-azul",
+    "name": "Lino algodon catrin azul",
+    "category": "LINO- ALGODÓN CATRIN E INDIANA",
+    "material": "Mezcla de lino con algodón toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "LAC-2",
+    "sku": "LAC-2",
+    "handle": "lino-algodon-catrin-amarillo",
+    "name": "Lino algodon catrin amarillo",
+    "category": "LINO- ALGODÓN CATRIN E INDIANA",
+    "material": "Mezcla de lino con algodón toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "LAC-3",
+    "sku": "LAC-3",
+    "handle": "lino-algodon-catrin-canela",
+    "name": "Lino algodon catrin  canela",
+    "category": "LINO- ALGODÓN CATRIN E INDIANA",
+    "material": "Mezcla de lino con algodón toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "LAC-4",
+    "sku": "LAC-4",
+    "handle": "lino-algodon-catrin-verde",
+    "name": "Lino algodón catrin verde",
+    "category": "LINO- ALGODÓN CATRIN E INDIANA",
+    "material": "Mezcla de lino con algodón toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "LAI-1",
+    "sku": "LAI-1",
+    "handle": "lino-algodon-indiana-amarillo",
+    "name": "Lino algodon indiana  amarillo",
+    "category": "LINO- ALGODÓN CATRIN E INDIANA",
+    "material": "Mezcla de lino con algodón toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "LC-1",
+    "sku": "LC-1",
+    "handle": "lino-catrin-negro",
+    "name": "Lino catrin negro",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lc-1-01.png",
+      "/assets/products/lc-1-02.png",
+      "/assets/products/lc-1-03.png",
+      "/assets/products/lc-1-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lc-1-01.png",
+      "https://sappaheadwear.com/assets/products/lc-1-02.png",
+      "https://sappaheadwear.com/assets/products/lc-1-03.png",
+      "https://sappaheadwear.com/assets/products/lc-1-04.png"
+    ]
+  },
+  {
+    "id": "LC-10",
+    "sku": "LC-10",
+    "handle": "lino-catrin-verde",
+    "name": "Lino catrin verde",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lc-10-01.png",
+      "/assets/products/lc-10-02.png",
+      "/assets/products/lc-10-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lc-10-01.png",
+      "https://sappaheadwear.com/assets/products/lc-10-02.png",
+      "https://sappaheadwear.com/assets/products/lc-10-03.png"
+    ]
+  },
+  {
+    "id": "LC-11",
+    "sku": "LC-11",
+    "handle": "lino-catrin-fucsia",
+    "name": "Lino catrin fucsia",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lc-11-01.png",
+      "/assets/products/lc-11-02.png",
+      "/assets/products/lc-11-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lc-11-01.png",
+      "https://sappaheadwear.com/assets/products/lc-11-02.png",
+      "https://sappaheadwear.com/assets/products/lc-11-03.png"
+    ]
+  },
+  {
+    "id": "LC-12",
+    "sku": "LC-12",
+    "handle": "lino-catrin-amarillo",
+    "name": "Lino catrin amarillo",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lc-12-01.png",
+      "/assets/products/lc-12-02.png",
+      "/assets/products/lc-12-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lc-12-01.png",
+      "https://sappaheadwear.com/assets/products/lc-12-02.png",
+      "https://sappaheadwear.com/assets/products/lc-12-03.png"
+    ]
+  },
+  {
+    "id": "LC-13",
+    "sku": "LC-13",
+    "handle": "lino-catrin-combinado-beige-negro",
+    "name": "Lino catrin combinado beige/negro",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lc-13-01.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lc-13-01.png"
+    ]
+  },
+  {
+    "id": "LC-2",
+    "sku": "LC-2",
+    "handle": "lino-catrin-rojo",
+    "name": "Lino catrin rojo",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lc-2-01.png",
+      "/assets/products/lc-2-02.png",
+      "/assets/products/lc-2-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lc-2-01.png",
+      "https://sappaheadwear.com/assets/products/lc-2-02.png",
+      "https://sappaheadwear.com/assets/products/lc-2-03.png"
+    ]
+  },
+  {
+    "id": "LC-3",
+    "sku": "LC-3",
+    "handle": "lino-catrin-beige",
+    "name": "Lino catrin beige",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lc-3-01.png",
+      "/assets/products/lc-3-02.png",
+      "/assets/products/lc-3-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lc-3-01.png",
+      "https://sappaheadwear.com/assets/products/lc-3-02.png",
+      "https://sappaheadwear.com/assets/products/lc-3-03.png"
+    ]
+  },
+  {
+    "id": "LC-4",
+    "sku": "LC-4",
+    "handle": "lino-catrin-azul",
+    "name": "Lino catrin azul",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lc-4-01.png",
+      "/assets/products/lc-4-02.png",
+      "/assets/products/lc-4-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lc-4-01.png",
+      "https://sappaheadwear.com/assets/products/lc-4-02.png",
+      "https://sappaheadwear.com/assets/products/lc-4-03.png"
+    ]
+  },
+  {
+    "id": "LC-5",
+    "sku": "LC-5",
+    "handle": "lino-catrin-cafe",
+    "name": "Lino catrin café",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lc-5-01.png",
+      "/assets/products/lc-5-02.png",
+      "/assets/products/lc-5-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lc-5-01.png",
+      "https://sappaheadwear.com/assets/products/lc-5-02.png",
+      "https://sappaheadwear.com/assets/products/lc-5-03.png"
+    ]
+  },
+  {
+    "id": "LC-6",
+    "sku": "LC-6",
+    "handle": "lino-catrin-orange",
+    "name": "Lino catrin orange",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lc-6-01.png",
+      "/assets/products/lc-6-02.png",
+      "/assets/products/lc-6-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lc-6-01.png",
+      "https://sappaheadwear.com/assets/products/lc-6-02.png",
+      "https://sappaheadwear.com/assets/products/lc-6-03.png"
+    ]
+  },
+  {
+    "id": "LC-7",
+    "sku": "LC-7",
+    "handle": "lc-7",
+    "name": "LC-7",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "LC-8",
+    "sku": "LC-8",
+    "handle": "lino-catrin-gris",
+    "name": "Lino catrin gris",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lc-8-01.png",
+      "/assets/products/lc-8-02.png",
+      "/assets/products/lc-8-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lc-8-01.png",
+      "https://sappaheadwear.com/assets/products/lc-8-02.png",
+      "https://sappaheadwear.com/assets/products/lc-8-03.png"
+    ]
+  },
+  {
+    "id": "LC-9",
+    "sku": "LC-9",
+    "handle": "lino-catrin-aqua",
+    "name": "Lino catrin aqua",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lc-9-01.png",
+      "/assets/products/lc-9-02.png",
+      "/assets/products/lc-9-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lc-9-01.png",
+      "https://sappaheadwear.com/assets/products/lc-9-02.png",
+      "https://sappaheadwear.com/assets/products/lc-9-03.png"
+    ]
+  },
+  {
+    "id": "LCZ-1",
+    "sku": "LCZ-1",
+    "handle": "lino-cazuelita-negro",
+    "name": "Lino cazuelita negro",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lcz-1-01.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lcz-1-01.png"
+    ]
+  },
+  {
+    "id": "LCZ-2",
+    "sku": "LCZ-2",
+    "handle": "lino-cazuelita-gris",
+    "name": "Lino cazuelita gris",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lcz-2-01.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lcz-2-01.png"
+    ]
+  },
+  {
+    "id": "LCZ-3",
+    "sku": "LCZ-3",
+    "handle": "lino-cazuelita-aqua",
+    "name": "Lino cazuelita aqua",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lcz-3-01.png",
+      "/assets/products/lcz-3-02.png",
+      "/assets/products/lcz-3-03.png",
+      "/assets/products/lcz-3-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lcz-3-01.png",
+      "https://sappaheadwear.com/assets/products/lcz-3-02.png",
+      "https://sappaheadwear.com/assets/products/lcz-3-03.png",
+      "https://sappaheadwear.com/assets/products/lcz-3-04.png"
+    ]
+  },
+  {
+    "id": "LCZ-4",
+    "sku": "LCZ-4",
+    "handle": "lino-cazuelita-canela",
+    "name": "Lino cazuelita canela",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lcz-4-01.png",
+      "/assets/products/lcz-4-02.png",
+      "/assets/products/lcz-4-03.png",
+      "/assets/products/lcz-4-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lcz-4-01.png",
+      "https://sappaheadwear.com/assets/products/lcz-4-02.png",
+      "https://sappaheadwear.com/assets/products/lcz-4-03.png",
+      "https://sappaheadwear.com/assets/products/lcz-4-04.png"
+    ]
+  },
+  {
+    "id": "LCZ-5",
+    "sku": "LCZ-5",
+    "handle": "lino-cazuelita-descripcion-pendiente-de-confirmar",
+    "name": "Lino cazuelita — descripción pendiente de confirmar",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "Lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lcz-5-01.png",
+      "/assets/products/lcz-5-02.png",
+      "/assets/products/lcz-5-03.png",
+      "/assets/products/lcz-5-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lcz-5-01.png",
+      "https://sappaheadwear.com/assets/products/lcz-5-02.png",
+      "https://sappaheadwear.com/assets/products/lcz-5-03.png",
+      "https://sappaheadwear.com/assets/products/lcz-5-04.png"
+    ]
+  },
+  {
+    "id": "LI-1",
+    "sku": "LI-1",
+    "handle": "lino-indiana-negro",
+    "name": "Lino Indiana negro",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/li-1-01.png",
+      "/assets/products/li-1-02.png",
+      "/assets/products/li-1-03.png",
+      "/assets/products/li-1-04.png",
+      "/assets/products/li-1-05.png",
+      "/assets/products/li-1-06.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/li-1-01.png",
+      "https://sappaheadwear.com/assets/products/li-1-02.png",
+      "https://sappaheadwear.com/assets/products/li-1-03.png",
+      "https://sappaheadwear.com/assets/products/li-1-04.png",
+      "https://sappaheadwear.com/assets/products/li-1-05.png",
+      "https://sappaheadwear.com/assets/products/li-1-06.png"
+    ]
+  },
+  {
+    "id": "LI-2",
+    "sku": "LI-2",
+    "handle": "lino-indiana-rojo",
+    "name": "Lino indiana rojo",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/li-2-01.png",
+      "/assets/products/li-2-02.png",
+      "/assets/products/li-2-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/li-2-01.png",
+      "https://sappaheadwear.com/assets/products/li-2-02.png",
+      "https://sappaheadwear.com/assets/products/li-2-03.png"
+    ]
+  },
+  {
+    "id": "LI-3",
+    "sku": "LI-3",
+    "handle": "lino-indiana-beige",
+    "name": "Lino indiana beige",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/li-3-01.png",
+      "/assets/products/li-3-02.png",
+      "/assets/products/li-3-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/li-3-01.png",
+      "https://sappaheadwear.com/assets/products/li-3-02.png",
+      "https://sappaheadwear.com/assets/products/li-3-03.png"
+    ]
+  },
+  {
+    "id": "LI-4",
+    "sku": "LI-4",
+    "handle": "lino-indiana-azul",
+    "name": "Lino indiana azul",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/li-4-01.png",
+      "/assets/products/li-4-02.png",
+      "/assets/products/li-4-03.png",
+      "/assets/products/li-4-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/li-4-01.png",
+      "https://sappaheadwear.com/assets/products/li-4-02.png",
+      "https://sappaheadwear.com/assets/products/li-4-03.png",
+      "https://sappaheadwear.com/assets/products/li-4-04.png"
+    ]
+  },
+  {
+    "id": "LI-5",
+    "sku": "LI-5",
+    "handle": "lino-indiana-cafe",
+    "name": "Lino indiana café",
+    "category": "LINO CATRIN E INDIANA",
+    "material": "tela de lino, entretela de algodón, toquilla y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/li-5-01.png",
+      "/assets/products/li-5-02.png",
+      "/assets/products/li-5-03.png",
+      "/assets/products/li-5-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/li-5-01.png",
+      "https://sappaheadwear.com/assets/products/li-5-02.png",
+      "https://sappaheadwear.com/assets/products/li-5-03.png",
+      "https://sappaheadwear.com/assets/products/li-5-04.png"
+    ]
+  },
+  {
+    "id": "LMI-1",
+    "sku": "LMI-1",
+    "handle": "lino-mixto-indiana-kaki-toquilla-flecha",
+    "name": "Lino mixto indiana kaki toquilla flecha",
+    "category": "LINO MIXTO",
+    "material": "Lino,copa hilo de celulosa, toquilla vinil.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lmi-1-01.png",
+      "/assets/products/lmi-1-02.png",
+      "/assets/products/lmi-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lmi-1-01.png",
+      "https://sappaheadwear.com/assets/products/lmi-1-02.png",
+      "https://sappaheadwear.com/assets/products/lmi-1-03.png"
+    ]
+  },
+  {
+    "id": "LMI-2",
+    "sku": "LMI-2",
+    "handle": "lino-mixto-indiana-orange-toquilla-flecha",
+    "name": "Lino mixto indiana orange toquilla flecha",
+    "category": "LINO MIXTO",
+    "material": "Lino,copa hilo de celulosa, toquilla vinil.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lmi-2-01.png",
+      "/assets/products/lmi-2-02.png",
+      "/assets/products/lmi-2-03.png",
+      "/assets/products/lmi-2-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lmi-2-01.png",
+      "https://sappaheadwear.com/assets/products/lmi-2-02.png",
+      "https://sappaheadwear.com/assets/products/lmi-2-03.png",
+      "https://sappaheadwear.com/assets/products/lmi-2-04.png"
+    ]
+  },
+  {
+    "id": "LMP-1",
+    "sku": "LMP-1",
+    "handle": "lino-mixto-plano-negro",
+    "name": "Lino mixto plano negro",
+    "category": "LINO MIXTO",
+    "material": "Lino,copa hilo de celulosa, toquilla vinil.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lmp-1-01.png",
+      "/assets/products/lmp-1-02.png",
+      "/assets/products/lmp-1-03.png",
+      "/assets/products/lmp-1-04.png",
+      "/assets/products/lmp-1-05.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lmp-1-01.png",
+      "https://sappaheadwear.com/assets/products/lmp-1-02.png",
+      "https://sappaheadwear.com/assets/products/lmp-1-03.png",
+      "https://sappaheadwear.com/assets/products/lmp-1-04.png",
+      "https://sappaheadwear.com/assets/products/lmp-1-05.png"
+    ]
+  },
+  {
+    "id": "LMP-2",
+    "sku": "LMP-2",
+    "handle": "lino-mixto-plano-rojo",
+    "name": "Lino mixto plano rojo",
+    "category": "LINO MIXTO",
+    "material": "Lino,copa hilo de celulosa, toquilla vinil.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lmp-2-01.png",
+      "/assets/products/lmp-2-02.png",
+      "/assets/products/lmp-2-03.png",
+      "/assets/products/lmp-2-04.png",
+      "/assets/products/lmp-2-05.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lmp-2-01.png",
+      "https://sappaheadwear.com/assets/products/lmp-2-02.png",
+      "https://sappaheadwear.com/assets/products/lmp-2-03.png",
+      "https://sappaheadwear.com/assets/products/lmp-2-04.png",
+      "https://sappaheadwear.com/assets/products/lmp-2-05.png"
+    ]
+  },
+  {
+    "id": "LMP-3",
+    "sku": "LMP-3",
+    "handle": "lino-mixto-plano-amarillo",
+    "name": "Lino mixto plano amarillo",
+    "category": "LINO MIXTO",
+    "material": "Lino,copa hilo de celulosa, toquilla vinil.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lmp-3-01.png",
+      "/assets/products/lmp-3-02.png",
+      "/assets/products/lmp-3-03.png",
+      "/assets/products/lmp-3-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lmp-3-01.png",
+      "https://sappaheadwear.com/assets/products/lmp-3-02.png",
+      "https://sappaheadwear.com/assets/products/lmp-3-03.png",
+      "https://sappaheadwear.com/assets/products/lmp-3-04.png"
+    ]
+  },
+  {
+    "id": "LMP-4",
+    "sku": "LMP-4",
+    "handle": "lino-mixto-plano-azul-rey",
+    "name": "Lino mixto plano azul rey",
+    "category": "LINO MIXTO",
+    "material": "Lino,copa hilo de celulosa, toquilla vinil.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lmp-4-01.png",
+      "/assets/products/lmp-4-02.png",
+      "/assets/products/lmp-4-03.png",
+      "/assets/products/lmp-4-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lmp-4-01.png",
+      "https://sappaheadwear.com/assets/products/lmp-4-02.png",
+      "https://sappaheadwear.com/assets/products/lmp-4-03.png",
+      "https://sappaheadwear.com/assets/products/lmp-4-04.png"
+    ]
+  },
+  {
+    "id": "LMP-5",
+    "sku": "LMP-5",
+    "handle": "lino-mixto-plano-orange",
+    "name": "Lino mixto plano orange",
+    "category": "LINO MIXTO",
+    "material": "Lino,copa hilo de celulosa, toquilla vinil.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lmp-5-01.png",
+      "/assets/products/lmp-5-02.png",
+      "/assets/products/lmp-5-03.png",
+      "/assets/products/lmp-5-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lmp-5-01.png",
+      "https://sappaheadwear.com/assets/products/lmp-5-02.png",
+      "https://sappaheadwear.com/assets/products/lmp-5-03.png",
+      "https://sappaheadwear.com/assets/products/lmp-5-04.png"
+    ]
+  },
+  {
+    "id": "LMP-6",
+    "sku": "LMP-6",
+    "handle": "lino-mixto-plano-oceano",
+    "name": "Lino mixto plano océano",
+    "category": "LINO MIXTO",
+    "material": "Lino,copa hilo de celulosa, toquilla vinil.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lmp-6-01.png",
+      "/assets/products/lmp-6-02.png",
+      "/assets/products/lmp-6-03.png",
+      "/assets/products/lmp-6-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lmp-6-01.png",
+      "https://sappaheadwear.com/assets/products/lmp-6-02.png",
+      "https://sappaheadwear.com/assets/products/lmp-6-03.png",
+      "https://sappaheadwear.com/assets/products/lmp-6-04.png"
+    ]
+  },
+  {
+    "id": "LP-1",
+    "sku": "LP-1",
+    "handle": "lino-plano-negro",
+    "name": "Lino plano negro",
+    "category": "LINO PLANO",
+    "material": "Lino, entretela de algodón, toquilla vinil y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lp-1-01.png",
+      "/assets/products/lp-1-02.png",
+      "/assets/products/lp-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lp-1-01.png",
+      "https://sappaheadwear.com/assets/products/lp-1-02.png",
+      "https://sappaheadwear.com/assets/products/lp-1-03.png"
+    ]
+  },
+  {
+    "id": "LP-2",
+    "sku": "LP-2",
+    "handle": "lino-plano-beige",
+    "name": "Lino plano beige",
+    "category": "LINO PLANO",
+    "material": "Lino, entretela de algodón, toquilla vinil y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lp-2-01.png",
+      "/assets/products/lp-2-02.png",
+      "/assets/products/lp-2-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lp-2-01.png",
+      "https://sappaheadwear.com/assets/products/lp-2-02.png",
+      "https://sappaheadwear.com/assets/products/lp-2-03.png"
+    ]
+  },
+  {
+    "id": "LP-3",
+    "sku": "LP-3",
+    "handle": "lino-plano-negro-falda-interior-rojo",
+    "name": "Lino plano negro falda interior rojo",
+    "category": "LINO PLANO",
+    "material": "Lino, entretela de algodón, toquilla vinil y forro poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/lp-3-01.png",
+      "/assets/products/lp-3-02.png",
+      "/assets/products/lp-3-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/lp-3-01.png",
+      "https://sappaheadwear.com/assets/products/lp-3-02.png",
+      "https://sappaheadwear.com/assets/products/lp-3-03.png"
+    ]
+  },
+  {
+    "id": "MMC-1",
+    "sku": "MMC-1",
+    "handle": "manta-mixto-catrin-crema",
+    "name": "Manta mixto catrin crema",
+    "category": "MANTA MIXTO CATRIN E INDIANA",
+    "material": "Copa de hilo de celulosa, ala de algodón y toquilla vinil",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "MMC-2",
+    "sku": "MMC-2",
+    "handle": "manta-mixto-catrin-hueso",
+    "name": "Manta mixto catrin hueso",
+    "category": "MANTA MIXTO CATRIN E INDIANA",
+    "material": "Copa de hilo de celulosa, ala de algodón y toquilla vinil",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "MMI-1",
+    "sku": "MMI-1",
+    "handle": "manta-mixto-indiana-crema",
+    "name": "Manta mixto indiana crema",
+    "category": "MANTA MIXTO CATRIN E INDIANA",
+    "material": "Copa de hilo de celulosa, ala de algodón y toquilla vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/mmi-1-01.png",
+      "/assets/products/mmi-1-02.png",
+      "/assets/products/mmi-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/mmi-1-01.png",
+      "https://sappaheadwear.com/assets/products/mmi-1-02.png",
+      "https://sappaheadwear.com/assets/products/mmi-1-03.png"
+    ]
+  },
+  {
+    "id": "MMI-2",
+    "sku": "MMI-2",
+    "handle": "manta-mixto-indiana-hueso",
+    "name": "Manta mixto indiana hueso",
+    "category": "MANTA MIXTO CATRIN E INDIANA",
+    "material": "Copa de hilo de celulosa, ala de algodón y toquilla vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/mmi-2-01.png",
+      "/assets/products/mmi-2-02.png",
+      "/assets/products/mmi-2-03.png",
+      "/assets/products/mmi-2-04.png",
+      "/assets/products/mmi-2-05.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/mmi-2-01.png",
+      "https://sappaheadwear.com/assets/products/mmi-2-02.png",
+      "https://sappaheadwear.com/assets/products/mmi-2-03.png",
+      "https://sappaheadwear.com/assets/products/mmi-2-04.png",
+      "https://sappaheadwear.com/assets/products/mmi-2-05.png"
+    ]
+  },
+  {
+    "id": "MMI-3",
+    "sku": "MMI-3",
+    "handle": "manta-mixto-indiana-gris",
+    "name": "Manta mixto indiana gris",
+    "category": "MANTA MIXTO CATRIN E INDIANA",
+    "material": "Copa de hilo de celulosa, ala de algodón y toquilla vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/mmi-3-01.png",
+      "/assets/products/mmi-3-02.png",
+      "/assets/products/mmi-3-03.png",
+      "/assets/products/mmi-3-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/mmi-3-01.png",
+      "https://sappaheadwear.com/assets/products/mmi-3-02.png",
+      "https://sappaheadwear.com/assets/products/mmi-3-03.png",
+      "https://sappaheadwear.com/assets/products/mmi-3-04.png"
+    ]
+  },
+  {
+    "id": "TCC-1",
+    "sku": "TCC-1",
+    "handle": "tela-calada-catrin-beige",
+    "name": "Tela calada catrin beige",
+    "category": "TELA CALADA",
+    "material": "Ala y copa de algodón con toquilla de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tcc-1-01.png",
+      "/assets/products/tcc-1-02.png",
+      "/assets/products/tcc-1-03.png",
+      "/assets/products/tcc-1-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tcc-1-01.png",
+      "https://sappaheadwear.com/assets/products/tcc-1-02.png",
+      "https://sappaheadwear.com/assets/products/tcc-1-03.png",
+      "https://sappaheadwear.com/assets/products/tcc-1-04.png"
+    ]
+  },
+  {
+    "id": "TCC-2",
+    "sku": "TCC-2",
+    "handle": "tela-calada-catrin-moka",
+    "name": "Tela calada catrin moka",
+    "category": "TELA CALADA",
+    "material": "Ala y copa de algodón con toquilla de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tcc-2-01.png",
+      "/assets/products/tcc-2-02.png",
+      "/assets/products/tcc-2-03.png",
+      "/assets/products/tcc-2-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tcc-2-01.png",
+      "https://sappaheadwear.com/assets/products/tcc-2-02.png",
+      "https://sappaheadwear.com/assets/products/tcc-2-03.png",
+      "https://sappaheadwear.com/assets/products/tcc-2-04.png"
+    ]
+  },
+  {
+    "id": "TCC-3",
+    "sku": "TCC-3",
+    "handle": "tela-calada-catrin-moka-ala-negra",
+    "name": "Tela calada catrin moka ala negra",
+    "category": "TELA CALADA",
+    "material": "Ala y copa de algodón con toquilla de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tcc-3-01.png",
+      "/assets/products/tcc-3-02.png",
+      "/assets/products/tcc-3-03.png",
+      "/assets/products/tcc-3-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tcc-3-01.png",
+      "https://sappaheadwear.com/assets/products/tcc-3-02.png",
+      "https://sappaheadwear.com/assets/products/tcc-3-03.png",
+      "https://sappaheadwear.com/assets/products/tcc-3-04.png"
+    ]
+  },
+  {
+    "id": "TCI-1",
+    "sku": "TCI-1",
+    "handle": "tela-calada-indiana-beige",
+    "name": "Tela calada indiana beige",
+    "category": "TELA CALADA",
+    "material": "Ala y copa de algodón con toquilla de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "TCI-2",
+    "sku": "TCI-2",
+    "handle": "tela-calada-indiana-moka",
+    "name": "Tela calada indiana moka",
+    "category": "TELA CALADA",
+    "material": "Ala y copa de algodón con toquilla de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tci-2-01.png",
+      "/assets/products/tci-2-02.png",
+      "/assets/products/tci-2-03.png",
+      "/assets/products/tci-2-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tci-2-01.png",
+      "https://sappaheadwear.com/assets/products/tci-2-02.png",
+      "https://sappaheadwear.com/assets/products/tci-2-03.png",
+      "https://sappaheadwear.com/assets/products/tci-2-04.png"
+    ]
+  },
+  {
+    "id": "TCI-3",
+    "sku": "TCI-3",
+    "handle": "tela-calada-indiana-moka-ala-negra",
+    "name": "Tela calada indiana moka ala negra",
+    "category": "TELA CALADA",
+    "material": "Ala y copa de algodón con toquilla de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tci-3-01.png",
+      "/assets/products/tci-3-02.png",
+      "/assets/products/tci-3-03.png",
+      "/assets/products/tci-3-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tci-3-01.png",
+      "https://sappaheadwear.com/assets/products/tci-3-02.png",
+      "https://sappaheadwear.com/assets/products/tci-3-03.png",
+      "https://sappaheadwear.com/assets/products/tci-3-04.png"
+    ]
+  },
+  {
+    "id": "TMC-1",
+    "sku": "TMC-1",
+    "handle": "catrin-tela-madera-toquilla-vinil",
+    "name": "Catrin tela madera toquilla vinil",
+    "category": "TELA MADERA",
+    "material": "Tela de celulosa toquilla vinil y poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tmc-1-01.png",
+      "/assets/products/tmc-1-02.png",
+      "/assets/products/tmc-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tmc-1-01.png",
+      "https://sappaheadwear.com/assets/products/tmc-1-02.png",
+      "https://sappaheadwear.com/assets/products/tmc-1-03.png"
+    ]
+  },
+  {
+    "id": "TPC-1",
+    "sku": "TPC-1",
+    "handle": "tipo-panama-catrin-toquilla-mondragon-negra",
+    "name": "Tipo panamá catrin toquilla mondragon negra",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-1-01.png",
+      "/assets/products/tpc-1-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-1-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-1-02.png"
+    ]
+  },
+  {
+    "id": "TPC-10",
+    "sku": "TPC-10",
+    "handle": "tipo-panama-catrin-toquilla-mon-ala-rosa",
+    "name": "Tipo panamá catrin toquilla mon ala rosa",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-10-01.png",
+      "/assets/products/tpc-10-02.png",
+      "/assets/products/tpc-10-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-10-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-10-02.png",
+      "https://sappaheadwear.com/assets/products/tpc-10-03.png"
+    ]
+  },
+  {
+    "id": "TPC-11",
+    "sku": "TPC-11",
+    "handle": "tipo-panama-catrin-toquilla-gris-azul",
+    "name": "Tipo panama catrin toquilla gris/azul",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-11-01.png",
+      "/assets/products/tpc-11-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-11-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-11-02.png"
+    ]
+  },
+  {
+    "id": "TPC-12",
+    "sku": "TPC-12",
+    "handle": "tipo-panama-catrin-toquilla-multicolor",
+    "name": "Tipo panama catrin toquilla multicolor",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-12-01.png",
+      "/assets/products/tpc-12-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-12-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-12-02.png"
+    ]
+  },
+  {
+    "id": "TPC-13",
+    "sku": "TPC-13",
+    "handle": "tipo-panama-catrin-toq-azul-bandas-blancas",
+    "name": "Tipo panamá catrin toq. azul bandas blancas",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-13-01.png",
+      "/assets/products/tpc-13-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-13-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-13-02.png"
+    ]
+  },
+  {
+    "id": "TPC-14",
+    "sku": "TPC-14",
+    "handle": "tipo-panama-catrin-color-natural-toq-beige-con-cafe",
+    "name": "Tipo panamá catrin color natural toq. Beige con café",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-14-01.png",
+      "/assets/products/tpc-14-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-14-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-14-02.png"
+    ]
+  },
+  {
+    "id": "TPC-15",
+    "sku": "TPC-15",
+    "handle": "tipo-panama-catrin-color-beige-toq-beige-con-cafe",
+    "name": "Tipo panamá catrin color beige  toq. Beige con café",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-15-01.png",
+      "/assets/products/tpc-15-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-15-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-15-02.png"
+    ]
+  },
+  {
+    "id": "TPC-2",
+    "sku": "TPC-2",
+    "handle": "tipo-panama-catrin-toquilla-popotillo-azul",
+    "name": "Tipo panamá catrin toquilla popotillo azul",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-2-01.png",
+      "/assets/products/tpc-2-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-2-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-2-02.png"
+    ]
+  },
+  {
+    "id": "TPC-3",
+    "sku": "TPC-3",
+    "handle": "tipo-panama-catrin-toquilla-popotillo-azul-rojo",
+    "name": "Tipo panamá catrin toquilla popotillo azul/rojo",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": false,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "TPC-4",
+    "sku": "TPC-4",
+    "handle": "tipo-panama-catrin-toquilla-popotillo-cielo",
+    "name": "Tipo panamá catrin toquilla popotillo cielo",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-4-01.png",
+      "/assets/products/tpc-4-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-4-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-4-02.png"
+    ]
+  },
+  {
+    "id": "TPC-5",
+    "sku": "TPC-5",
+    "handle": "tipo-panama-catrin-beige-toq-mon-negra",
+    "name": "Tipo panamá catrin beige toq. mon negra",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-5-01.png",
+      "/assets/products/tpc-5-02.png",
+      "/assets/products/tpc-5-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-5-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-5-02.png",
+      "https://sappaheadwear.com/assets/products/tpc-5-03.png"
+    ]
+  },
+  {
+    "id": "TPC-6",
+    "sku": "TPC-6",
+    "handle": "tipo-panama-catrin-oxford-toq-mon-negra",
+    "name": "Tipo panamá catrin oxford toq. mon. negra",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-6-01.png",
+      "/assets/products/tpc-6-02.png",
+      "/assets/products/tpc-6-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-6-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-6-02.png",
+      "https://sappaheadwear.com/assets/products/tpc-6-03.png"
+    ]
+  },
+  {
+    "id": "TPC-7",
+    "sku": "TPC-7",
+    "handle": "tipo-panama-catrin-toquilla-popotillo-azul-dorado",
+    "name": "Tipo panamá catrin toquilla popotillo azul/dorado",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-7-01.png",
+      "/assets/products/tpc-7-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-7-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-7-02.png"
+    ]
+  },
+  {
+    "id": "TPC-8",
+    "sku": "TPC-8",
+    "handle": "tipo-panama-catrin-toquilla-popotillo-azul-negro",
+    "name": "Tipo panamá catrin toquilla popotillo azul/negro",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-8-01.png",
+      "/assets/products/tpc-8-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-8-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-8-02.png"
+    ]
+  },
+  {
+    "id": "TPC-9",
+    "sku": "TPC-9",
+    "handle": "tipo-panama-catrin-toquilla-mon-cafe-combinada",
+    "name": "Tipo panamá catrin toquilla mon café combinada",
+    "category": "TIPO PANAMA MODELO CATRIN",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpc-9-01.png",
+      "/assets/products/tpc-9-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpc-9-01.png",
+      "https://sappaheadwear.com/assets/products/tpc-9-02.png"
+    ]
+  },
+  {
+    "id": "TPI-1",
+    "sku": "TPI-1",
+    "handle": "tipo-panama-indiana-toquilla-mon-negra",
+    "name": "Tipo panamá Indiana toquilla mon negra",
+    "category": "TIPO PANAMA MODELO INDIANA",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/tpi-1-01.png",
+      "/assets/products/tpi-1-02.png",
+      "/assets/products/tpi-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/tpi-1-01.png",
+      "https://sappaheadwear.com/assets/products/tpi-1-02.png",
+      "https://sappaheadwear.com/assets/products/tpi-1-03.png"
+    ]
+  },
+  {
+    "id": "TPM-1",
+    "sku": "TPM-1",
+    "handle": "tipo-panama-ala-amplia-color-natural-toq-mon-negra",
+    "name": "Tipo panamá ala amplia color natural toq. Mon negra",
+    "category": "TIPO PANAMA MODELO AMPLIO PARA MUJER",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "TPM-2",
+    "sku": "TPM-2",
+    "handle": "tipo-panama-ala-amplia-color-beige-toq-mon-negra",
+    "name": "Tipo panamá ala amplia color beige toq. Mon negra",
+    "category": "TIPO PANAMA MODELO AMPLIO PARA MUJER",
+    "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "VB-1",
+    "sku": "VB-1",
+    "handle": "vaquero-biopoli",
+    "name": "Vaquero Biopoli",
+    "category": "VAQUEROS",
+    "material": "Lino, celulosa, algodón y agave con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vb-1-01.png",
+      "/assets/products/vb-1-02.png",
+      "/assets/products/vb-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vb-1-01.png",
+      "https://sappaheadwear.com/assets/products/vb-1-02.png",
+      "https://sappaheadwear.com/assets/products/vb-1-03.png"
+    ]
+  },
+  {
+    "id": "VE-1",
+    "sku": "VE-1",
+    "handle": "espadin-vaquero-natural",
+    "name": "Espadín vaquero natural",
+    "category": "VAQUEROS",
+    "material": "Lino, celulosa, algodón y agave con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/ve-1-01.png",
+      "/assets/products/ve-1-02.png",
+      "/assets/products/ve-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/ve-1-01.png",
+      "https://sappaheadwear.com/assets/products/ve-1-02.png",
+      "https://sappaheadwear.com/assets/products/ve-1-03.png"
+    ]
+  },
+  {
+    "id": "VE-2",
+    "sku": "VE-2",
+    "handle": "espadin-vaquero-chocolate",
+    "name": "Espadín vaquero chocolate",
+    "category": "VAQUEROS",
+    "material": "Lino, celulosa, algodón y agave con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/ve-2-01.png",
+      "/assets/products/ve-2-02.png",
+      "/assets/products/ve-2-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/ve-2-01.png",
+      "https://sappaheadwear.com/assets/products/ve-2-02.png",
+      "https://sappaheadwear.com/assets/products/ve-2-03.png"
+    ]
+  },
+  {
+    "id": "VE-3",
+    "sku": "VE-3",
+    "handle": "espadin-chihuahua-natural",
+    "name": "Espadín chihuahua natural",
+    "category": "VAQUEROS",
+    "material": "Lino, celulosa, algodón y agave con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/ve-3-01.png",
+      "/assets/products/ve-3-02.png",
+      "/assets/products/ve-3-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/ve-3-01.png",
+      "https://sappaheadwear.com/assets/products/ve-3-02.png",
+      "https://sappaheadwear.com/assets/products/ve-3-03.png"
+    ]
+  },
+  {
+    "id": "VE-4",
+    "sku": "VE-4",
+    "handle": "espadin-chihuahua-chocolate",
+    "name": "Espadín chihuahua chocolate",
+    "category": "VAQUEROS",
+    "material": "Lino, celulosa, algodón y agave con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/ve-4-01.png",
+      "/assets/products/ve-4-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/ve-4-01.png",
+      "https://sappaheadwear.com/assets/products/ve-4-02.png"
+    ]
+  },
+  {
+    "id": "VL-1",
+    "sku": "VL-1",
+    "handle": "vaquero-lino-negro",
+    "name": "Vaquero lino negro",
+    "category": "VAQUEROS",
+    "material": "Lino, celulosa, algodón y agave con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vl-1-01.png",
+      "/assets/products/vl-1-02.png",
+      "/assets/products/vl-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vl-1-01.png",
+      "https://sappaheadwear.com/assets/products/vl-1-02.png",
+      "https://sappaheadwear.com/assets/products/vl-1-03.png"
+    ]
+  },
+  {
+    "id": "VL-2",
+    "sku": "VL-2",
+    "handle": "vaquero-lino-beige",
+    "name": "Vaquero lino beige",
+    "category": "VAQUEROS",
+    "material": "Lino, celulosa, algodón y agave con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vl-2-01.png",
+      "/assets/products/vl-2-02.png",
+      "/assets/products/vl-2-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vl-2-01.png",
+      "https://sappaheadwear.com/assets/products/vl-2-02.png",
+      "https://sappaheadwear.com/assets/products/vl-2-03.png"
+    ]
+  },
+  {
+    "id": "VM-1",
+    "sku": "VM-1",
+    "handle": "vaquero-tela-madera-10-5",
+    "name": "Vaquero Tela madera 10.5",
+    "category": "VAQUEROS",
+    "material": "Lino, celulosa, algodón y agave con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vm-1-01.png",
+      "/assets/products/vm-1-02.png",
+      "/assets/products/vm-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vm-1-01.png",
+      "https://sappaheadwear.com/assets/products/vm-1-02.png",
+      "https://sappaheadwear.com/assets/products/vm-1-03.png"
+    ]
+  },
+  {
+    "id": "VM-2",
+    "sku": "VM-2",
+    "handle": "vaquero-tela-madera-8-5",
+    "name": "Vaquero tela madera 8.5",
+    "category": "VAQUEROS",
+    "material": "Lino, celulosa, algodón y agave con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vm-2-01.png",
+      "/assets/products/vm-2-02.png",
+      "/assets/products/vm-2-03.png",
+      "/assets/products/vm-2-04.png",
+      "/assets/products/vm-2-05.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vm-2-01.png",
+      "https://sappaheadwear.com/assets/products/vm-2-02.png",
+      "https://sappaheadwear.com/assets/products/vm-2-03.png",
+      "https://sappaheadwear.com/assets/products/vm-2-04.png",
+      "https://sappaheadwear.com/assets/products/vm-2-05.png"
+    ]
+  },
+  {
+    "id": "VMM-1",
+    "sku": "VMM-1",
+    "handle": "vaquero-manta-mixto-hueso",
+    "name": "Vaquero manta mixto hueso",
+    "category": "VAQUEROS",
+    "material": "Lino, celulosa, algodón y agave con toquillas de vinil",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vmm-1-01.png",
+      "/assets/products/vmm-1-02.png",
+      "/assets/products/vmm-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vmm-1-01.png",
+      "https://sappaheadwear.com/assets/products/vmm-1-02.png",
+      "https://sappaheadwear.com/assets/products/vmm-1-03.png"
+    ]
+  },
+  {
+    "id": "VVC-1",
+    "sku": "VVC-1",
+    "handle": "vuelta-y-vuelta-catrin-blanco-toquilla-popotillo-azul-dorado",
+    "name": "Vuelta y vuelta catrin blanco toquilla popotillo azul/dorado",
+    "category": "VUELTA Y VUELTA",
+    "material": "Cinta de celulosa y toquilla poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vvc-1-01.png",
+      "/assets/products/vvc-1-02.png",
+      "/assets/products/vvc-1-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vvc-1-01.png",
+      "https://sappaheadwear.com/assets/products/vvc-1-02.png",
+      "https://sappaheadwear.com/assets/products/vvc-1-03.png"
+    ]
+  },
+  {
+    "id": "VVC-2",
+    "sku": "VVC-2",
+    "handle": "vuelta-y-vuelta-catrin-blanco-toquilla-popotillo-gris-azul",
+    "name": "Vuelta y vuelta catrin blanco toquilla popotillo gris/azul",
+    "category": "VUELTA Y VUELTA",
+    "material": "Cinta de celulosa y toquilla poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vvc-2-01.png",
+      "/assets/products/vvc-2-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vvc-2-01.png",
+      "https://sappaheadwear.com/assets/products/vvc-2-02.png"
+    ]
+  },
+  {
+    "id": "VVC-3",
+    "sku": "VVC-3",
+    "handle": "fotografa-negro",
+    "name": "Fotógrafa negro",
+    "category": "VUELTA Y VUELTA",
+    "material": "Cinta de celulosa y toquilla poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "VVC-4",
+    "sku": "VVC-4",
+    "handle": "fotografa-azul",
+    "name": "Fotógrafa azul",
+    "category": "VUELTA Y VUELTA",
+    "material": "Cinta de celulosa y toquilla poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [],
+    "imageUrls": []
+  },
+  {
+    "id": "VVC-6",
+    "sku": "VVC-6",
+    "handle": "vuelta-y-vuelta-blanco-toquilla-popotillo-negra",
+    "name": "Vuelta y vuelta blanco toquilla popotillo negra",
+    "category": "VUELTA Y VUELTA",
+    "material": "Cinta de celulosa y toquilla poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vvc-6-01.png",
+      "/assets/products/vvc-6-02.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vvc-6-01.png",
+      "https://sappaheadwear.com/assets/products/vvc-6-02.png"
+    ]
+  },
+  {
+    "id": "VVC-7",
+    "sku": "VVC-7",
+    "handle": "vuelta-y-vuelta-beige-toquilla-popotillo-multicolor",
+    "name": "Vuelta y vuelta beige toquilla popotillo multicolor",
+    "category": "VUELTA Y VUELTA",
+    "material": "Cinta de celulosa y toquilla poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vvc-7-01.png",
+      "/assets/products/vvc-7-02.png",
+      "/assets/products/vvc-7-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vvc-7-01.png",
+      "https://sappaheadwear.com/assets/products/vvc-7-02.png",
+      "https://sappaheadwear.com/assets/products/vvc-7-03.png"
+    ]
+  },
+  {
+    "id": "VVC-8",
+    "sku": "VVC-8",
+    "handle": "vuelta-y-vuelta-blanco-lineas-de-colores",
+    "name": "Vuelta y vuelta blanco lineas de colores",
+    "category": "VUELTA Y VUELTA",
+    "material": "Cinta de celulosa y toquilla poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vvc-8-01.png",
+      "/assets/products/vvc-8-02.png",
+      "/assets/products/vvc-8-03.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vvc-8-01.png",
+      "https://sappaheadwear.com/assets/products/vvc-8-02.png",
+      "https://sappaheadwear.com/assets/products/vvc-8-03.png"
+    ]
+  },
+  {
+    "id": "VVP-1",
+    "sku": "VVP-1",
+    "handle": "vuelta-y-vuelta-blanco-plano-orilla-volteada",
+    "name": "Vuelta y vuelta blanco plano orilla volteada",
+    "category": "VUELTA Y VUELTA",
+    "material": "Cinta de celulosa y toquilla poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vvp-1-01.png",
+      "/assets/products/vvp-1-02.png",
+      "/assets/products/vvp-1-03.png",
+      "/assets/products/vvp-1-04.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vvp-1-01.png",
+      "https://sappaheadwear.com/assets/products/vvp-1-02.png",
+      "https://sappaheadwear.com/assets/products/vvp-1-03.png",
+      "https://sappaheadwear.com/assets/products/vvp-1-04.png"
+    ]
+  },
+  {
+    "id": "VVP-2",
+    "sku": "VVP-2",
+    "handle": "vuelta-y-vuelta-negro-plano-orilla-volteada",
+    "name": "Vuelta y vuelta negro plano orilla volteada",
+    "category": "VUELTA Y VUELTA",
+    "material": "Cinta de celulosa y toquilla poliéster",
+    "active": true,
+    "status": "draft",
+    "images": [
+      "/assets/products/vvp-2-01.png"
+    ],
+    "imageUrls": [
+      "https://sappaheadwear.com/assets/products/vvp-2-01.png"
+    ]
+  }
+]

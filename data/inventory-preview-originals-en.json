@@ -1,0 +1,1910 @@
+[
+    {
+        "id":  "TPC-1",
+        "sku":  "TPC-1",
+        "handle":  "tipo-panama-catrin-toquilla-mondragon-negra",
+        "name":  "Tipo panamá catrin toquilla mondragon negra",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-1-01.jpg",
+                       "/assets/preview-originals/tpc-1-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-1-01.jpg",
+                          "/assets/preview-originals/tpc-1-02.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-2",
+        "sku":  "TPC-2",
+        "handle":  "tipo-panama-catrin-toquilla-popotillo-azul",
+        "name":  "Tipo panamá catrin toquilla popotillo azul",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-2-01.jpg",
+                       "/assets/preview-originals/tpc-2-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-2-01.jpg",
+                          "/assets/preview-originals/tpc-2-02.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-3",
+        "sku":  "TPC-3",
+        "handle":  "tipo-panama-catrin-toquilla-popotillo-azul-rojo",
+        "name":  "Tipo panamá catrin toquilla popotillo azul/rojo",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+
+                   ],
+        "imageUrls":  [
+
+                      ]
+    },
+    {
+        "id":  "TPC-4",
+        "sku":  "TPC-4",
+        "handle":  "tipo-panama-catrin-toquilla-popotillo-cielo",
+        "name":  "Tipo panamá catrin toquilla popotillo cielo",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-4-01.jpg",
+                       "/assets/preview-originals/tpc-4-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-4-01.jpg",
+                          "/assets/preview-originals/tpc-4-02.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-5",
+        "sku":  "TPC-5",
+        "handle":  "tipo-panama-catrin-beige-toq-mon-negra",
+        "name":  "Tipo panamá catrin beige toq. mon negra",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-5-01.jpg",
+                       "/assets/preview-originals/tpc-5-02.jpg",
+                       "/assets/preview-originals/tpc-5-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-5-01.jpg",
+                          "/assets/preview-originals/tpc-5-02.jpg",
+                          "/assets/preview-originals/tpc-5-03.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-6",
+        "sku":  "TPC-6",
+        "handle":  "tipo-panama-catrin-oxford-toq-mon-negra",
+        "name":  "Tipo panamá catrin oxford toq. mon. negra",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-6-01.jpg",
+                       "/assets/preview-originals/tpc-6-02.jpg",
+                       "/assets/preview-originals/tpc-6-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-6-01.jpg",
+                          "/assets/preview-originals/tpc-6-02.jpg",
+                          "/assets/preview-originals/tpc-6-03.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-7",
+        "sku":  "TPC-7",
+        "handle":  "tipo-panama-catrin-toquilla-popotillo-azul-dorado",
+        "name":  "Tipo panamá catrin toquilla popotillo azul/dorado",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-7-01.jpg",
+                       "/assets/preview-originals/tpc-7-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-7-01.jpg",
+                          "/assets/preview-originals/tpc-7-02.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-8",
+        "sku":  "TPC-8",
+        "handle":  "tipo-panama-catrin-toquilla-popotillo-azul-negro",
+        "name":  "Tipo panamá catrin toquilla popotillo azul/negro",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-8-01.jpg",
+                       "/assets/preview-originals/tpc-8-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-8-01.jpg",
+                          "/assets/preview-originals/tpc-8-02.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-9",
+        "sku":  "TPC-9",
+        "handle":  "tipo-panama-catrin-toquilla-mon-cafe-combinada",
+        "name":  "Tipo panamá catrin toquilla mon café combinada",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-9-01.jpg",
+                       "/assets/preview-originals/tpc-9-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-9-01.jpg",
+                          "/assets/preview-originals/tpc-9-02.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-10",
+        "sku":  "TPC-10",
+        "handle":  "tipo-panama-catrin-toquilla-mon-ala-rosa",
+        "name":  "Tipo panamá catrin toquilla mon ala rosa",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-10-01.jpg",
+                       "/assets/preview-originals/tpc-10-02.jpg",
+                       "/assets/preview-originals/tpc-10-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-10-01.jpg",
+                          "/assets/preview-originals/tpc-10-02.jpg",
+                          "/assets/preview-originals/tpc-10-03.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-11",
+        "sku":  "TPC-11",
+        "handle":  "tipo-panama-catrin-toquilla-gris-azul",
+        "name":  "Tipo panama catrin toquilla gris/azul",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-11-01.jpg",
+                       "/assets/preview-originals/tpc-11-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-11-01.jpg",
+                          "/assets/preview-originals/tpc-11-02.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-12",
+        "sku":  "TPC-12",
+        "handle":  "tipo-panama-catrin-toquilla-multicolor",
+        "name":  "Tipo panama catrin toquilla multicolor",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-12-01.jpg",
+                       "/assets/preview-originals/tpc-12-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-12-01.jpg",
+                          "/assets/preview-originals/tpc-12-02.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-13",
+        "sku":  "TPC-13",
+        "handle":  "tipo-panama-catrin-toq-azul-bandas-blancas",
+        "name":  "Tipo panamá catrin toq. azul bandas blancas",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-13-01.jpg",
+                       "/assets/preview-originals/tpc-13-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-13-01.jpg",
+                          "/assets/preview-originals/tpc-13-02.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-14",
+        "sku":  "TPC-14",
+        "handle":  "tipo-panama-catrin-color-natural-toq-beige-con-cafe",
+        "name":  "Tipo panamá catrin color natural toq. Beige con café",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-14-01.jpg",
+                       "/assets/preview-originals/tpc-14-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-14-01.jpg",
+                          "/assets/preview-originals/tpc-14-02.jpg"
+                      ]
+    },
+    {
+        "id":  "TPC-15",
+        "sku":  "TPC-15",
+        "handle":  "tipo-panama-catrin-color-beige-toq-beige-con-cafe",
+        "name":  "Tipo panamá catrin color beige  toq. Beige con café",
+        "category":  "PANAMA STYLE SHORT BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpc-15-01.jpg",
+                       "/assets/preview-originals/tpc-15-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpc-15-01.jpg",
+                          "/assets/preview-originals/tpc-15-02.jpg"
+                      ]
+    },
+    {
+        "id":  "TPI-1",
+        "sku":  "TPI-1",
+        "handle":  "tipo-panama-indiana-toquilla-mon-negra",
+        "name":  "Tipo panamá Indiana toquilla mon negra",
+        "category":  "PANAMA STYLE LONG BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tpi-1-01.jpg",
+                       "/assets/preview-originals/tpi-1-02.jpg",
+                       "/assets/preview-originals/tpi-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tpi-1-01.jpg",
+                          "/assets/preview-originals/tpi-1-02.jpg",
+                          "/assets/preview-originals/tpi-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "TPM-1",
+        "sku":  "TPM-1",
+        "handle":  "tipo-panama-ala-amplia-color-natural-toq-mon-negra",
+        "name":  "Tipo panamá ala amplia color natural toq. Mon negra",
+        "category":  "PANAMA STYLE WIDE BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+
+                   ],
+        "imageUrls":  [
+
+                      ]
+    },
+    {
+        "id":  "TPM-2",
+        "sku":  "TPM-2",
+        "handle":  "tipo-panama-ala-amplia-color-beige-toq-mon-negra",
+        "name":  "Tipo panamá ala amplia color beige toq. Mon negra",
+        "category":  "PANAMA STYLE WIDE BRIM FEDORA HAT",
+        "material":  "Fine tissue cellulose fiber, polyester hat band.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+
+                   ],
+        "imageUrls":  [
+
+                      ]
+    },
+    {
+        "id":  "LC-1",
+        "sku":  "LC-1",
+        "handle":  "lino-catrin-negro",
+        "name":  "Lino catrin negro",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lc-1-01.jpg",
+                       "/assets/preview-originals/lc-1-02.jpg",
+                       "/assets/preview-originals/lc-1-03.jpg",
+                       "/assets/preview-originals/lc-1-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lc-1-01.jpg",
+                          "/assets/preview-originals/lc-1-02.jpg",
+                          "/assets/preview-originals/lc-1-03.jpg",
+                          "/assets/preview-originals/lc-1-04.jpg"
+                      ]
+    },
+    {
+        "id":  "LC-2",
+        "sku":  "LC-2",
+        "handle":  "lino-catrin-rojo",
+        "name":  "Lino catrin rojo",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lc-2-01.jpg",
+                       "/assets/preview-originals/lc-2-02.jpg",
+                       "/assets/preview-originals/lc-2-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lc-2-01.jpg",
+                          "/assets/preview-originals/lc-2-02.jpg",
+                          "/assets/preview-originals/lc-2-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LC-3",
+        "sku":  "LC-3",
+        "handle":  "lino-catrin-beige",
+        "name":  "Lino catrin beige",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lc-3-01.jpg",
+                       "/assets/preview-originals/lc-3-02.jpg",
+                       "/assets/preview-originals/lc-3-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lc-3-01.jpg",
+                          "/assets/preview-originals/lc-3-02.jpg",
+                          "/assets/preview-originals/lc-3-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LC-4",
+        "sku":  "LC-4",
+        "handle":  "lino-catrin-azul",
+        "name":  "Lino catrin azul",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lc-4-01.jpg",
+                       "/assets/preview-originals/lc-4-02.jpg",
+                       "/assets/preview-originals/lc-4-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lc-4-01.jpg",
+                          "/assets/preview-originals/lc-4-02.jpg",
+                          "/assets/preview-originals/lc-4-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LC-5",
+        "sku":  "LC-5",
+        "handle":  "lino-catrin-cafe",
+        "name":  "Lino catrin café",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lc-5-01.jpg",
+                       "/assets/preview-originals/lc-5-02.jpg",
+                       "/assets/preview-originals/lc-5-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lc-5-01.jpg",
+                          "/assets/preview-originals/lc-5-02.jpg",
+                          "/assets/preview-originals/lc-5-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LC-6",
+        "sku":  "LC-6",
+        "handle":  "lino-catrin-orange",
+        "name":  "Lino catrin orange",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lc-6-01.jpg",
+                       "/assets/preview-originals/lc-6-02.jpg",
+                       "/assets/preview-originals/lc-6-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lc-6-01.jpg",
+                          "/assets/preview-originals/lc-6-02.jpg",
+                          "/assets/preview-originals/lc-6-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LC-7",
+        "sku":  "LC-7",
+        "handle":  "lc-7",
+        "name":  "LC-7",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+
+                   ],
+        "imageUrls":  [
+
+                      ]
+    },
+    {
+        "id":  "LC-8",
+        "sku":  "LC-8",
+        "handle":  "lino-catrin-gris",
+        "name":  "Lino catrin gris",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lc-8-01.jpg",
+                       "/assets/preview-originals/lc-8-02.jpg",
+                       "/assets/preview-originals/lc-8-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lc-8-01.jpg",
+                          "/assets/preview-originals/lc-8-02.jpg",
+                          "/assets/preview-originals/lc-8-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LC-9",
+        "sku":  "LC-9",
+        "handle":  "lino-catrin-aqua",
+        "name":  "Lino catrin aqua",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lc-9-01.jpg",
+                       "/assets/preview-originals/lc-9-02.jpg",
+                       "/assets/preview-originals/lc-9-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lc-9-01.jpg",
+                          "/assets/preview-originals/lc-9-02.jpg",
+                          "/assets/preview-originals/lc-9-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LC-10",
+        "sku":  "LC-10",
+        "handle":  "lino-catrin-verde",
+        "name":  "Lino catrin verde",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lc-10-01.jpg",
+                       "/assets/preview-originals/lc-10-02.jpg",
+                       "/assets/preview-originals/lc-10-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lc-10-01.jpg",
+                          "/assets/preview-originals/lc-10-02.jpg",
+                          "/assets/preview-originals/lc-10-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LC-11",
+        "sku":  "LC-11",
+        "handle":  "lino-catrin-fucsia",
+        "name":  "Lino catrin fucsia",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lc-11-01.jpg",
+                       "/assets/preview-originals/lc-11-02.jpg",
+                       "/assets/preview-originals/lc-11-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lc-11-01.jpg",
+                          "/assets/preview-originals/lc-11-02.jpg",
+                          "/assets/preview-originals/lc-11-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LC-12",
+        "sku":  "LC-12",
+        "handle":  "lino-catrin-amarillo",
+        "name":  "Lino catrin amarillo",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lc-12-01.jpg",
+                       "/assets/preview-originals/lc-12-02.jpg",
+                       "/assets/preview-originals/lc-12-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lc-12-01.jpg",
+                          "/assets/preview-originals/lc-12-02.jpg",
+                          "/assets/preview-originals/lc-12-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LC-13",
+        "sku":  "LC-13",
+        "handle":  "lino-catrin-combinado-beige-negro",
+        "name":  "Lino catrin combinado beige/negro",
+        "category":  "LINEN SHORT BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lc-13-01.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lc-13-01.jpg"
+                      ]
+    },
+    {
+        "id":  "LI-1",
+        "sku":  "LI-1",
+        "handle":  "lino-indiana-negro",
+        "name":  "Lino Indiana negro",
+        "category":  "LINEN  LONG BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/li-1-01.jpg",
+                       "/assets/preview-originals/li-1-02.jpg",
+                       "/assets/preview-originals/li-1-03.jpg",
+                       "/assets/preview-originals/li-1-04.jpg",
+                       "/assets/preview-originals/li-1-05.jpg",
+                       "/assets/preview-originals/li-1-06.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/li-1-01.jpg",
+                          "/assets/preview-originals/li-1-02.jpg",
+                          "/assets/preview-originals/li-1-03.jpg",
+                          "/assets/preview-originals/li-1-04.jpg",
+                          "/assets/preview-originals/li-1-05.jpg",
+                          "/assets/preview-originals/li-1-06.jpg"
+                      ]
+    },
+    {
+        "id":  "LI-2",
+        "sku":  "LI-2",
+        "handle":  "lino-indiana-rojo",
+        "name":  "Lino indiana rojo",
+        "category":  "LINEN  LONG BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/li-2-01.jpg",
+                       "/assets/preview-originals/li-2-02.jpg",
+                       "/assets/preview-originals/li-2-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/li-2-01.jpg",
+                          "/assets/preview-originals/li-2-02.jpg",
+                          "/assets/preview-originals/li-2-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LI-3",
+        "sku":  "LI-3",
+        "handle":  "lino-indiana-beige",
+        "name":  "Lino indiana beige",
+        "category":  "LINEN  LONG BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/li-3-01.jpg",
+                       "/assets/preview-originals/li-3-02.jpg",
+                       "/assets/preview-originals/li-3-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/li-3-01.jpg",
+                          "/assets/preview-originals/li-3-02.jpg",
+                          "/assets/preview-originals/li-3-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LI-4",
+        "sku":  "LI-4",
+        "handle":  "lino-indiana-azul",
+        "name":  "Lino indiana azul",
+        "category":  "LINEN  LONG BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/li-4-01.jpg",
+                       "/assets/preview-originals/li-4-02.jpg",
+                       "/assets/preview-originals/li-4-03.jpg",
+                       "/assets/preview-originals/li-4-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/li-4-01.jpg",
+                          "/assets/preview-originals/li-4-02.jpg",
+                          "/assets/preview-originals/li-4-03.jpg",
+                          "/assets/preview-originals/li-4-04.jpg"
+                      ]
+    },
+    {
+        "id":  "LI-5",
+        "sku":  "LI-5",
+        "handle":  "lino-indiana-cafe",
+        "name":  "Lino indiana café",
+        "category":  "LINEN  LONG BRIM FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/li-5-01.jpg",
+                       "/assets/preview-originals/li-5-02.jpg",
+                       "/assets/preview-originals/li-5-03.jpg",
+                       "/assets/preview-originals/li-5-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/li-5-01.jpg",
+                          "/assets/preview-originals/li-5-02.jpg",
+                          "/assets/preview-originals/li-5-03.jpg",
+                          "/assets/preview-originals/li-5-04.jpg"
+                      ]
+    },
+    {
+        "id":  "LCZ-1",
+        "sku":  "LCZ-1",
+        "handle":  "lino-cazuelita-negro",
+        "name":  "Lino cazuelita negro",
+        "category":  "LINEN  PORK PIE FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lcz-1-01.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lcz-1-01.jpg"
+                      ]
+    },
+    {
+        "id":  "LCZ-2",
+        "sku":  "LCZ-2",
+        "handle":  "lino-cazuelita-gris",
+        "name":  "Lino cazuelita gris",
+        "category":  "LINEN  PORK PIE FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lcz-2-01.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lcz-2-01.jpg"
+                      ]
+    },
+    {
+        "id":  "LCZ-3",
+        "sku":  "LCZ-3",
+        "handle":  "lino-cazuelita-aqua",
+        "name":  "Lino cazuelita aqua",
+        "category":  "LINEN  PORK PIE FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lcz-3-01.jpg",
+                       "/assets/preview-originals/lcz-3-02.jpg",
+                       "/assets/preview-originals/lcz-3-03.jpg",
+                       "/assets/preview-originals/lcz-3-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lcz-3-01.jpg",
+                          "/assets/preview-originals/lcz-3-02.jpg",
+                          "/assets/preview-originals/lcz-3-03.jpg",
+                          "/assets/preview-originals/lcz-3-04.jpg"
+                      ]
+    },
+    {
+        "id":  "LCZ-4",
+        "sku":  "LCZ-4",
+        "handle":  "lino-cazuelita-canela",
+        "name":  "Lino cazuelita canela",
+        "category":  "LINEN  PORK PIE FEDORA HAT",
+        "material":  "Linen, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lcz-4-01.jpg",
+                       "/assets/preview-originals/lcz-4-02.jpg",
+                       "/assets/preview-originals/lcz-4-03.jpg",
+                       "/assets/preview-originals/lcz-4-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lcz-4-01.jpg",
+                          "/assets/preview-originals/lcz-4-02.jpg",
+                          "/assets/preview-originals/lcz-4-03.jpg",
+                          "/assets/preview-originals/lcz-4-04.jpg"
+                      ]
+    },
+    {
+        "id":  "LAC-1",
+        "sku":  "LAC-1",
+        "handle":  "lino-algodon-catrin-azul",
+        "name":  "Lino algodon catrin azul",
+        "category":  "LINEN-COTTON   SHORT BRIM FEDORA HAT",
+        "material":  "Linen blend cotton, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lac-1-01.jpg",
+                       "/assets/preview-originals/lac-1-02.jpg",
+                       "/assets/preview-originals/lac-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lac-1-01.jpg",
+                          "/assets/preview-originals/lac-1-02.jpg",
+                          "/assets/preview-originals/lac-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LAC-2",
+        "sku":  "LAC-2",
+        "handle":  "lino-algodon-catrin-amarillo",
+        "name":  "Lino algodon catrin amarillo",
+        "category":  "LINEN-COTTON   SHORT BRIM FEDORA HAT",
+        "material":  "Linen blend cotton, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lac-2-01.jpg",
+                       "/assets/preview-originals/lac-2-02.jpg",
+                       "/assets/preview-originals/lac-2-03.jpg",
+                       "/assets/preview-originals/lac-2-lai-1-comparativa.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lac-2-01.jpg",
+                          "/assets/preview-originals/lac-2-02.jpg",
+                          "/assets/preview-originals/lac-2-03.jpg",
+                          "/assets/preview-originals/lac-2-lai-1-comparativa.jpg"
+                      ]
+    },
+    {
+        "id":  "LAC-3",
+        "sku":  "LAC-3",
+        "handle":  "lino-algodon-catrin-canela",
+        "name":  "Lino algodon catrin  canela",
+        "category":  "LINEN-COTTON   SHORT BRIM FEDORA HAT",
+        "material":  "Linen blend cotton, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lac-3-01.jpg",
+                       "/assets/preview-originals/lac-3-02.jpg",
+                       "/assets/preview-originals/lac-3-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lac-3-01.jpg",
+                          "/assets/preview-originals/lac-3-02.jpg",
+                          "/assets/preview-originals/lac-3-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LAC-4",
+        "sku":  "LAC-4",
+        "handle":  "lino-algodon-catrin-verde",
+        "name":  "Lino algodón catrin verde",
+        "category":  "LINEN-COTTON   SHORT BRIM FEDORA HAT",
+        "material":  "Linen blend cotton, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lac-4-01.jpg",
+                       "/assets/preview-originals/lac-4-02.jpg",
+                       "/assets/preview-originals/lac-4-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lac-4-01.jpg",
+                          "/assets/preview-originals/lac-4-02.jpg",
+                          "/assets/preview-originals/lac-4-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LAI-1",
+        "sku":  "LAI-1",
+        "handle":  "lino-algodon-indiana-amarillo",
+        "name":  "Lino algodon indiana  amarillo",
+        "category":  "LINEN-COTTON  LONG BRIM FEDORA HAT",
+        "material":  "Linen blend cotton, cotton interlining, satin interior lining  and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lai-1-01.jpg",
+                       "/assets/preview-originals/lai-1-02.jpg",
+                       "/assets/preview-originals/lac-2-lai-1-comparativa.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lai-1-01.jpg",
+                          "/assets/preview-originals/lai-1-02.jpg",
+                          "/assets/preview-originals/lac-2-lai-1-comparativa.jpg"
+                      ]
+    },
+    {
+        "id":  "LP-1",
+        "sku":  "LP-1",
+        "handle":  "lino-plano-negro",
+        "name":  "Lino plano negro",
+        "category":  "LINEN  LONG AND FLAT BRIM FEDORA HAT",
+        "material":  "Linen , cotton interlining, satin interior lining  and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lp-1-01.jpg",
+                       "/assets/preview-originals/lp-1-02.jpg",
+                       "/assets/preview-originals/lp-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lp-1-01.jpg",
+                          "/assets/preview-originals/lp-1-02.jpg",
+                          "/assets/preview-originals/lp-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LP-2",
+        "sku":  "LP-2",
+        "handle":  "lino-plano-beige",
+        "name":  "Lino plano beige",
+        "category":  "LINEN  LONG AND FLAT BRIM FEDORA HAT",
+        "material":  "Linen , cotton interlining, satin interior lining  and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lp-2-01.jpg",
+                       "/assets/preview-originals/lp-2-02.jpg",
+                       "/assets/preview-originals/lp-2-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lp-2-01.jpg",
+                          "/assets/preview-originals/lp-2-02.jpg",
+                          "/assets/preview-originals/lp-2-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LP-3",
+        "sku":  "LP-3",
+        "handle":  "lino-plano-negro-falda-interior-rojo",
+        "name":  "Lino plano negro falda interior rojo",
+        "category":  "LINEN  LONG AND FLAT BRIM FEDORA HAT",
+        "material":  "Linen , cotton interlining, satin interior lining  and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lp-3-01.jpg",
+                       "/assets/preview-originals/lp-3-02.jpg",
+                       "/assets/preview-originals/lp-3-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lp-3-01.jpg",
+                          "/assets/preview-originals/lp-3-02.jpg",
+                          "/assets/preview-originals/lp-3-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LMP-1",
+        "sku":  "LMP-1",
+        "handle":  "lino-mixto-plano-negro",
+        "name":  "Lino mixto plano negro",
+        "category":  "MIXED LINEN  LONG AND FLAT BRIM FEDORA HAT",
+        "material":  "Cellulose crown, linen  brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lmp-1-01.jpg",
+                       "/assets/preview-originals/lmp-1-02.jpg",
+                       "/assets/preview-originals/lmp-1-03.jpg",
+                       "/assets/preview-originals/lmp-1-04.jpg",
+                       "/assets/preview-originals/lmp-1-05.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lmp-1-01.jpg",
+                          "/assets/preview-originals/lmp-1-02.jpg",
+                          "/assets/preview-originals/lmp-1-03.jpg",
+                          "/assets/preview-originals/lmp-1-04.jpg",
+                          "/assets/preview-originals/lmp-1-05.jpg"
+                      ]
+    },
+    {
+        "id":  "LMP-2",
+        "sku":  "LMP-2",
+        "handle":  "lino-mixto-plano-rojo",
+        "name":  "Lino mixto plano rojo",
+        "category":  "MIXED LINEN  LONG AND FLAT BRIM FEDORA HAT",
+        "material":  "Cellulose crown, linen  brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lmp-2-01.jpg",
+                       "/assets/preview-originals/lmp-2-02.jpg",
+                       "/assets/preview-originals/lmp-2-03.jpg",
+                       "/assets/preview-originals/lmp-2-04.jpg",
+                       "/assets/preview-originals/lmp-2-05.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lmp-2-01.jpg",
+                          "/assets/preview-originals/lmp-2-02.jpg",
+                          "/assets/preview-originals/lmp-2-03.jpg",
+                          "/assets/preview-originals/lmp-2-04.jpg",
+                          "/assets/preview-originals/lmp-2-05.jpg"
+                      ]
+    },
+    {
+        "id":  "LMP-3",
+        "sku":  "LMP-3",
+        "handle":  "lino-mixto-plano-amarillo",
+        "name":  "Lino mixto plano amarillo",
+        "category":  "MIXED LINEN  LONG AND FLAT BRIM FEDORA HAT",
+        "material":  "Cellulose crown, linen  brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lmp-3-01.jpg",
+                       "/assets/preview-originals/lmp-3-02.jpg",
+                       "/assets/preview-originals/lmp-3-03.jpg",
+                       "/assets/preview-originals/lmp-3-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lmp-3-01.jpg",
+                          "/assets/preview-originals/lmp-3-02.jpg",
+                          "/assets/preview-originals/lmp-3-03.jpg",
+                          "/assets/preview-originals/lmp-3-04.jpg"
+                      ]
+    },
+    {
+        "id":  "LMP-4",
+        "sku":  "LMP-4",
+        "handle":  "lino-mixto-plano-azul-rey",
+        "name":  "Lino mixto plano azul rey",
+        "category":  "MIXED LINEN  LONG AND FLAT BRIM FEDORA HAT",
+        "material":  "Cellulose crown, linen  brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lmp-4-01.jpg",
+                       "/assets/preview-originals/lmp-4-02.jpg",
+                       "/assets/preview-originals/lmp-4-03.jpg",
+                       "/assets/preview-originals/lmp-4-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lmp-4-01.jpg",
+                          "/assets/preview-originals/lmp-4-02.jpg",
+                          "/assets/preview-originals/lmp-4-03.jpg",
+                          "/assets/preview-originals/lmp-4-04.jpg"
+                      ]
+    },
+    {
+        "id":  "LMP-5",
+        "sku":  "LMP-5",
+        "handle":  "lino-mixto-plano-orange",
+        "name":  "Lino mixto plano orange",
+        "category":  "MIXED LINEN  LONG AND FLAT BRIM FEDORA HAT",
+        "material":  "Cellulose crown, linen  brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lmp-5-01.jpg",
+                       "/assets/preview-originals/lmp-5-02.jpg",
+                       "/assets/preview-originals/lmp-5-03.jpg",
+                       "/assets/preview-originals/lmp-5-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lmp-5-01.jpg",
+                          "/assets/preview-originals/lmp-5-02.jpg",
+                          "/assets/preview-originals/lmp-5-03.jpg",
+                          "/assets/preview-originals/lmp-5-04.jpg"
+                      ]
+    },
+    {
+        "id":  "LMP-6",
+        "sku":  "LMP-6",
+        "handle":  "lino-mixto-plano-oceano",
+        "name":  "Lino mixto plano océano",
+        "category":  "MIXED LINEN  LONG AND FLAT BRIM FEDORA HAT",
+        "material":  "Cellulose crown, linen  brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lmp-6-01.jpg",
+                       "/assets/preview-originals/lmp-6-02.jpg",
+                       "/assets/preview-originals/lmp-6-03.jpg",
+                       "/assets/preview-originals/lmp-6-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lmp-6-01.jpg",
+                          "/assets/preview-originals/lmp-6-02.jpg",
+                          "/assets/preview-originals/lmp-6-03.jpg",
+                          "/assets/preview-originals/lmp-6-04.jpg"
+                      ]
+    },
+    {
+        "id":  "LMI-1",
+        "sku":  "LMI-1",
+        "handle":  "lino-mixto-indiana-kaki-toquilla-flecha",
+        "name":  "Lino mixto indiana kaki toquilla flecha",
+        "category":  "MIXED LINEN  LONG AND FLAT BRIM FEDORA HAT",
+        "material":  "Cellulose crown, linen  brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lmi-1-01.jpg",
+                       "/assets/preview-originals/lmi-1-02.jpg",
+                       "/assets/preview-originals/lmi-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lmi-1-01.jpg",
+                          "/assets/preview-originals/lmi-1-02.jpg",
+                          "/assets/preview-originals/lmi-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "LMI-2",
+        "sku":  "LMI-2",
+        "handle":  "lino-mixto-indiana-orange-toquilla-flecha",
+        "name":  "Lino mixto indiana orange toquilla flecha",
+        "category":  "MIXED LINEN  LONG AND FLAT BRIM FEDORA HAT",
+        "material":  "Cellulose crown, linen  brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/lmi-2-01.jpg",
+                       "/assets/preview-originals/lmi-2-02.jpg",
+                       "/assets/preview-originals/lmi-2-03.jpg",
+                       "/assets/preview-originals/lmi-2-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/lmi-2-01.jpg",
+                          "/assets/preview-originals/lmi-2-02.jpg",
+                          "/assets/preview-originals/lmi-2-03.jpg",
+                          "/assets/preview-originals/lmi-2-04.jpg"
+                      ]
+    },
+    {
+        "id":  "H-1",
+        "sku":  "H-1",
+        "handle":  "hibrido-negro",
+        "name":  "Híbrido negro",
+        "category":  "HIBRIDS FEDORA HATS",
+        "material":  "Cotton crown, cellulose brim and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/h-1-01.jpg",
+                       "/assets/preview-originals/h-1-02.jpg",
+                       "/assets/preview-originals/h-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/h-1-01.jpg",
+                          "/assets/preview-originals/h-1-02.jpg",
+                          "/assets/preview-originals/h-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "H-2",
+        "sku":  "H-2",
+        "handle":  "hibrido-azul",
+        "name":  "Híbrido azul",
+        "category":  "HIBRIDS FEDORA HATS",
+        "material":  "Cotton crown, cellulose brim and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/h-2-01.jpg",
+                       "/assets/preview-originals/h-2-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/h-2-01.jpg",
+                          "/assets/preview-originals/h-2-02.jpg"
+                      ]
+    },
+    {
+        "id":  "H-3",
+        "sku":  "H-3",
+        "handle":  "hibrido-beige",
+        "name":  "Híbrido beige",
+        "category":  "HIBRIDS FEDORA HATS",
+        "material":  "Cotton crown, cellulose brim and polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/h-3-01.jpg",
+                       "/assets/preview-originals/h-3-02.jpg",
+                       "/assets/preview-originals/h-3-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/h-3-01.jpg",
+                          "/assets/preview-originals/h-3-02.jpg",
+                          "/assets/preview-originals/h-3-03.jpg"
+                      ]
+    },
+    {
+        "id":  "MMC-1",
+        "sku":  "MMC-1",
+        "handle":  "manta-mixto-catrin-crema",
+        "name":  "Manta mixto catrin crema",
+        "category":  "MIXED COTTON  SHORT BRIM FEDORA HAT",
+        "material":  "Cellulose thread crown, cotton brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/mmc-1-01.jpg",
+                       "/assets/preview-originals/mmc-1-02.jpg",
+                       "/assets/preview-originals/mmc-1-03.jpg",
+                       "/assets/preview-originals/mmc-1-mmc-2-comparativa.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/mmc-1-01.jpg",
+                          "/assets/preview-originals/mmc-1-02.jpg",
+                          "/assets/preview-originals/mmc-1-03.jpg",
+                          "/assets/preview-originals/mmc-1-mmc-2-comparativa.jpg"
+                      ]
+    },
+    {
+        "id":  "MMC-2",
+        "sku":  "MMC-2",
+        "handle":  "manta-mixto-catrin-hueso",
+        "name":  "Manta mixto catrin hueso",
+        "category":  "MIXED COTTON  SHORT BRIM FEDORA HAT",
+        "material":  "Cellulose thread crown, cotton brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/mmc-2-01.jpg",
+                       "/assets/preview-originals/mmc-2-02.jpg",
+                       "/assets/preview-originals/mmc-2-03.jpg",
+                       "/assets/preview-originals/mmc-1-mmc-2-comparativa.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/mmc-2-01.jpg",
+                          "/assets/preview-originals/mmc-2-02.jpg",
+                          "/assets/preview-originals/mmc-2-03.jpg",
+                          "/assets/preview-originals/mmc-1-mmc-2-comparativa.jpg"
+                      ]
+    },
+    {
+        "id":  "MMI-1",
+        "sku":  "MMI-1",
+        "handle":  "manta-mixto-indiana-crema",
+        "name":  "Manta mixto indiana crema",
+        "category":  "MIXED COTTON  LONG BRIM FEDORA HAT",
+        "material":  "Cellulose thread crown, cotton brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/mmi-1-01.jpg",
+                       "/assets/preview-originals/mmi-1-02.jpg",
+                       "/assets/preview-originals/mmi-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/mmi-1-01.jpg",
+                          "/assets/preview-originals/mmi-1-02.jpg",
+                          "/assets/preview-originals/mmi-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "MMI-2",
+        "sku":  "MMI-2",
+        "handle":  "manta-mixto-indiana-hueso",
+        "name":  "Manta mixto indiana hueso",
+        "category":  "MIXED COTTON  LONG BRIM FEDORA HAT",
+        "material":  "Cellulose thread crown, cotton brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/mmi-2-01.jpg",
+                       "/assets/preview-originals/mmi-2-02.jpg",
+                       "/assets/preview-originals/mmi-2-03.jpg",
+                       "/assets/preview-originals/mmi-2-04.jpg",
+                       "/assets/preview-originals/mmi-2-05.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/mmi-2-01.jpg",
+                          "/assets/preview-originals/mmi-2-02.jpg",
+                          "/assets/preview-originals/mmi-2-03.jpg",
+                          "/assets/preview-originals/mmi-2-04.jpg",
+                          "/assets/preview-originals/mmi-2-05.jpg"
+                      ]
+    },
+    {
+        "id":  "MMI-3",
+        "sku":  "MMI-3",
+        "handle":  "manta-mixto-indiana-gris",
+        "name":  "Manta mixto indiana gris",
+        "category":  "MIXED COTTON  LONG BRIM FEDORA HAT",
+        "material":  "Cellulose thread crown, cotton brim and vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/mmi-3-01.jpg",
+                       "/assets/preview-originals/mmi-3-02.jpg",
+                       "/assets/preview-originals/mmi-3-03.jpg",
+                       "/assets/preview-originals/mmi-3-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/mmi-3-01.jpg",
+                          "/assets/preview-originals/mmi-3-02.jpg",
+                          "/assets/preview-originals/mmi-3-03.jpg",
+                          "/assets/preview-originals/mmi-3-04.jpg"
+                      ]
+    },
+    {
+        "id":  "TCC-1",
+        "sku":  "TCC-1",
+        "handle":  "tela-calada-catrin-beige",
+        "name":  "Tela calada catrin beige",
+        "category":  "COTTON VENTED SHORT BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim, vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tcc-1-01.jpg",
+                       "/assets/preview-originals/tcc-1-02.jpg",
+                       "/assets/preview-originals/tcc-1-03.jpg",
+                       "/assets/preview-originals/tcc-1-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tcc-1-01.jpg",
+                          "/assets/preview-originals/tcc-1-02.jpg",
+                          "/assets/preview-originals/tcc-1-03.jpg",
+                          "/assets/preview-originals/tcc-1-04.jpg"
+                      ]
+    },
+    {
+        "id":  "TCC-2",
+        "sku":  "TCC-2",
+        "handle":  "tela-calada-catrin-moka",
+        "name":  "Tela calada catrin moka",
+        "category":  "COTTON VENTED SHORT BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim, vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tcc-2-01.jpg",
+                       "/assets/preview-originals/tcc-2-02.jpg",
+                       "/assets/preview-originals/tcc-2-03.jpg",
+                       "/assets/preview-originals/tcc-2-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tcc-2-01.jpg",
+                          "/assets/preview-originals/tcc-2-02.jpg",
+                          "/assets/preview-originals/tcc-2-03.jpg",
+                          "/assets/preview-originals/tcc-2-04.jpg"
+                      ]
+    },
+    {
+        "id":  "TCC-3",
+        "sku":  "TCC-3",
+        "handle":  "tela-calada-catrin-moka-ala-negra",
+        "name":  "Tela calada catrin moka ala negra",
+        "category":  "COTTON VENTED SHORT BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim, vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tcc-3-01.jpg",
+                       "/assets/preview-originals/tcc-3-02.jpg",
+                       "/assets/preview-originals/tcc-3-03.jpg",
+                       "/assets/preview-originals/tcc-3-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tcc-3-01.jpg",
+                          "/assets/preview-originals/tcc-3-02.jpg",
+                          "/assets/preview-originals/tcc-3-03.jpg",
+                          "/assets/preview-originals/tcc-3-04.jpg"
+                      ]
+    },
+    {
+        "id":  "TCI-1",
+        "sku":  "TCI-1",
+        "handle":  "tela-calada-indiana-beige",
+        "name":  "Tela calada indiana beige",
+        "category":  "COTTON VENTED LONG BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim. Vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tci-1-01.jpg",
+                       "/assets/preview-originals/tci-1-02.jpg",
+                       "/assets/preview-originals/tci-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tci-1-01.jpg",
+                          "/assets/preview-originals/tci-1-02.jpg",
+                          "/assets/preview-originals/tci-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "TCI-2",
+        "sku":  "TCI-2",
+        "handle":  "tela-calada-indiana-moka",
+        "name":  "Tela calada indiana moka",
+        "category":  "COTTON VENTED LONG BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim. Vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tci-2-01.jpg",
+                       "/assets/preview-originals/tci-2-02.jpg",
+                       "/assets/preview-originals/tci-2-03.jpg",
+                       "/assets/preview-originals/tci-2-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tci-2-01.jpg",
+                          "/assets/preview-originals/tci-2-02.jpg",
+                          "/assets/preview-originals/tci-2-03.jpg",
+                          "/assets/preview-originals/tci-2-04.jpg"
+                      ]
+    },
+    {
+        "id":  "TCI-3",
+        "sku":  "TCI-3",
+        "handle":  "tela-calada-indiana-moka-ala-negra",
+        "name":  "Tela calada indiana moka ala negra",
+        "category":  "COTTON VENTED LONG BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim. Vinyl hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tci-3-01.jpg",
+                       "/assets/preview-originals/tci-3-02.jpg",
+                       "/assets/preview-originals/tci-3-03.jpg",
+                       "/assets/preview-originals/tci-3-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tci-3-01.jpg",
+                          "/assets/preview-originals/tci-3-02.jpg",
+                          "/assets/preview-originals/tci-3-03.jpg",
+                          "/assets/preview-originals/tci-3-04.jpg"
+                      ]
+    },
+    {
+        "id":  "VVC-1",
+        "sku":  "VVC-1",
+        "handle":  "vuelta-y-vuelta-catrin-blanco-toquilla-popotillo-azul-dorado",
+        "name":  "Vuelta y vuelta catrin blanco toquilla popotillo azul/dorado",
+        "category":  "BRAIDED SHORT BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim, polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vvc-1-01.jpg",
+                       "/assets/preview-originals/vvc-1-02.jpg",
+                       "/assets/preview-originals/vvc-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vvc-1-01.jpg",
+                          "/assets/preview-originals/vvc-1-02.jpg",
+                          "/assets/preview-originals/vvc-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "VVC-2",
+        "sku":  "VVC-2",
+        "handle":  "vuelta-y-vuelta-catrin-blanco-toquilla-popotillo-gris-azul",
+        "name":  "Vuelta y vuelta catrin blanco toquilla popotillo gris/azul",
+        "category":  "BRAIDED SHORT BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim, polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vvc-2-01.jpg",
+                       "/assets/preview-originals/vvc-2-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vvc-2-01.jpg",
+                          "/assets/preview-originals/vvc-2-02.jpg"
+                      ]
+    },
+    {
+        "id":  "VVC-3",
+        "sku":  "VVC-3",
+        "handle":  "fotografa-negro",
+        "name":  "Fotógrafa negro",
+        "category":  "BRAIDED SHORT BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim, polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+
+                   ],
+        "imageUrls":  [
+
+                      ]
+    },
+    {
+        "id":  "VVC-4",
+        "sku":  "VVC-4",
+        "handle":  "fotografa-azul",
+        "name":  "Fotógrafa azul",
+        "category":  "BRAIDED SHORT BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim, polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+
+                   ],
+        "imageUrls":  [
+
+                      ]
+    },
+    {
+        "id":  "VVC-6",
+        "sku":  "VVC-6",
+        "handle":  "vuelta-y-vuelta-blanco-toquilla-popotillo-negra",
+        "name":  "Vuelta y vuelta blanco toquilla popotillo negra",
+        "category":  "BRAIDED SHORT BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim, polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vvc-6-01.jpg",
+                       "/assets/preview-originals/vvc-6-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vvc-6-01.jpg",
+                          "/assets/preview-originals/vvc-6-02.jpg"
+                      ]
+    },
+    {
+        "id":  "VVC-7",
+        "sku":  "VVC-7",
+        "handle":  "vuelta-y-vuelta-beige-toquilla-popotillo-multicolor",
+        "name":  "Vuelta y vuelta beige toquilla popotillo multicolor",
+        "category":  "BRAIDED SHORT BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim, polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vvc-7-01.jpg",
+                       "/assets/preview-originals/vvc-7-02.jpg",
+                       "/assets/preview-originals/vvc-7-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vvc-7-01.jpg",
+                          "/assets/preview-originals/vvc-7-02.jpg",
+                          "/assets/preview-originals/vvc-7-03.jpg"
+                      ]
+    },
+    {
+        "id":  "VVC-8",
+        "sku":  "VVC-8",
+        "handle":  "vuelta-y-vuelta-blanco-lineas-de-colores",
+        "name":  "Vuelta y vuelta blanco lineas de colores",
+        "category":  "BRAIDED SHORT BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim, polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vvc-8-01.jpg",
+                       "/assets/preview-originals/vvc-8-02.jpg",
+                       "/assets/preview-originals/vvc-8-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vvc-8-01.jpg",
+                          "/assets/preview-originals/vvc-8-02.jpg",
+                          "/assets/preview-originals/vvc-8-03.jpg"
+                      ]
+    },
+    {
+        "id":  "VVP-1",
+        "sku":  "VVP-1",
+        "handle":  "vuelta-y-vuelta-blanco-plano-orilla-volteada",
+        "name":  "Vuelta y vuelta blanco plano orilla volteada",
+        "category":  "BRAIDED LONG BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim, polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vvp-1-01.jpg",
+                       "/assets/preview-originals/vvp-1-02.jpg",
+                       "/assets/preview-originals/vvp-1-03.jpg",
+                       "/assets/preview-originals/vvp-1-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vvp-1-01.jpg",
+                          "/assets/preview-originals/vvp-1-02.jpg",
+                          "/assets/preview-originals/vvp-1-03.jpg",
+                          "/assets/preview-originals/vvp-1-04.jpg"
+                      ]
+    },
+    {
+        "id":  "VVP-2",
+        "sku":  "VVP-2",
+        "handle":  "vuelta-y-vuelta-negro-plano-orilla-volteada",
+        "name":  "Vuelta y vuelta negro plano orilla volteada",
+        "category":  "BRAIDED LONG BRIM FEDORA HAT",
+        "material":  "Cotton crown and brim, polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vvp-2-01.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vvp-2-01.jpg"
+                      ]
+    },
+    {
+        "id":  "TMC-1",
+        "sku":  "TMC-1",
+        "handle":  "catrin-tela-madera-toquilla-vinil",
+        "name":  "Catrin tela madera toquilla vinil",
+        "category":  "COTTON WOOD SHORT BRIM FEDORA HAT",
+        "material":  "Fabric cellulose and vinyl  hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/tmc-1-01.jpg",
+                       "/assets/preview-originals/tmc-1-02.jpg",
+                       "/assets/preview-originals/tmc-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/tmc-1-01.jpg",
+                          "/assets/preview-originals/tmc-1-02.jpg",
+                          "/assets/preview-originals/tmc-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "VL-1",
+        "sku":  "VL-1",
+        "handle":  "vaquero-lino-negro",
+        "name":  "Vaquero lino negro",
+        "category":  "COWBOY HATS",
+        "material":  "Linen, cellulose and agave fibers with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vl-1-01.jpg",
+                       "/assets/preview-originals/vl-1-02.jpg",
+                       "/assets/preview-originals/vl-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vl-1-01.jpg",
+                          "/assets/preview-originals/vl-1-02.jpg",
+                          "/assets/preview-originals/vl-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "VL-2",
+        "sku":  "VL-2",
+        "handle":  "vaquero-lino-beige",
+        "name":  "Vaquero lino beige",
+        "category":  "COWBOY HATS",
+        "material":  "Linen, cellulose and agave fibers with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vl-2-01.jpg",
+                       "/assets/preview-originals/vl-2-02.jpg",
+                       "/assets/preview-originals/vl-2-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vl-2-01.jpg",
+                          "/assets/preview-originals/vl-2-02.jpg",
+                          "/assets/preview-originals/vl-2-03.jpg"
+                      ]
+    },
+    {
+        "id":  "VM-1",
+        "sku":  "VM-1",
+        "handle":  "vaquero-tela-madera-10-5",
+        "name":  "Vaquero Tela madera 10.5",
+        "category":  "COWBOY HATS",
+        "material":  "Linen, cellulose and agave fibers with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vm-1-01.jpg",
+                       "/assets/preview-originals/vm-1-02.jpg",
+                       "/assets/preview-originals/vm-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vm-1-01.jpg",
+                          "/assets/preview-originals/vm-1-02.jpg",
+                          "/assets/preview-originals/vm-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "VM-2",
+        "sku":  "VM-2",
+        "handle":  "vaquero-tela-madera-8-5",
+        "name":  "Vaquero tela madera 8.5",
+        "category":  "COWBOY HATS",
+        "material":  "Linen, cellulose and agave fibers with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vm-2-01.jpg",
+                       "/assets/preview-originals/vm-2-02.jpg",
+                       "/assets/preview-originals/vm-2-03.jpg",
+                       "/assets/preview-originals/vm-2-04.jpg",
+                       "/assets/preview-originals/vm-2-05.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vm-2-01.jpg",
+                          "/assets/preview-originals/vm-2-02.jpg",
+                          "/assets/preview-originals/vm-2-03.jpg",
+                          "/assets/preview-originals/vm-2-04.jpg",
+                          "/assets/preview-originals/vm-2-05.jpg"
+                      ]
+    },
+    {
+        "id":  "VMM-1",
+        "sku":  "VMM-1",
+        "handle":  "vaquero-manta-mixto-hueso",
+        "name":  "Vaquero manta mixto hueso",
+        "category":  "COWBOY HATS",
+        "material":  "Linen, cellulose and agave fibers with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vmm-1-01.jpg",
+                       "/assets/preview-originals/vmm-1-02.jpg",
+                       "/assets/preview-originals/vmm-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vmm-1-01.jpg",
+                          "/assets/preview-originals/vmm-1-02.jpg",
+                          "/assets/preview-originals/vmm-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "VB-1",
+        "sku":  "VB-1",
+        "handle":  "vaquero-biopoli",
+        "name":  "Vaquero Biopoli",
+        "category":  "COWBOY HATS",
+        "material":  "Linen, cellulose and agave fibers with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/vb-1-01.jpg",
+                       "/assets/preview-originals/vb-1-02.jpg",
+                       "/assets/preview-originals/vb-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/vb-1-01.jpg",
+                          "/assets/preview-originals/vb-1-02.jpg",
+                          "/assets/preview-originals/vb-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "VE-1",
+        "sku":  "VE-1",
+        "handle":  "espadin-vaquero-natural",
+        "name":  "Espadín vaquero natural",
+        "category":  "COWBOY HATS",
+        "material":  "Linen, cellulose and agave fibers with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/ve-1-01.jpg",
+                       "/assets/preview-originals/ve-1-02.jpg",
+                       "/assets/preview-originals/ve-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/ve-1-01.jpg",
+                          "/assets/preview-originals/ve-1-02.jpg",
+                          "/assets/preview-originals/ve-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "VE-2",
+        "sku":  "VE-2",
+        "handle":  "espadin-vaquero-chocolate",
+        "name":  "Espadín vaquero chocolate",
+        "category":  "COWBOY HATS",
+        "material":  "Linen, cellulose and agave fibers with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/ve-2-01.jpg",
+                       "/assets/preview-originals/ve-2-02.jpg",
+                       "/assets/preview-originals/ve-2-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/ve-2-01.jpg",
+                          "/assets/preview-originals/ve-2-02.jpg",
+                          "/assets/preview-originals/ve-2-03.jpg"
+                      ]
+    },
+    {
+        "id":  "VE-3",
+        "sku":  "VE-3",
+        "handle":  "espadin-chihuahua-natural",
+        "name":  "Espadín chihuahua natural",
+        "category":  "COWBOY HATS",
+        "material":  "Linen, cellulose and agave fibers with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/ve-3-01.jpg",
+                       "/assets/preview-originals/ve-3-02.jpg",
+                       "/assets/preview-originals/ve-3-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/ve-3-01.jpg",
+                          "/assets/preview-originals/ve-3-02.jpg",
+                          "/assets/preview-originals/ve-3-03.jpg"
+                      ]
+    },
+    {
+        "id":  "VE-4",
+        "sku":  "VE-4",
+        "handle":  "espadin-chihuahua-chocolate",
+        "name":  "Espadín chihuahua chocolate",
+        "category":  "COWBOY HATS",
+        "material":  "Linen, cellulose and agave fibers with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/ve-4-01.jpg",
+                       "/assets/preview-originals/ve-4-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/ve-4-01.jpg",
+                          "/assets/preview-originals/ve-4-02.jpg"
+                      ]
+    },
+    {
+        "id":  "CCN-1",
+        "sku":  "CCN-1",
+        "handle":  "costureado-palma-catrin-natural",
+        "name":  "Costureado palma catrin natural",
+        "category":  "LINEA B",
+        "material":  "Strow with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/ccn-1-01.jpg",
+                       "/assets/preview-originals/ccn-1-02.jpg",
+                       "/assets/preview-originals/ccn-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/ccn-1-01.jpg",
+                          "/assets/preview-originals/ccn-1-02.jpg",
+                          "/assets/preview-originals/ccn-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "CCQ-1",
+        "sku":  "CCQ-1",
+        "handle":  "costureado-palma-catrin-quemado",
+        "name":  "Costureado palma catrin quemado",
+        "category":  "LINEA B",
+        "material":  "Strow with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/ccq-1-01.jpg",
+                       "/assets/preview-originals/ccq-1-02.jpg",
+                       "/assets/preview-originals/ccq-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/ccq-1-01.jpg",
+                          "/assets/preview-originals/ccq-1-02.jpg",
+                          "/assets/preview-originals/ccq-1-03.jpg"
+                      ]
+    },
+    {
+        "id":  "CPF-1",
+        "sku":  "CPF-1",
+        "handle":  "costureado-plano-fino",
+        "name":  "Costureado plano  fino",
+        "category":  "LINEA B",
+        "material":  "Strow with vynil hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/cpf-1-01.jpg",
+                       "/assets/preview-originals/cpf-1-02.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/cpf-1-01.jpg",
+                          "/assets/preview-originals/cpf-1-02.jpg"
+                      ]
+    },
+    {
+        "id":  "CPC-1",
+        "sku":  "CPC-1",
+        "handle":  "costureado-cordovez-con-toquilla-tejida",
+        "name":  "Costureado cordovéz con toquilla tejida",
+        "category":  "LINEA B",
+        "material":  "Strow with polyester hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+
+                   ],
+        "imageUrls":  [
+
+                      ]
+    },
+    {
+        "id":  "CI-1",
+        "sku":  "CI-1",
+        "handle":  "costureado-indiana-ala-corta-con-barbiquejo",
+        "name":  "Costureado indiana ala corta con barbiquejo",
+        "category":  "LINEA B",
+        "material":  "Strow with cotton hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/ci-1-01.jpg",
+                       "/assets/preview-originals/ci-1-02.jpg",
+                       "/assets/preview-originals/ci-1-03.jpg",
+                       "/assets/preview-originals/ci-1-04.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/ci-1-01.jpg",
+                          "/assets/preview-originals/ci-1-02.jpg",
+                          "/assets/preview-originals/ci-1-03.jpg",
+                          "/assets/preview-originals/ci-1-04.jpg"
+                      ]
+    },
+    {
+        "id":  "CF-1",
+        "sku":  "CF-1",
+        "handle":  "costureado-faldon-con-barbiquejo",
+        "name":  "Costureado faldón con barbiquejo",
+        "category":  "LINEA B",
+        "material":  "Strow with cotton hatband.",
+        "active":  true,
+        "status":  "draft",
+        "images":  [
+                       "/assets/preview-originals/cf-1-01.jpg",
+                       "/assets/preview-originals/cf-1-02.jpg",
+                       "/assets/preview-originals/cf-1-03.jpg"
+                   ],
+        "imageUrls":  [
+                          "/assets/preview-originals/cf-1-01.jpg",
+                          "/assets/preview-originals/cf-1-02.jpg",
+                          "/assets/preview-originals/cf-1-03.jpg"
+                      ]
+    }
+]

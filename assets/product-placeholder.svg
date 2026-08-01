@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Imagen pendiente</title>
+  <desc id="desc">Marcador discreto para un producto que aún no tiene fotografía.</desc>
+  <rect width="1080" height="1080" fill="#ece9e3"/>
+  <circle cx="540" cy="485" r="210" fill="none" stroke="#c7c0b5" stroke-width="4"/>
+  <path d="M315 520c52-22 115-35 188-39 19-83 88-143 172-143 83 0 153 60 172 143 72 4 135 17 188 39-36 82-191 142-360 142S351 602 315 520Z" fill="none" stroke="#9c9285" stroke-width="18" stroke-linejoin="round"/>
+  <text x="540" y="790" fill="#6f665c" font-family="Arial, sans-serif" font-size="34" letter-spacing="8" text-anchor="middle">IMAGEN PENDIENTE</text>
+</svg>

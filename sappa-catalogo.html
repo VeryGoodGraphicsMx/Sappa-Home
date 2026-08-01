@@ -38,6 +38,25 @@
     overflow-x: hidden;
   }
 
+  .preview-banner {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 10px 20px;
+    background: #f0c264;
+    color: #17120b;
+    font-family: var(--ff-cond);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  body.originals-preview .catalog-hero { padding-top: 204px; }
+  body.originals-preview .filter-bar { top: 112px; }
+
   /* ── NAV ── */
   nav {
     position: fixed;
@@ -158,7 +177,7 @@
     display: flex;
     gap: 16px;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .search-box {
     position: relative;
@@ -185,7 +204,17 @@
     color: rgba(245,240,232,0.3);
     pointer-events: none;
   }
-  .chips { display: flex; gap: 6px; flex-wrap: wrap; flex: 1; }
+  .chips {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    gap: 6px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .chips::-webkit-scrollbar { display: none; }
   .chip {
     font-family: var(--ff-cond);
     font-size: 12px; font-weight: 600;
@@ -211,8 +240,58 @@
   /* ── GRID ── */
   .catalog-section { padding: 60px 80px 100px; background: var(--black); }
   .catalog-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+  .model-group {
+    scroll-margin-top: 210px;
+  }
+  .model-group-header {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 28px;
+    align-items: end;
+    padding: 0 0 24px;
+    margin-bottom: 2px;
+    border-top: 1px solid rgba(184,137,74,0.5);
+  }
+  .model-group-copy { padding-top: 24px; }
+  .model-group-label {
+    margin-bottom: 8px;
+    color: var(--gold);
+    font-family: var(--ff-cond);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+  }
+  .model-group-title {
+    color: var(--white);
+    font-family: var(--ff-display);
+    font-size: clamp(30px, 3.2vw, 48px);
+    font-weight: 700;
+    line-height: 1.05;
+  }
+  .model-group-description {
+    max-width: 720px;
+    margin-top: 10px;
+    color: rgba(245,240,232,0.58);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .model-group-count {
+    padding-bottom: 5px;
+    color: rgba(245,240,232,0.38);
+    font-family: var(--ff-cond);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .model-group-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 2px;
   }
 
@@ -306,7 +385,7 @@
   .mobile-contact { display: none; }
 
   .card-body {
-    padding: 18px 20px 20px;
+    padding: 16px 18px 18px;
     border-top: 1px solid rgba(245,240,232,0.06);
   }
   .card-category {
@@ -318,10 +397,47 @@
   }
   .card-sku {
     font-family: var(--ff-display);
-    font-size: 22px; font-weight: 900;
+    font-size: 23px; font-weight: 900;
     color: var(--white);
     line-height: 1;
   }
+  .card-name {
+    margin: 9px 0 0;
+    min-height: 2.8em;
+    color: rgba(245,240,232,0.58);
+    font-family: var(--ff-body);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  .card-name a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-name a:hover,
+  .card-name a:focus-visible {
+    color: var(--white);
+  }
+  .card-material {
+    margin-top: 10px;
+    color: rgba(245,240,232,0.48);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .card-details {
+    display: inline-block;
+    margin-top: 14px;
+    color: var(--sand);
+    font-family: var(--ff-cond);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.17em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .card-details:hover { color: var(--white); }
+  .card-image.is-placeholder img,
+  .modal-gallery.is-placeholder img { padding: 18%; }
   .card-badge {
     display: inline-block;
     margin-top: 10px;
@@ -348,6 +464,131 @@
     margin-bottom: 10px;
   }
   .empty-state p { font-size: 14px; color: rgba(245,240,232,0.45); }
+  .empty-state.is-visible { display: block; }
+
+  /* PRODUCT DETAIL MODAL */
+  body.modal-open { overflow: hidden; }
+  .product-modal[hidden] { display: none; }
+  .product-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    display: grid;
+    place-items: center;
+    padding: 28px;
+    background: rgba(5,4,3,0.84);
+    backdrop-filter: blur(12px);
+  }
+  .product-modal-dialog {
+    position: relative;
+    width: min(1040px, 100%);
+    max-height: calc(100vh - 56px);
+    overflow: auto;
+    background: var(--charcoal);
+    border: 1px solid rgba(245,240,232,0.12);
+    box-shadow: 0 28px 80px rgba(0,0,0,0.5);
+  }
+  .product-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 5;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(245,240,232,0.18);
+    border-radius: 50%;
+    background: rgba(10,9,6,0.78);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .product-modal-content {
+    display: grid;
+    grid-template-columns: minmax(0,1.1fr) minmax(320px,0.9fr);
+  }
+  .modal-gallery {
+    position: relative;
+    min-height: 560px;
+    background: #ececec url('/media/product-card-background.png') center / cover no-repeat;
+  }
+  .modal-gallery img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+    object-fit: contain;
+  }
+  .modal-gallery-control {
+    position: absolute;
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    transform: translateY(-50%);
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    color: var(--black);
+    cursor: pointer;
+    font-size: 26px;
+  }
+  .modal-gallery-prev { left: 16px; }
+  .modal-gallery-next { right: 16px; }
+  .modal-gallery-count {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(10,9,6,0.68);
+    font-family: var(--ff-cond);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+  }
+  .modal-details { padding: 72px 48px 48px; }
+  .modal-details h2 {
+    margin: 10px 0 12px;
+    color: var(--white);
+    font-family: var(--ff-display);
+    font-size: clamp(32px,4vw,50px);
+    line-height: 1.02;
+  }
+  .modal-sku {
+    color: var(--sand);
+    font-family: var(--ff-cond);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .product-facts { margin: 34px 0; }
+  .product-facts div {
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+  }
+  .product-facts div:last-child { border-bottom: 1px solid var(--line); }
+  .product-facts dt {
+    margin-bottom: 5px;
+    color: var(--gold);
+    font-family: var(--ff-cond);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .product-facts dd { color: rgba(245,240,232,0.72); font-size: 14px; }
+  .pending-image-note { margin-bottom: 22px; color: rgba(245,240,232,0.55); font-size: 13px; }
+  .modal-consult {
+    display: block;
+    padding: 15px 20px;
+    background: var(--gold);
+    color: var(--black);
+    font-family: var(--ff-cond);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 
   /* ── SIZE CHART ── */
   .size-section {
@@ -479,40 +720,77 @@
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
   /* ── RESPONSIVE ── */
-  @media (max-width: 1200px) { .catalog-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 1200px) { .model-group-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   @media (max-width: 900px) {
-    nav { padding: 0 24px; }
+    nav { height: 60px; padding: 0 24px; }
     .nav-links, .nav-cta { display: none; }
-    .catalog-hero { padding: 120px 24px 60px; }
-    .filter-bar { padding: 20px 24px; top: 60px; }
+    .catalog-hero { padding: 112px 24px 56px; }
+    .preview-banner { top: 60px; padding: 8px 16px; font-size: 11px; line-height: 1.25; }
+    .filter-bar,
+    body.originals-preview .filter-bar { position: relative; top: auto; padding: 16px 24px 18px; }
+    .filter-inner { display: grid; grid-template-columns: 1fr auto; gap: 12px; }
+    .search-box { grid-column: 1 / -1; max-width: none; }
+    .chips {
+      min-width: 0;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+      scroll-snap-type: x proximity;
+    }
+    .chip { scroll-snap-align: start; }
+    .result-count { align-self: center; margin-left: 0; }
     .catalog-section { padding: 40px 24px 72px; }
-    .catalog-grid { grid-template-columns: repeat(2, 1fr); gap: 2px; }
+    .catalog-grid { gap: 56px; }
+    .model-group-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .size-section { padding: 64px 24px; }
     .size-inner { grid-template-columns: 1fr; gap: 40px; }
     .cta-band { grid-template-columns: 1fr; padding: 60px 24px; gap: 36px; }
     footer { padding: 36px 24px 24px; flex-direction: column; align-items: flex-start; gap: 8px; }
+    body.originals-preview .catalog-hero { padding-top: 162px; }
   }
   @media (max-width: 560px) {
-    .catalog-grid { grid-template-columns: repeat(2, 1fr); }
+    .catalog-hero { padding-left: 18px; padding-right: 18px; }
+    .hero-title { font-size: clamp(42px, 14vw, 62px); }
+    .hero-copy { font-size: 15px; line-height: 1.6; }
+    .filter-bar,
+    body.originals-preview .filter-bar { padding-left: 14px; padding-right: 14px; }
+    .filter-inner { grid-template-columns: minmax(0, 1fr) auto; }
+    .chips { grid-column: 1 / -1; grid-row: 2; }
+    .result-count { grid-column: 2; grid-row: 3; }
+    .catalog-section { padding: 34px 12px 64px; }
+    .catalog-grid { gap: 46px; }
+    .model-group { scroll-margin-top: 24px; }
+    .model-group-header { grid-template-columns: 1fr; gap: 8px; padding-bottom: 18px; }
+    .model-group-copy { padding-top: 18px; }
+    .model-group-title { font-size: 29px; }
+    .model-group-description { margin-top: 8px; font-size: 13px; }
+    .model-group-count { padding-bottom: 0; }
+    .model-group-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card-body { padding: 12px 12px 14px; }
+    .card-sku { font-size: 20px; }
+    .card-name { min-height: 3.9em; font-size: 11px; line-height: 1.3; }
     .card-action { display: none; }
-    .mobile-contact {
-      display: inline-block;
-      margin-top: 12px;
-      color: var(--gold);
-      font-family: var(--ff-cond);
-      font-size: 9px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
+    .mobile-contact { display: none; }
   }
   @media (hover: none) {
     .gallery-control { opacity: 1; width: 32px; height: 32px; }
   }
+  @media (max-width: 760px) {
+    .product-modal { padding: 0; place-items: stretch; }
+    .product-modal-dialog { width: 100%; max-height: 100vh; border: 0; }
+    .product-modal-content { grid-template-columns: 1fr; }
+    .modal-gallery, .modal-gallery img { min-height: min(100vw, 520px); }
+    .modal-details { padding: 34px 24px 40px; }
+    .modal-details h2 { font-size: 34px; }
+  }
 </style>
 </head>
 <body>
+
+<div class="preview-banner" id="previewBanner" hidden>
+  Vista previa para cliente · fotografías originales sin edición · no es la versión pública
+</div>
 
 <!-- NAV -->
 <nav>
@@ -530,11 +808,11 @@
 <header class="catalog-hero">
   <div class="hero-noise"></div>
   <div class="hero-inner">
-    <div class="eyebrow">Catálogo Completo 2025</div>
+    <div class="eyebrow">Catálogo completo SAPPA</div>
     <h1 class="hero-title">Cada pieza.<br><em>Su carácter.</em></h1>
-    <p class="hero-copy">53 modelos disponibles. Explora por material, línea o SKU. Para consultas de mayoreo o disponibilidad, escríbenos directamente.</p>
+    <p class="hero-copy">Explora el inventario unificado por nombre, categoría, material o SKU. Para consultas de mayoreo o disponibilidad, escríbenos directamente.</p>
     <div class="hero-pills">
-      <span class="pill" id="pillTotal">53 modelos</span>
+      <span class="pill" id="pillTotal">Cargando modelos…</span>
       <span class="pill">Tallas S · M · L · XL · XXL</span>
       <span class="pill">Panama · Linen · Cowboy · Porkpie</span>
     </div>
@@ -568,10 +846,10 @@
   <div class="filter-inner">
     <div class="search-box">
       <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-      <input type="search" id="searchInput" placeholder="Buscar SKU o material...">
+      <input type="search" id="searchInput" placeholder="Buscar nombre, SKU o material…" autocomplete="off">
     </div>
     <div class="chips" id="chipWrap"></div>
-    <div class="result-count" id="resultCount">53 productos</div>
+    <div class="result-count" id="resultCount">Cargando inventario…</div>
   </div>
 </div>
 
@@ -579,6 +857,14 @@
 <section class="catalog-section" id="catalogo">
   <div class="catalog-grid" id="catalogGrid"></div>
 </section>
+
+<!-- PRODUCT DETAIL -->
+<div class="product-modal" id="productModal" hidden>
+  <div class="product-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+    <button class="product-modal-close" id="productModalClose" type="button" aria-label="Cerrar detalle">×</button>
+    <div class="product-modal-content" id="productModalContent"></div>
+  </div>
+</div>
 
 <!-- SIZE CHART -->
 <section class="size-section" id="tallas">
@@ -630,8 +916,49 @@
   <p class="footer-tagline">Crown Your Character.</p>
 </footer>
 
-<script src="/shopify-config.js"></script>
+<script src="/scripts/inventory.js"></script>
 <script>
+  if (window.SappaInventory.IS_ENGLISH) {
+    document.documentElement.lang = 'en';
+    document.title = 'Full Catalog · SAPPA Headwear';
+    document.querySelector('meta[name="description"]').content = 'Complete SAPPA Headwear catalog. Explore every model family, material, size, and SKU.';
+    document.querySelectorAll('.nav-links a')[1].textContent = 'Catalog';
+    document.querySelectorAll('.nav-links a')[2].textContent = 'Size Guide';
+    document.querySelectorAll('.nav-links a')[3].textContent = 'Contact';
+    document.querySelector('.nav-cta').textContent = 'Inquire';
+    document.querySelector('.eyebrow').textContent = 'Complete SAPPA catalog';
+    document.querySelector('.hero-title').innerHTML = 'Every piece.<br><em>Its character.</em>';
+    document.querySelector('.hero-copy').textContent = 'Explore the complete inventory by name, family, material, or SKU. For wholesale and availability inquiries, contact us directly.';
+    document.querySelectorAll('.hero-pills .pill')[1].textContent = 'Sizes S · M · L · XL · XXL';
+    document.getElementById('searchInput').placeholder = 'Search by name, SKU, or material…';
+    document.getElementById('resultCount').textContent = 'Loading inventory…';
+    document.getElementById('productModalClose').setAttribute('aria-label', 'Close details');
+    document.querySelector('.section-label').textContent = 'Size Guide';
+    document.querySelector('.section-title').innerHTML = 'Your perfect<br>fit, <em>always.</em>';
+    document.querySelector('.section-body').textContent = 'All Sappa models are available in five sizes. Measure around the head at forehead level to ensure a comfortable, accurate fit.';
+    const sizeHeaders = document.querySelectorAll('.size-table th');
+    sizeHeaders[0].textContent = 'Size';
+    sizeHeaders[1].textContent = 'Centimeters';
+    sizeHeaders[2].textContent = 'Inches';
+    document.querySelector('.cta-band h2').innerHTML = 'Check availability<br><em>before ordering.</em>';
+    document.querySelector('.cta-band p').textContent = 'For real-time stock, wholesale orders, size or color confirmation, and special quotes, contact us directly. We respond within 24 hours.';
+    document.querySelector('.btn-dark').textContent = 'Contact by email';
+    document.querySelector('.btn-dark').href = 'mailto:sappaheadwear@gmail.com?subject=Sappa%20inventory%20inquiry';
+  }
+  if (window.SappaInventory.IS_ORIGINAL_PREVIEW) {
+    document.body.classList.add('originals-preview');
+    document.getElementById('previewBanner').hidden = false;
+    document.getElementById('previewBanner').textContent = window.SappaInventory.IS_ENGLISH
+      ? 'Client preview · original unedited photography · not the public version'
+      : 'Vista previa para cliente · fotografías originales sin edición · no es la versión pública';
+    document.title = window.SappaInventory.IS_ENGLISH
+      ? 'Original-photo preview · SAPPA Headwear'
+      : 'Vista previa con originales · SAPPA Headwear';
+  }
+</script>
+<script src="/scripts/catalog.js"></script>
+<!-- Catálogo legado conservado temporalmente como referencia, pero no ejecutado. -->
+<script type="application/legacy-disabled">
 const legacyInventory = [
   { sku: 'TCC-3', category: 'Tela Cotton', image: 'https://static.wixstatic.com/media/65fb71_ca5c0f42b47d48559e3093dffe49c1ce~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_ca5c0f42b47d48559e3093dffe49c1ce~mv2.png', inStock: true },
   { sku: 'TCC-2', category: 'Tela Cotton', image: 'https://static.wixstatic.com/media/65fb71_d1b51f54d8714e2b93e5e705cea14bbf~mv2.png/v1/fill/w_600,h_600,al_c,q_85,enc_avif,quality_auto/65fb71_d1b51f54d8714e2b93e5e705cea14bbf~mv2.png', inStock: true },
