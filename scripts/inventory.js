@@ -1,9 +1,11 @@
 (function () {
   'use strict';
 
-  const IS_ORIGINAL_PREVIEW = new URLSearchParams(window.location.search).get('preview') === 'originals';
+  const searchParams = new URLSearchParams(window.location.search);
+  const IS_ORIGINAL_PREVIEW = searchParams.get('preview') === 'originals';
+  const IS_ENGLISH = searchParams.get('lang') === 'en';
   const INVENTORY_URL = IS_ORIGINAL_PREVIEW
-    ? '/data/inventory-preview-originals.json'
+    ? (IS_ENGLISH ? '/data/inventory-preview-originals-en.json' : '/data/inventory-preview-originals.json')
     : '/data/inventory.json';
   const PUBLICLY_BLOCKED_SKUS = new Set(['TPC-3', 'LCZ-5']);
   let inventoryPromise;
@@ -78,6 +80,7 @@
 
   window.SappaInventory = Object.freeze({
     INVENTORY_URL,
+    IS_ENGLISH,
     IS_ORIGINAL_PREVIEW,
     getActiveProducts,
     getProductBySkuOrHandle,

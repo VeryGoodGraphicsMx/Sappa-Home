@@ -918,10 +918,42 @@
 
 <script src="/scripts/inventory.js"></script>
 <script>
+  if (window.SappaInventory.IS_ENGLISH) {
+    document.documentElement.lang = 'en';
+    document.title = 'Full Catalog · SAPPA Headwear';
+    document.querySelector('meta[name="description"]').content = 'Complete SAPPA Headwear catalog. Explore every model family, material, size, and SKU.';
+    document.querySelectorAll('.nav-links a')[1].textContent = 'Catalog';
+    document.querySelectorAll('.nav-links a')[2].textContent = 'Size Guide';
+    document.querySelectorAll('.nav-links a')[3].textContent = 'Contact';
+    document.querySelector('.nav-cta').textContent = 'Inquire';
+    document.querySelector('.eyebrow').textContent = 'Complete SAPPA catalog';
+    document.querySelector('.hero-title').innerHTML = 'Every piece.<br><em>Its character.</em>';
+    document.querySelector('.hero-copy').textContent = 'Explore the complete inventory by name, family, material, or SKU. For wholesale and availability inquiries, contact us directly.';
+    document.querySelectorAll('.hero-pills .pill')[1].textContent = 'Sizes S · M · L · XL · XXL';
+    document.getElementById('searchInput').placeholder = 'Search by name, SKU, or material…';
+    document.getElementById('resultCount').textContent = 'Loading inventory…';
+    document.getElementById('productModalClose').setAttribute('aria-label', 'Close details');
+    document.querySelector('.section-label').textContent = 'Size Guide';
+    document.querySelector('.section-title').innerHTML = 'Your perfect<br>fit, <em>always.</em>';
+    document.querySelector('.section-body').textContent = 'All Sappa models are available in five sizes. Measure around the head at forehead level to ensure a comfortable, accurate fit.';
+    const sizeHeaders = document.querySelectorAll('.size-table th');
+    sizeHeaders[0].textContent = 'Size';
+    sizeHeaders[1].textContent = 'Centimeters';
+    sizeHeaders[2].textContent = 'Inches';
+    document.querySelector('.cta-band h2').innerHTML = 'Check availability<br><em>before ordering.</em>';
+    document.querySelector('.cta-band p').textContent = 'For real-time stock, wholesale orders, size or color confirmation, and special quotes, contact us directly. We respond within 24 hours.';
+    document.querySelector('.btn-dark').textContent = 'Contact by email';
+    document.querySelector('.btn-dark').href = 'mailto:sappaheadwear@gmail.com?subject=Sappa%20inventory%20inquiry';
+  }
   if (window.SappaInventory.IS_ORIGINAL_PREVIEW) {
     document.body.classList.add('originals-preview');
     document.getElementById('previewBanner').hidden = false;
-    document.title = 'Vista previa con originales · SAPPA Headwear';
+    document.getElementById('previewBanner').textContent = window.SappaInventory.IS_ENGLISH
+      ? 'Client preview · original unedited photography · not the public version'
+      : 'Vista previa para cliente · fotografías originales sin edición · no es la versión pública';
+    document.title = window.SappaInventory.IS_ENGLISH
+      ? 'Original-photo preview · SAPPA Headwear'
+      : 'Vista previa con originales · SAPPA Headwear';
   }
 </script>
 <script src="/scripts/catalog.js"></script>

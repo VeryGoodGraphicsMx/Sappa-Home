@@ -3,7 +3,11 @@ param(
   [string]$Workbook,
 
   [Parameter(Mandatory = $true)]
-  [string]$Inventory
+  [string]$Inventory,
+
+  [string]$BaseInventory,
+
+  [switch]$UseWorkbookMaterials
 )
 
 $ErrorActionPreference = 'Stop'
@@ -94,12 +98,20 @@ foreach ($row in $rows) {
   $header = $row.Values | Where-Object { $_ -ne 'q' -and $_ -notmatch '^CLAVES PARA SOMBREROS SAPPA$' } | Select-Object -First 1
   if ($header) {
     $cluster = $header
-    $material = ''
   }
 }
 
-$inventoryPath = (Resolve-Path -LiteralPath $Inventory).Path
-$existing = [System.IO.File]::ReadAllText($inventoryPath, [System.Text.Encoding]::UTF8) | ConvertFrom-Json
+$inventoryPath = if (Test-Path -LiteralPath $Inventory) {
+  (Resolve-Path -LiteralPath $Inventory).Path
+} else {
+  [System.IO.Path]::GetFullPath($Inventory)
+}
+$existingPath = if ($BaseInventory) {
+  (Resolve-Path -LiteralPath $BaseInventory).Path
+} else {
+  $inventoryPath
+}
+$existing = [System.IO.File]::ReadAllText($existingPath, [System.Text.Encoding]::UTF8) | ConvertFrom-Json
 $spanishInventoryPath = Join-Path (Split-Path $inventoryPath -Parent) 'inventory.json'
 $spanishInventory = [System.IO.File]::ReadAllText($spanishInventoryPath, [System.Text.Encoding]::UTF8) | ConvertFrom-Json
 $bySku = @{}
@@ -118,7 +130,9 @@ $updated = foreach ($record in $records.Values) {
     $product.name = $product.sku
   }
   $product.category = $record.Category
-  if ($spanishBySku.ContainsKey($record.Sku) -and $spanishBySku[$record.Sku].material) {
+  if ($UseWorkbookMaterials -and $record.Material) {
+    $product.material = $record.Material
+  } elseif ($spanishBySku.ContainsKey($record.Sku) -and $spanishBySku[$record.Sku].material) {
     $product.material = $spanishBySku[$record.Sku].material
   }
   $product.active = $true
