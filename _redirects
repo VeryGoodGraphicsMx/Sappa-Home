@@ -1,11 +1,12 @@
-# ─── Geo-based redirects ───────────────────────────────────────────
-# LATAM → Spanish version
+# Temporary client-validation mode. Restore the maintenance rules after approval.
+
+# LATAM -> Spanish version
 /  /es/Index.html  302  Country=MX,CO,AR,CL,PE,VE,EC,GT,HN,SV,DO,BO,PY,UY,CU,NI,CR,PA,PR
 
-# English-speaking countries → English version
+# English-speaking countries -> English version
 /  /en/index.html  302  Country=US,CA,GB,AU,NZ,IE,ZA
 
-# Default fallback (everyone else) → English
+# Default fallback (everyone else) -> English
 /  /en/index.html  302
 
 # Preserve legacy catalog URLs while the public frontend moves off Wix.
