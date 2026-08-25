@@ -76,6 +76,10 @@ function buildReviewInventory(products, language) {
     updateProduct(review, sku, product => appendImages(product, names.map(asset)));
   });
 
+  // Lino Cazuelita: la primera fotografia pasa al final de cada galeria.
+  review.filter(product => product.sku.startsWith('LCZ-') && product.images.length > 1)
+    .forEach(product => setImages(product, [...product.images.slice(1), product.images[0]]));
+
   ['VVC-1', 'VVC-2', 'VVC-6'].forEach(sku => {
     updateProduct(review, sku, product => appendImages(product, [asset('vvc-shared-interior.jpg')]));
   });
