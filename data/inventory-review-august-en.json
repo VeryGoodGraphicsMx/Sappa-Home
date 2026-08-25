@@ -49,11 +49,13 @@
     "active": true,
     "status": "draft",
     "images": [
-      "/assets/review-august/tpc-3-red-band.png",
+      "/assets/review-august/tpc-3-01.jpg",
+      "/assets/review-august/tpc-3-02.jpg",
       "/assets/review-august/tpc-shared-rear.png"
     ],
     "imageUrls": [
-      "/assets/review-august/tpc-3-red-band.png",
+      "/assets/review-august/tpc-3-01.jpg",
+      "/assets/review-august/tpc-3-02.jpg",
       "/assets/review-august/tpc-shared-rear.png"
     ]
   },
