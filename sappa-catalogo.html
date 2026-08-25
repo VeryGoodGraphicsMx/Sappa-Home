@@ -376,6 +376,30 @@
     font-size: 10px;
     letter-spacing: 0.1em;
   }
+  .comparison-image-labels {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    background: rgba(10,9,6,0.82);
+    color: var(--white);
+    font-family: var(--ff-cond);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-align: center;
+  }
+  .comparison-image-labels[hidden] { display: none; }
+  .comparison-image-labels span {
+    padding: 10px 8px;
+  }
+  .comparison-image-labels span + span {
+    border-left: 1px solid rgba(245,240,232,0.28);
+  }
+  .card-image.comparison-labels-visible .card-action { bottom: 54px; }
 
   /* Quick action on hover */
   .card-action {
@@ -564,6 +588,7 @@
     font-size: 11px;
     letter-spacing: 0.12em;
   }
+  .modal-gallery.comparison-labels-visible .modal-gallery-count { bottom: 54px; }
   .modal-details { padding: 72px 48px 48px; }
   .modal-details h2 {
     margin: 10px 0 12px;
@@ -944,7 +969,7 @@
   <p class="footer-tagline">Crown Your Character.</p>
 </footer>
 
-<script src="/scripts/inventory.js?v=20260824-lcz1-order"></script>
+<script src="/scripts/inventory.js?v=20260824-lcz-lac-review"></script>
 <script>
   if (window.SappaInventory.IS_ENGLISH) {
     document.documentElement.lang = 'en';
@@ -1008,7 +1033,7 @@
       : 'Nueva propuesta de catálogo · SAPPA Headwear';
   }
 </script>
-<script src="/scripts/catalog.js?v=20260824-mmc-comparison"></script>
+<script src="/scripts/catalog.js?v=20260824-lcz-lac-review"></script>
 <!-- Catálogo legado conservado temporalmente como referencia, pero no ejecutado. -->
 <script type="application/legacy-disabled">
 const legacyInventory = [

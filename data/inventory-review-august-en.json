@@ -736,15 +736,15 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/lcz-3-02.jpg",
+      "/assets/preview-originals/lcz-3-01.jpg",
       "/assets/preview-originals/lcz-3-03.jpg",
-      "/assets/preview-originals/lcz-3-04.jpg",
-      "/assets/preview-originals/lcz-3-01.jpg"
+      "/assets/preview-originals/lcz-3-04.jpg"
     ],
     "imageUrls": [
       "/assets/preview-originals/lcz-3-02.jpg",
+      "/assets/preview-originals/lcz-3-01.jpg",
       "/assets/preview-originals/lcz-3-03.jpg",
-      "/assets/preview-originals/lcz-3-04.jpg",
-      "/assets/preview-originals/lcz-3-01.jpg"
+      "/assets/preview-originals/lcz-3-04.jpg"
     ]
   },
   {
@@ -758,15 +758,15 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/lcz-4-02.jpg",
+      "/assets/preview-originals/lcz-4-01.jpg",
       "/assets/preview-originals/lcz-4-03.jpg",
-      "/assets/preview-originals/lcz-4-04.jpg",
-      "/assets/preview-originals/lcz-4-01.jpg"
+      "/assets/preview-originals/lcz-4-04.jpg"
     ],
     "imageUrls": [
       "/assets/preview-originals/lcz-4-02.jpg",
+      "/assets/preview-originals/lcz-4-01.jpg",
       "/assets/preview-originals/lcz-4-03.jpg",
-      "/assets/preview-originals/lcz-4-04.jpg",
-      "/assets/preview-originals/lcz-4-01.jpg"
+      "/assets/preview-originals/lcz-4-04.jpg"
     ]
   },
   {
@@ -777,9 +777,24 @@
     "category": "LINEN-COTTON   SHORT BRIM FEDORA HAT",
     "material": "Linen blend cotton, cotton interlining, satin interior lining  and polyester hatband.",
     "active": true,
-    "status": "pending-photo",
-    "images": [],
-    "imageUrls": []
+    "status": "draft",
+    "images": [
+      "/assets/preview-originals/lac-2-01.jpg",
+      "/assets/preview-originals/lac-2-02.jpg",
+      "/assets/preview-originals/lac-2-03.jpg",
+      "/assets/preview-originals/lac-2-lai-1-comparativa.jpg"
+    ],
+    "imageUrls": [
+      "/assets/preview-originals/lac-2-01.jpg",
+      "/assets/preview-originals/lac-2-02.jpg",
+      "/assets/preview-originals/lac-2-03.jpg",
+      "/assets/preview-originals/lac-2-lai-1-comparativa.jpg"
+    ],
+    "comparisonLabels": {
+      "image": "/assets/preview-originals/lac-2-lai-1-comparativa.jpg",
+      "left": "LAC-1",
+      "right": "LAC-2"
+    }
   },
   {
     "id": "LAC-2",
@@ -801,7 +816,12 @@
       "/assets/preview-originals/lac-2-02.jpg",
       "/assets/preview-originals/lac-2-03.jpg",
       "/assets/preview-originals/lac-2-lai-1-comparativa.jpg"
-    ]
+    ],
+    "comparisonLabels": {
+      "image": "/assets/preview-originals/lac-2-lai-1-comparativa.jpg",
+      "left": "LAC-1",
+      "right": "LAC-2"
+    }
   },
   {
     "id": "LAC-3",

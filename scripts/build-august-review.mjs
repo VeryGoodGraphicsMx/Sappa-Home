@@ -51,10 +51,22 @@ function buildReviewInventory(products, language) {
     setImages(product, [4, 5, 6].map(index => `/assets/preview-originals/li-1-0${index}.jpg`));
   });
 
-  // LAC-1 queda visible como pendiente hasta confirmar la fotografia correcta.
-  updateProduct(review, 'LAC-1', product => {
-    product.status = 'pending-photo';
-    setImages(product, []);
+  // LAC-1 comparte la galeria confirmada de LAC-2. La ultima vista compara
+  // ambos modelos y el frontend la rotula para distinguir izquierda/derecha.
+  const lacComparisonImage = '/assets/preview-originals/lac-2-lai-1-comparativa.jpg';
+  const lac2 = review.find(product => product.sku === 'LAC-2');
+  if (!lac2) throw new Error('No se encontro LAC-2 para completar LAC-1.');
+  const lacGallery = [...lac2.images];
+  ['LAC-1', 'LAC-2'].forEach(sku => {
+    updateProduct(review, sku, product => {
+      product.status = 'draft';
+      setImages(product, lacGallery);
+      product.comparisonLabels = {
+        image: lacComparisonImage,
+        left: 'LAC-1',
+        right: 'LAC-2'
+      };
+    });
   });
 
   // MMI-3 usa copias grises editadas; los originales permanecen intactos.
@@ -129,6 +141,14 @@ function buildReviewInventory(products, language) {
   updateProduct(review, 'LCZ-2', product => {
     const [photo1, photo2, photo3] = product.images;
     setImages(product, [photo3, photo1, photo2]);
+  });
+
+  // LCZ-3 y LCZ-4: la cuarta foto visible pasa a la segunda posicion.
+  ['LCZ-3', 'LCZ-4'].forEach(sku => {
+    updateProduct(review, sku, product => {
+      const [photo1, photo2, photo3, photo4, ...remainingPhotos] = product.images;
+      setImages(product, [photo1, photo4, photo2, photo3, ...remainingPhotos]);
+    });
   });
 
   ['VVC-1', 'VVC-2', 'VVC-6'].forEach(sku => {

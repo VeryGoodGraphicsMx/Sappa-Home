@@ -91,6 +91,25 @@
     return copy.imageView(product, index);
   }
 
+  function comparisonLabels(product, currentImage) {
+    const labels = product.comparisonLabels;
+    if (!labels) return '';
+    const hidden = labels.image === currentImage ? '' : ' hidden';
+    return `
+      <div class="comparison-image-labels"${hidden} aria-label="${escapeHtml(`${labels.left}, ${labels.right}`)}">
+        <span>${escapeHtml(labels.left)}</span>
+        <span>${escapeHtml(labels.right)}</span>
+      </div>`;
+  }
+
+  function syncComparisonLabels(container, product, currentImage) {
+    const labels = container.querySelector('.comparison-image-labels');
+    if (!labels) return;
+    const visible = product.comparisonLabels?.image === currentImage;
+    labels.hidden = !visible;
+    container.classList.toggle('comparison-labels-visible', visible);
+  }
+
   function consultationLink(product) {
     const subject = encodeURIComponent(copy.consultationSubject(product));
     const body = encodeURIComponent(copy.consultationBody(product));
@@ -167,7 +186,7 @@
 
     return `
       <article class="product-card" data-product-handle="${safeHandle}" data-active="true">
-        <div class="card-image${hasImage ? '' : ' is-placeholder'}">
+        <div class="card-image${hasImage ? '' : ' is-placeholder'}${product.comparisonLabels?.image === images[0] ? ' comparison-labels-visible' : ''}">
           <img
             src="${escapeHtml(images[0])}"
             alt="${escapeHtml(imageAlt(product, 0))}"
@@ -175,6 +194,7 @@
             loading="lazy"
             decoding="async"
           >
+          ${comparisonLabels(product, images[0])}
           ${galleryControls(product, images)}
           <div class="card-action">
             <a href="${consultationLink(product)}">${copy.consult}</a>
@@ -246,8 +266,9 @@
           <div><dt>${copy.status}</dt><dd>${copy.activeStatus}</dd></div>`;
 
     modalContent.innerHTML = `
-      <div class="modal-gallery${openProduct.images.length ? '' : ' is-placeholder'}">
+      <div class="modal-gallery${openProduct.images.length ? '' : ' is-placeholder'}${openProduct.comparisonLabels?.image === image ? ' comparison-labels-visible' : ''}">
         <img src="${escapeHtml(image)}" alt="${escapeHtml(imageAlt(openProduct, openImageIndex))}" decoding="async">
+        ${comparisonLabels(openProduct, image)}
         ${hasGallery ? `
           <button class="modal-gallery-control modal-gallery-prev" type="button" data-modal-direction="-1" aria-label="${copy.previousImage}">‹</button>
           <button class="modal-gallery-control modal-gallery-next" type="button" data-modal-direction="1" aria-label="${copy.nextImage}">›</button>
@@ -351,6 +372,7 @@
       image.alt = imageAlt(product, next);
       image.dataset.imageIndex = String(next);
       counter.textContent = `${next + 1} / ${product.images.length}`;
+      syncComparisonLabels(card.querySelector('.card-image'), product, product.images[next]);
       return;
     }
 
