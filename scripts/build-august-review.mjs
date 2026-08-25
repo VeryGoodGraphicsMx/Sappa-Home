@@ -109,6 +109,9 @@ function buildReviewInventory(products, language) {
     .forEach(sku => {
       updateProduct(review, sku, product => appendImages(product, [asset('tpc-shared-rear.png')]));
     });
+  updateProduct(review, 'TPC-3', product => {
+    setImages(product, [asset('tpc-3-red-band.png'), asset('tpc-shared-rear.png')]);
+  });
 
   // Lino Cazuelita: la primera fotografia pasa al final de cada galeria.
   review.filter(product => product.sku.startsWith('LCZ-') && product.images.length > 1)
