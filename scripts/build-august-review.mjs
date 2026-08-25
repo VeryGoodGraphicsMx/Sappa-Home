@@ -76,6 +76,29 @@ function buildReviewInventory(products, language) {
     updateProduct(review, sku, product => appendImages(product, names.map(asset)));
   });
 
+  // MMC-1 y MMC-2 conservan solamente sus tres vistas individuales.
+  // La cuarta fotografia compartida se muestra como una tarjeta comparativa independiente.
+  const mmcComparisonImage = '/assets/preview-originals/mmc-1-mmc-2-comparativa.jpg';
+  ['MMC-1', 'MMC-2'].forEach(sku => {
+    updateProduct(review, sku, product => {
+      setImages(product, product.images.filter(image => image !== mmcComparisonImage));
+    });
+  });
+  const mmc2Index = review.findIndex(product => product.sku === 'MMC-2');
+  if (mmc2Index < 0) throw new Error('No se encontro MMC-2 para insertar la imagen comparativa.');
+  review.splice(mmc2Index + 1, 0, {
+    id: 'MMC-COMPARATIVA',
+    sku: language === 'en' ? 'COMPARISON IMAGE' : 'IMAGEN COMPARATIVA',
+    handle: 'mmc-1-mmc-2-comparativa',
+    name: language === 'en' ? 'Comparison image' : 'Imagen comparativa',
+    category: review[mmc2Index].category,
+    material: '',
+    active: true,
+    status: 'comparison',
+    images: [mmcComparisonImage],
+    imageUrls: [mmcComparisonImage]
+  });
+
   // La vista trasera compartida fue confirmada para estas claves TPC.
   ['TPC-1', 'TPC-2', 'TPC-3', 'TPC-4', 'TPC-7', 'TPC-8', 'TPC-9', 'TPC-11', 'TPC-12']
     .forEach(sku => {

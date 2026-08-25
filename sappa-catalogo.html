@@ -317,6 +317,12 @@
     transition: background 0.3s;
   }
   .product-card:hover { background: var(--dark); }
+  .comparison-card {
+    cursor: default;
+    outline: 1px solid rgba(184,137,74,0.42);
+    outline-offset: -1px;
+  }
+  .comparison-card:hover { background: var(--charcoal); }
 
   .card-image {
     aspect-ratio: 1;
@@ -333,6 +339,7 @@
     z-index: 1;
   }
   .product-card:hover .card-image img { transform: scale(1.07); }
+  .comparison-card:hover .card-image img { transform: none; }
 
   .gallery-control {
     position: absolute;
@@ -937,7 +944,7 @@
   <p class="footer-tagline">Crown Your Character.</p>
 </footer>
 
-<script src="/scripts/inventory.js?v=20260824-tpc-rear"></script>
+<script src="/scripts/inventory.js?v=20260824-mmc-comparison"></script>
 <script>
   if (window.SappaInventory.IS_ENGLISH) {
     document.documentElement.lang = 'en';
@@ -1001,7 +1008,7 @@
       : 'Nueva propuesta de catálogo · SAPPA Headwear';
   }
 </script>
-<script src="/scripts/catalog.js"></script>
+<script src="/scripts/catalog.js?v=20260824-mmc-comparison"></script>
 <!-- Catálogo legado conservado temporalmente como referencia, pero no ejecutado. -->
 <script type="application/legacy-disabled">
 const legacyInventory = [

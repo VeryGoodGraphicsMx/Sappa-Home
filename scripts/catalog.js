@@ -138,6 +138,23 @@
     const images = productImages(product);
     const hasImage = product.images.length > 0;
     const safeHandle = escapeHtml(product.handle);
+    const isComparison = product.status === 'comparison';
+    if (isComparison) {
+      return `
+        <article class="product-card comparison-card" data-product-handle="${safeHandle}" data-active="true">
+          <div class="card-image">
+            <img
+              src="${escapeHtml(images[0])}"
+              alt="${escapeHtml(product.name)}"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="card-body">
+            <div class="card-sku">${escapeHtml(product.sku)}</div>
+          </div>
+        </article>`;
+    }
     const previewValue = augustReview ? 'august-review' : originalPreview ? 'originals' : '';
     const detailUrl = previewValue || isEnglish
       ? `/sappa-catalogo.html?${previewValue ? `preview=${previewValue}&amp;` : ''}${isEnglish ? 'lang=en&amp;' : ''}product=${encodeURIComponent(product.handle)}`
@@ -184,6 +201,7 @@
     const materials = [...new Set(products.map(product => product.material).filter(Boolean))];
     const description = materials.join(' · ');
     const isCowboy = category === 'VAQUEROS' || category === 'COWBOY HATS';
+    const variantCount = products.filter(product => product.status !== 'comparison').length;
     return `
       <section class="model-group" aria-labelledby="group-${escapeHtml(products[0].handle)}">
         <header class="model-group-header">
@@ -192,7 +210,7 @@
             <h2 class="model-group-title" id="group-${escapeHtml(products[0].handle)}">${escapeHtml(category)}</h2>
             ${description && !(augustReview && isCowboy) ? `<p class="model-group-description"><strong>${copy.material}:</strong> ${escapeHtml(description)}</p>` : ''}
           </div>
-          <div class="model-group-count">${copy.variant(products.length)}</div>
+          <div class="model-group-count">${copy.variant(variantCount)}</div>
         </header>
         <div class="model-group-grid">
           ${products.map(productCard).join('')}
@@ -203,7 +221,8 @@
   function renderCatalog() {
     const products = filteredProducts();
     const groups = groupedProducts(products);
-    resultCount.textContent = copy.result(products.length, groups.length);
+    const variantCount = products.filter(product => product.status !== 'comparison').length;
+    resultCount.textContent = copy.result(variantCount, groups.length);
 
     if (!products.length) {
       grid.innerHTML = `
@@ -373,7 +392,8 @@
     try {
       const allProducts = await window.SappaInventory.loadInventory();
       inventory = window.SappaInventory.getActiveProducts(allProducts);
-      pillTotal.textContent = copy.total(inventory.length, new Set(inventory.map(product => product.category)).size);
+      const variantCount = inventory.filter(product => product.status !== 'comparison').length;
+      pillTotal.textContent = copy.total(variantCount, new Set(inventory.map(product => product.category)).size);
       buildChips();
       renderCatalog();
 
