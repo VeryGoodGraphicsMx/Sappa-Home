@@ -59,7 +59,12 @@ function buildReviewInventory(products, language) {
 
   // MMI-3 usa copias grises editadas; los originales permanecen intactos.
   updateProduct(review, 'MMI-3', product => {
-    setImages(product, [1, 2, 3, 4].map(index => asset(`mmi-3-gray-0${index}.jpg`)));
+    setImages(product, [1, 2, 4].map(index => asset(`mmi-3-gray-0${index}.jpg`)));
+  });
+
+  // MMI-2: se retira la tercera fotografia de la galeria.
+  updateProduct(review, 'MMI-2', product => {
+    setImages(product, product.images.filter((image, index) => index !== 2));
   });
 
   // Fotografias nuevas identificadas por SKU en el chat del cliente.
