@@ -76,6 +76,12 @@ function buildReviewInventory(products, language) {
     updateProduct(review, sku, product => appendImages(product, names.map(asset)));
   });
 
+  // La vista trasera compartida fue confirmada para estas claves TPC.
+  ['TPC-1', 'TPC-2', 'TPC-3', 'TPC-4', 'TPC-7', 'TPC-8', 'TPC-9', 'TPC-11', 'TPC-12']
+    .forEach(sku => {
+      updateProduct(review, sku, product => appendImages(product, [asset('tpc-shared-rear.png')]));
+    });
+
   // Lino Cazuelita: la primera fotografia pasa al final de cada galeria.
   review.filter(product => product.sku.startsWith('LCZ-') && product.images.length > 1)
     .forEach(product => setImages(product, [...product.images.slice(1), product.images[0]]));

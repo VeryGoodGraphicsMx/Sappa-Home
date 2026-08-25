@@ -10,11 +10,13 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/tpc-1-01.jpg",
-      "/assets/preview-originals/tpc-1-02.jpg"
+      "/assets/preview-originals/tpc-1-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ],
     "imageUrls": [
       "/assets/preview-originals/tpc-1-01.jpg",
-      "/assets/preview-originals/tpc-1-02.jpg"
+      "/assets/preview-originals/tpc-1-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ]
   },
   {
@@ -28,11 +30,13 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/tpc-2-01.jpg",
-      "/assets/preview-originals/tpc-2-02.jpg"
+      "/assets/preview-originals/tpc-2-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ],
     "imageUrls": [
       "/assets/preview-originals/tpc-2-01.jpg",
-      "/assets/preview-originals/tpc-2-02.jpg"
+      "/assets/preview-originals/tpc-2-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ]
   },
   {
@@ -44,8 +48,12 @@
     "material": "Fibra de celulosa tejido fino, toquilla poliéster.",
     "active": true,
     "status": "draft",
-    "images": [],
-    "imageUrls": []
+    "images": [
+      "/assets/review-august/tpc-shared-rear.png"
+    ],
+    "imageUrls": [
+      "/assets/review-august/tpc-shared-rear.png"
+    ]
   },
   {
     "id": "TPC-4",
@@ -58,11 +66,13 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/tpc-4-01.jpg",
-      "/assets/preview-originals/tpc-4-02.jpg"
+      "/assets/preview-originals/tpc-4-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ],
     "imageUrls": [
       "/assets/preview-originals/tpc-4-01.jpg",
-      "/assets/preview-originals/tpc-4-02.jpg"
+      "/assets/preview-originals/tpc-4-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ]
   },
   {
@@ -116,11 +126,13 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/tpc-7-01.jpg",
-      "/assets/preview-originals/tpc-7-02.jpg"
+      "/assets/preview-originals/tpc-7-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ],
     "imageUrls": [
       "/assets/preview-originals/tpc-7-01.jpg",
-      "/assets/preview-originals/tpc-7-02.jpg"
+      "/assets/preview-originals/tpc-7-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ]
   },
   {
@@ -134,11 +146,13 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/tpc-8-01.jpg",
-      "/assets/preview-originals/tpc-8-02.jpg"
+      "/assets/preview-originals/tpc-8-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ],
     "imageUrls": [
       "/assets/preview-originals/tpc-8-01.jpg",
-      "/assets/preview-originals/tpc-8-02.jpg"
+      "/assets/preview-originals/tpc-8-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ]
   },
   {
@@ -152,11 +166,13 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/tpc-9-01.jpg",
-      "/assets/preview-originals/tpc-9-02.jpg"
+      "/assets/preview-originals/tpc-9-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ],
     "imageUrls": [
       "/assets/preview-originals/tpc-9-01.jpg",
-      "/assets/preview-originals/tpc-9-02.jpg"
+      "/assets/preview-originals/tpc-9-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ]
   },
   {
@@ -190,11 +206,13 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/tpc-11-01.jpg",
-      "/assets/preview-originals/tpc-11-02.jpg"
+      "/assets/preview-originals/tpc-11-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ],
     "imageUrls": [
       "/assets/preview-originals/tpc-11-01.jpg",
-      "/assets/preview-originals/tpc-11-02.jpg"
+      "/assets/preview-originals/tpc-11-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ]
   },
   {
@@ -208,11 +226,13 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/tpc-12-01.jpg",
-      "/assets/preview-originals/tpc-12-02.jpg"
+      "/assets/preview-originals/tpc-12-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ],
     "imageUrls": [
       "/assets/preview-originals/tpc-12-01.jpg",
-      "/assets/preview-originals/tpc-12-02.jpg"
+      "/assets/preview-originals/tpc-12-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ]
   },
   {
