@@ -687,14 +687,14 @@
     "active": true,
     "status": "draft",
     "images": [
+      "/assets/preview-originals/lcz-2-01.jpg",
       "/assets/review-august/lcz-2-update-01.jpg",
-      "/assets/review-august/lcz-2-interior.jpg",
-      "/assets/preview-originals/lcz-2-01.jpg"
+      "/assets/review-august/lcz-2-interior.jpg"
     ],
     "imageUrls": [
+      "/assets/preview-originals/lcz-2-01.jpg",
       "/assets/review-august/lcz-2-update-01.jpg",
-      "/assets/review-august/lcz-2-interior.jpg",
-      "/assets/preview-originals/lcz-2-01.jpg"
+      "/assets/review-august/lcz-2-interior.jpg"
     ]
   },
   {

@@ -80,6 +80,13 @@ function buildReviewInventory(products, language) {
   review.filter(product => product.sku.startsWith('LCZ-') && product.images.length > 1)
     .forEach(product => setImages(product, [...product.images.slice(1), product.images[0]]));
 
+  // LCZ-2: sobre el orden visible anterior, la foto 3 pasa a 1,
+  // la foto 1 pasa a 2 y la foto 2 pasa a 3.
+  updateProduct(review, 'LCZ-2', product => {
+    const [photo1, photo2, photo3] = product.images;
+    setImages(product, [photo3, photo1, photo2]);
+  });
+
   ['VVC-1', 'VVC-2', 'VVC-6'].forEach(sku => {
     updateProduct(review, sku, product => appendImages(product, [asset('vvc-shared-interior.jpg')]));
   });
