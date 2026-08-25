@@ -51,19 +51,19 @@ function buildReviewInventory(products, language) {
     setImages(product, [4, 5, 6].map(index => `/assets/preview-originals/li-1-0${index}.jpg`));
   });
 
-  // LAC-1 comparte la galeria confirmada de LAC-2. La ultima vista compara
-  // ambos modelos y el frontend la rotula para distinguir izquierda/derecha.
+  // LAC-1 continua pendiente. La comparativa confirmada corresponde a
+  // LAI-1 (izquierda) y LAC-2 (derecha), y aparece al final de ambos modelos.
   const lacComparisonImage = '/assets/preview-originals/lac-2-lai-1-comparativa.jpg';
-  const lac2 = review.find(product => product.sku === 'LAC-2');
-  if (!lac2) throw new Error('No se encontro LAC-2 para completar LAC-1.');
-  const lacGallery = [...lac2.images];
-  ['LAC-1', 'LAC-2'].forEach(sku => {
+  updateProduct(review, 'LAC-1', product => {
+    product.status = 'pending-photo';
+    setImages(product, []);
+    delete product.comparisonLabels;
+  });
+  ['LAC-2', 'LAI-1'].forEach(sku => {
     updateProduct(review, sku, product => {
-      product.status = 'draft';
-      setImages(product, lacGallery);
       product.comparisonLabels = {
         image: lacComparisonImage,
-        left: 'LAC-1',
+        left: 'LAI-1',
         right: 'LAC-2'
       };
     });
@@ -82,7 +82,7 @@ function buildReviewInventory(products, language) {
   // Fotografias nuevas identificadas por SKU en el chat del cliente.
   const appendBySku = {
     'LCZ-1': ['lcz-1-update-01.jpg', 'lcz-1-update-02.jpg', 'lcz-1-update-03.jpg'],
-    'H-2': ['h-2-update-01.jpg', 'h-2-interior.jpg'],
+    'H-2': ['h-2-update-01.jpg'],
     'LCZ-2': ['lcz-2-update-01.jpg', 'lcz-2-interior.jpg'],
     'MMI-1': ['mmi-1-interior.jpg'],
     'TCI-1': ['tci-1-update-01.jpg'],
@@ -91,6 +91,15 @@ function buildReviewInventory(products, language) {
   };
   Object.entries(appendBySku).forEach(([sku, names]) => {
     updateProduct(review, sku, product => appendImages(product, names.map(asset)));
+  });
+
+  // H-2: la segunda vista pasa a portada y se excluye la playera amarilla.
+  updateProduct(review, 'H-2', product => {
+    setImages(product, [
+      '/assets/preview-originals/h-2-02.jpg',
+      '/assets/preview-originals/h-2-01.jpg',
+      asset('h-2-update-01.jpg')
+    ]);
   });
 
   // MMC-1 y MMC-2 conservan solamente sus tres vistas individuales.
@@ -155,7 +164,43 @@ function buildReviewInventory(products, language) {
     updateProduct(review, sku, product => appendImages(product, [asset('vvc-shared-interior.jpg')]));
   });
   updateProduct(review, 'VVC-2', product => appendImages(product, [asset('vvc-2-interior.jpg')]));
-  updateProduct(review, 'VVP-2', product => setImages(product, [asset('vvp-2-confirmed.jpg')]));
+
+  // Se retira la tercera vista de VVC-1 y la cuarta de VVC-2.
+  updateProduct(review, 'VVC-1', product => {
+    setImages(product, product.images.filter((image, index) => index !== 2));
+  });
+  updateProduct(review, 'VVC-2', product => {
+    setImages(product, product.images.filter((image, index) => index !== 3));
+  });
+
+  // La cuarta foto de VVP-1 corresponde a VVP-2 y pasa a ser su portada.
+  const vvp2Front = '/assets/preview-originals/vvp-1-04.jpg';
+  updateProduct(review, 'VVP-1', product => {
+    setImages(product, product.images.filter(image => image !== vvp2Front));
+  });
+  updateProduct(review, 'VVP-2', product => {
+    setImages(product, [vvp2Front, asset('vvp-2-confirmed.jpg')]);
+  });
+
+  // VM-2 foto 4 se retira; la foto 5 compara VM-1 (izquierda) y VM-2
+  // (derecha), por lo que tambien se agrega al final de VM-1.
+  const vmComparisonImage = '/assets/preview-originals/vm-2-05.jpg';
+  updateProduct(review, 'VM-2', product => {
+    setImages(product, product.images.filter((image, index) => index !== 3));
+    product.comparisonLabels = {
+      image: vmComparisonImage,
+      left: 'VM-1',
+      right: 'VM-2'
+    };
+  });
+  updateProduct(review, 'VM-1', product => {
+    appendImages(product, [vmComparisonImage]);
+    product.comparisonLabels = {
+      image: vmComparisonImage,
+      left: 'VM-1',
+      right: 'VM-2'
+    };
+  });
 
   // VVC-5 se conserva como ficha pendiente, tal como solicito el cliente.
   const vvc4Index = review.findIndex(product => product.sku === 'VVC-4');

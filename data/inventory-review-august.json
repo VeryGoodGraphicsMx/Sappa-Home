@@ -777,24 +777,9 @@
     "category": "LINO- ALGODÓN CATRIN",
     "material": "Mezcla de lino con algodón toquilla y forro poliéster.",
     "active": true,
-    "status": "draft",
-    "images": [
-      "/assets/preview-originals/lac-2-01.jpg",
-      "/assets/preview-originals/lac-2-02.jpg",
-      "/assets/preview-originals/lac-2-03.jpg",
-      "/assets/preview-originals/lac-2-lai-1-comparativa.jpg"
-    ],
-    "imageUrls": [
-      "/assets/preview-originals/lac-2-01.jpg",
-      "/assets/preview-originals/lac-2-02.jpg",
-      "/assets/preview-originals/lac-2-03.jpg",
-      "/assets/preview-originals/lac-2-lai-1-comparativa.jpg"
-    ],
-    "comparisonLabels": {
-      "image": "/assets/preview-originals/lac-2-lai-1-comparativa.jpg",
-      "left": "LAC-1",
-      "right": "LAC-2"
-    }
+    "status": "pending-photo",
+    "images": [],
+    "imageUrls": []
   },
   {
     "id": "LAC-2",
@@ -819,7 +804,7 @@
     ],
     "comparisonLabels": {
       "image": "/assets/preview-originals/lac-2-lai-1-comparativa.jpg",
-      "left": "LAC-1",
+      "left": "LAI-1",
       "right": "LAC-2"
     }
   },
@@ -881,7 +866,12 @@
       "/assets/preview-originals/lai-1-01.jpg",
       "/assets/preview-originals/lai-1-02.jpg",
       "/assets/preview-originals/lac-2-lai-1-comparativa.jpg"
-    ]
+    ],
+    "comparisonLabels": {
+      "image": "/assets/preview-originals/lac-2-lai-1-comparativa.jpg",
+      "left": "LAI-1",
+      "right": "LAC-2"
+    }
   },
   {
     "id": "LP-1",
@@ -1151,16 +1141,14 @@
     "active": true,
     "status": "draft",
     "images": [
-      "/assets/preview-originals/h-2-01.jpg",
       "/assets/preview-originals/h-2-02.jpg",
-      "/assets/review-august/h-2-update-01.jpg",
-      "/assets/review-august/h-2-interior.jpg"
+      "/assets/preview-originals/h-2-01.jpg",
+      "/assets/review-august/h-2-update-01.jpg"
     ],
     "imageUrls": [
-      "/assets/preview-originals/h-2-01.jpg",
       "/assets/preview-originals/h-2-02.jpg",
-      "/assets/review-august/h-2-update-01.jpg",
-      "/assets/review-august/h-2-interior.jpg"
+      "/assets/preview-originals/h-2-01.jpg",
+      "/assets/review-august/h-2-update-01.jpg"
     ]
   },
   {
@@ -1447,13 +1435,11 @@
     "images": [
       "/assets/preview-originals/vvc-1-01.jpg",
       "/assets/preview-originals/vvc-1-02.jpg",
-      "/assets/preview-originals/vvc-1-03.jpg",
       "/assets/review-august/vvc-shared-interior.jpg"
     ],
     "imageUrls": [
       "/assets/preview-originals/vvc-1-01.jpg",
       "/assets/preview-originals/vvc-1-02.jpg",
-      "/assets/preview-originals/vvc-1-03.jpg",
       "/assets/review-august/vvc-shared-interior.jpg"
     ]
   },
@@ -1469,14 +1455,12 @@
     "images": [
       "/assets/preview-originals/vvc-2-01.jpg",
       "/assets/preview-originals/vvc-2-02.jpg",
-      "/assets/review-august/vvc-shared-interior.jpg",
-      "/assets/review-august/vvc-2-interior.jpg"
+      "/assets/review-august/vvc-shared-interior.jpg"
     ],
     "imageUrls": [
       "/assets/preview-originals/vvc-2-01.jpg",
       "/assets/preview-originals/vvc-2-02.jpg",
-      "/assets/review-august/vvc-shared-interior.jpg",
-      "/assets/review-august/vvc-2-interior.jpg"
+      "/assets/review-august/vvc-shared-interior.jpg"
     ]
   },
   {
@@ -1587,14 +1571,12 @@
     "images": [
       "/assets/preview-originals/vvp-1-01.jpg",
       "/assets/preview-originals/vvp-1-02.jpg",
-      "/assets/preview-originals/vvp-1-03.jpg",
-      "/assets/preview-originals/vvp-1-04.jpg"
+      "/assets/preview-originals/vvp-1-03.jpg"
     ],
     "imageUrls": [
       "/assets/preview-originals/vvp-1-01.jpg",
       "/assets/preview-originals/vvp-1-02.jpg",
-      "/assets/preview-originals/vvp-1-03.jpg",
-      "/assets/preview-originals/vvp-1-04.jpg"
+      "/assets/preview-originals/vvp-1-03.jpg"
     ]
   },
   {
@@ -1607,9 +1589,11 @@
     "active": true,
     "status": "draft",
     "images": [
+      "/assets/preview-originals/vvp-1-04.jpg",
       "/assets/review-august/vvp-2-confirmed.jpg"
     ],
     "imageUrls": [
+      "/assets/preview-originals/vvp-1-04.jpg",
       "/assets/review-august/vvp-2-confirmed.jpg"
     ]
   },
@@ -1685,13 +1669,20 @@
     "images": [
       "/assets/preview-originals/vm-1-01.jpg",
       "/assets/preview-originals/vm-1-02.jpg",
-      "/assets/preview-originals/vm-1-03.jpg"
+      "/assets/preview-originals/vm-1-03.jpg",
+      "/assets/preview-originals/vm-2-05.jpg"
     ],
     "imageUrls": [
       "/assets/preview-originals/vm-1-01.jpg",
       "/assets/preview-originals/vm-1-02.jpg",
-      "/assets/preview-originals/vm-1-03.jpg"
-    ]
+      "/assets/preview-originals/vm-1-03.jpg",
+      "/assets/preview-originals/vm-2-05.jpg"
+    ],
+    "comparisonLabels": {
+      "image": "/assets/preview-originals/vm-2-05.jpg",
+      "left": "VM-1",
+      "right": "VM-2"
+    }
   },
   {
     "id": "VM-2",
@@ -1706,16 +1697,19 @@
       "/assets/preview-originals/vm-2-01.jpg",
       "/assets/preview-originals/vm-2-02.jpg",
       "/assets/preview-originals/vm-2-03.jpg",
-      "/assets/preview-originals/vm-2-04.jpg",
       "/assets/preview-originals/vm-2-05.jpg"
     ],
     "imageUrls": [
       "/assets/preview-originals/vm-2-01.jpg",
       "/assets/preview-originals/vm-2-02.jpg",
       "/assets/preview-originals/vm-2-03.jpg",
-      "/assets/preview-originals/vm-2-04.jpg",
       "/assets/preview-originals/vm-2-05.jpg"
-    ]
+    ],
+    "comparisonLabels": {
+      "image": "/assets/preview-originals/vm-2-05.jpg",
+      "left": "VM-1",
+      "right": "VM-2"
+    }
   },
   {
     "id": "VMM-1",
