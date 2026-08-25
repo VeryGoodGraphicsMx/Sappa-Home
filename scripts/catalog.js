@@ -10,19 +10,17 @@
   const modal = document.getElementById('productModal');
   const modalContent = document.getElementById('productModalContent');
   const modalClose = document.getElementById('productModalClose');
-  const originalPreview = window.SappaInventory.IS_ORIGINAL_PREVIEW;
-  const augustReview = window.SappaInventory.IS_AUGUST_REVIEW;
   const isEnglish = window.SappaInventory.IS_ENGLISH;
   const copy = isEnglish ? {
     all: 'All',
     previousImage: 'Previous image of',
     nextImage: 'Next image of',
-    familyLabel: 'Model family',
+    familyLabel: 'Collection',
     material: 'Material',
-    variant: count => `${count} variant${count === 1 ? '' : 's'}`,
-    result: (products, groups) => `${products} variant${products === 1 ? '' : 's'} · ${groups} famil${groups === 1 ? 'y' : 'ies'}`,
+    variant: count => `${count} model${count === 1 ? '' : 's'}`,
+    result: (products, groups) => `${products} model${products === 1 ? '' : 's'} · ${groups} collection${groups === 1 ? '' : 's'}`,
     noResults: 'No results',
-    noResultsBody: 'We could not find products matching those filters. Try another name, SKU, material, or family.',
+    noResultsBody: 'We could not find products matching those filters. Try another name, SKU, material, or collection.',
     pendingImage: product => `Image pending for ${product.name}, SKU ${product.sku}`,
     imageView: (product, index) => `${product.name}, SKU ${product.sku}, view ${index + 1} of ${product.images.length}`,
     consultationSubject: product => `Inquiry for SKU ${product.sku}`,
@@ -36,15 +34,15 @@
     inventoryUnavailable: 'Inventory unavailable',
     catalogUnavailable: 'We could not load the catalog',
     catalogUnavailableBody: 'Please reload the page. If the problem continues, contact us directly.',
-    total: (products, groups) => `${products} variants · ${groups} families`
+    total: (products, groups) => `${products} models · ${groups} collections`
   } : {
     all: 'Todos',
     previousImage: 'Imagen anterior de',
     nextImage: 'Imagen siguiente de',
-    familyLabel: 'Familia de modelos',
+    familyLabel: 'Colección',
     material: 'Material',
-    variant: count => `${count} variante${count === 1 ? '' : 's'}`,
-    result: (products, groups) => `${products} variante${products === 1 ? '' : 's'} · ${groups} familia${groups === 1 ? '' : 's'}`,
+    variant: count => `${count} modelo${count === 1 ? '' : 's'}`,
+    result: (products, groups) => `${products} modelo${products === 1 ? '' : 's'} · ${groups} colecci${groups === 1 ? 'ón' : 'ones'}`,
     noResults: 'Sin resultados',
     noResultsBody: 'No encontramos productos con esos filtros. Prueba con otro nombre, SKU, material o categoría.',
     pendingImage: product => `Imagen pendiente para ${product.name}, SKU ${product.sku}`,
@@ -60,7 +58,7 @@
     inventoryUnavailable: 'Inventario no disponible',
     catalogUnavailable: 'No pudimos cargar el catálogo',
     catalogUnavailableBody: 'Intenta recargar la página. Si el problema continúa, contáctanos directamente.',
-    total: (products, groups) => `${products} variantes · ${groups} familias`
+    total: (products, groups) => `${products} modelos · ${groups} colecciones`
   };
 
   let inventory = [];
@@ -174,10 +172,7 @@
           </div>
         </article>`;
     }
-    const previewValue = augustReview ? 'august-review' : originalPreview ? 'originals' : '';
-    const detailUrl = previewValue || isEnglish
-      ? `/sappa-catalogo.html?${previewValue ? `preview=${previewValue}&amp;` : ''}${isEnglish ? 'lang=en&amp;' : ''}product=${encodeURIComponent(product.handle)}`
-      : `/producto/${encodeURIComponent(product.handle)}`;
+    const detailUrl = `/sappa-catalogo.html?${isEnglish ? 'lang=en&amp;' : ''}product=${encodeURIComponent(product.handle)}`;
     const isCowboy = product.category === 'VAQUEROS' || product.category === 'COWBOY HATS';
     const reviewCardBody = `
       <div class="card-sku"><a href="${detailUrl}" data-detail-handle="${safeHandle}">${escapeHtml(product.sku)}</a></div>
@@ -201,9 +196,7 @@
           </div>
         </div>
         <div class="card-body">
-          ${augustReview ? reviewCardBody : `
-            <div class="card-sku">${escapeHtml(product.sku)}</div>
-            <h3 class="card-name"><a href="${detailUrl}" data-detail-handle="${safeHandle}">${escapeHtml(product.name)}</a></h3>`}
+          ${reviewCardBody}
         </div>
       </article>`;
   }
@@ -228,7 +221,7 @@
           <div class="model-group-copy">
             <div class="model-group-label">${copy.familyLabel}</div>
             <h2 class="model-group-title" id="group-${escapeHtml(products[0].handle)}">${escapeHtml(category)}</h2>
-            ${description && !(augustReview && isCowboy) ? `<p class="model-group-description"><strong>${copy.material}:</strong> ${escapeHtml(description)}</p>` : ''}
+            ${description && !isCowboy ? `<p class="model-group-description"><strong>${copy.material}:</strong> ${escapeHtml(description)}</p>` : ''}
           </div>
           <div class="model-group-count">${copy.variant(variantCount)}</div>
         </header>
@@ -276,12 +269,10 @@
       </div>
       <div class="modal-details">
         <div class="card-category">${escapeHtml(openProduct.category)}</div>
-        <h2 id="productModalTitle">${escapeHtml(augustReview ? openProduct.sku : openProduct.name)}</h2>
-        <div class="modal-sku">${augustReview ? copy.familyLabel : 'SKU'} ${escapeHtml(augustReview ? openProduct.category : openProduct.sku)}</div>
+        <h2 id="productModalTitle">${escapeHtml(openProduct.sku)}</h2>
+        <div class="modal-sku">${copy.familyLabel} ${escapeHtml(openProduct.category)}</div>
         <dl class="product-facts">
-          ${augustReview ? reviewFacts : `
-            <div><dt>${copy.material}</dt><dd>${escapeHtml(openProduct.material)}</dd></div>
-            <div><dt>${copy.status}</dt><dd>${copy.activeStatus}</dd></div>`}
+          ${reviewFacts}
         </dl>
         ${openProduct.images.length ? '' : `<p class="pending-image-note">${copy.pendingPhoto}</p>`}
         <a class="modal-consult" href="${consultationLink(openProduct)}">${copy.consult}</a>
@@ -299,16 +290,10 @@
     modalClose.focus();
 
     if (options.updateHistory !== false) {
-      if (originalPreview || augustReview || isEnglish) {
-        const previewUrl = new URL('/sappa-catalogo.html', window.location.origin);
-        if (originalPreview) previewUrl.searchParams.set('preview', 'originals');
-        if (augustReview) previewUrl.searchParams.set('preview', 'august-review');
-        if (isEnglish) previewUrl.searchParams.set('lang', 'en');
-        previewUrl.searchParams.set('product', product.handle);
-        window.history.pushState({ product: product.handle }, '', previewUrl);
-      } else {
-        window.history.pushState({ product: product.handle }, '', `/producto/${encodeURIComponent(product.handle)}`);
-      }
+      const productUrl = new URL('/sappa-catalogo.html', window.location.origin);
+      if (isEnglish) productUrl.searchParams.set('lang', 'en');
+      productUrl.searchParams.set('product', product.handle);
+      window.history.pushState({ product: product.handle }, '', productUrl);
     }
   }
 
@@ -321,8 +306,6 @@
 
     if (options.updateHistory !== false) {
       const catalogUrl = new URL('/sappa-catalogo.html', window.location.origin);
-      if (originalPreview) catalogUrl.searchParams.set('preview', 'originals');
-      if (augustReview) catalogUrl.searchParams.set('preview', 'august-review');
       if (isEnglish) catalogUrl.searchParams.set('lang', 'en');
       window.history.pushState({}, '', catalogUrl);
     }

@@ -400,8 +400,8 @@
   }
   .collections-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
   }
   .collection-card {
     position: relative;
@@ -410,9 +410,40 @@
     cursor: pointer;
     background: var(--mid);
   }
-  .collection-card:first-child {
-    grid-row: span 1;
-    aspect-ratio: unset;
+  .collection-card--line-a {
+    grid-column: 1 / -1;
+    aspect-ratio: 16/9;
+  }
+  .collection-card--upcoming {
+    aspect-ratio: 16/10;
+    cursor: default;
+  }
+  .collection-card--upcoming .collection-card-img img {
+    filter: saturate(0.35) brightness(0.58);
+  }
+  .collection-card--upcoming:hover .collection-card-img img {
+    transform: scale(1.025);
+    filter: saturate(0.45) brightness(0.64);
+  }
+  .collection-card--upcoming .collection-card-overlay {
+    background: linear-gradient(to top, rgba(10,9,6,0.94) 0%, rgba(10,9,6,0.42) 58%, rgba(10,9,6,0.12) 100%);
+  }
+  .collection-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--ff-cond);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.68);
+  }
+  .collection-status::before {
+    content: '';
+    width: 18px;
+    height: 1px;
+    background: var(--gold);
   }
   .collection-card-img {
     width: 100%;
@@ -1175,7 +1206,26 @@
     .craft-pillars { grid-template-columns: 1fr; }
     .pillar { border-right: none !important; border-top: 1px solid rgba(245,240,232,0.08); padding-right: 0 !important; padding-left: 0 !important; }
     .pillar:first-child { border-top: none; }
-    .collections-grid { grid-template-columns: 1fr; }
+    .collections-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .collection-card--line-a {
+      grid-column: 1 / -1;
+      aspect-ratio: 4/3;
+    }
+    .collection-card--upcoming { aspect-ratio: 4/5; }
+    .collection-card--upcoming .collection-card-body { padding: 18px 16px; }
+    .collection-card--upcoming .collection-tag {
+      font-size: 9px;
+      letter-spacing: 0.16em;
+      margin-bottom: 5px;
+    }
+    .collection-card--upcoming .collection-name {
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+    .collection-card--upcoming .collection-status { display: none; }
     .gallery-grid { grid-template-columns: 1fr 1fr; }
     .gallery-item:nth-child(1) { grid-column: span 2; }
     .gallery-item:nth-child(3) { grid-column: span 1; }
@@ -1274,9 +1324,9 @@
   </div>
   <div class="collections-grid">
     <!-- Collection A -->
-    <div class="collection-card reveal reveal-delay-1">
+    <div class="collection-card collection-card--line-a reveal reveal-delay-1">
       <div class="collection-card-img">
-        <img src="https://static.wixstatic.com/media/65fb71_0f692226f0bb4009ba085426636b51bd~mv2.png" alt="Collection A" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Collection A</div>'">
+        <img src="/assets/linea-a-composicion-v2.webp" alt="SAPPA Collection A hats between Bellas Artes and a seaside sunset" loading="lazy" decoding="async">
       </div>
       <div class="collection-card-overlay"></div>
       <div class="collection-card-body">
@@ -1287,29 +1337,27 @@
       </div>
     </div>
     <!-- Collection B -->
-    <div class="collection-card reveal reveal-delay-2">
+    <div class="collection-card collection-card--upcoming reveal reveal-delay-2">
       <div class="collection-card-img">
         <img src="https://static.wixstatic.com/media/65fb71_8fad3c7abdbb4d17884c8d0306266db0~mv2.png" alt="Collection B" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Collection B</div>'">
       </div>
       <div class="collection-card-overlay"></div>
       <div class="collection-card-body">
-        <div class="collection-tag">Versatile</div>
+        <div class="collection-tag">Coming soon</div>
         <div class="collection-name">Collection B</div>
-        <p class="collection-desc">The perfect balance of style and function. Timeless design built for everyday wear.</p>
-        <a href="/sappa-catalogo.html" class="collection-link">Discover <span class="arrow-right"></span></a>
+        <div class="collection-status">In preparation</div>
       </div>
     </div>
     <!-- Collection C -->
-    <div class="collection-card reveal reveal-delay-3">
+    <div class="collection-card collection-card--upcoming reveal reveal-delay-3">
       <div class="collection-card-img">
         <img src="https://static.wixstatic.com/media/65fb71_8d17957583574af189d31d790ba001a4~mv2.png" alt="Collection C" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Collection C</div>'">
       </div>
       <div class="collection-card-overlay"></div>
       <div class="collection-card-body">
-        <div class="collection-tag">Performance</div>
+        <div class="collection-tag">Coming soon</div>
         <div class="collection-name">Collection C</div>
-        <p class="collection-desc">Durability, lightness, and style for active environments. Built to last without sacrificing character.</p>
-        <a href="/sappa-catalogo.html" class="collection-link">Discover <span class="arrow-right"></span></a>
+        <div class="collection-status">In preparation</div>
       </div>
     </div>
   </div>

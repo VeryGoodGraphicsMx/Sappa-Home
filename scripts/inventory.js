@@ -2,19 +2,12 @@
   'use strict';
 
   const searchParams = new URLSearchParams(window.location.search);
-  const IS_ORIGINAL_PREVIEW = searchParams.get('preview') === 'originals';
-  const IS_AUGUST_REVIEW = searchParams.get('preview') === 'august-review';
   const IS_ENGLISH = searchParams.get('lang') === 'en';
-  const INVENTORY_PATH = IS_AUGUST_REVIEW
-    ? (IS_ENGLISH ? '/data/inventory-review-august-en.json' : '/data/inventory-review-august.json')
-    : IS_ORIGINAL_PREVIEW
-      ? (IS_ENGLISH ? '/data/inventory-preview-originals-en.json' : '/data/inventory-preview-originals.json')
-      : '/data/inventory.json';
-  const previewVersion = searchParams.get('v');
-  const INVENTORY_URL = previewVersion
-    ? `${INVENTORY_PATH}?v=${encodeURIComponent(previewVersion)}`
-    : INVENTORY_PATH;
-  const PUBLICLY_BLOCKED_SKUS = new Set(['TPC-3', 'LCZ-5']);
+  const INVENTORY_PATH = IS_ENGLISH
+    ? '/data/inventory-review-august-en.json'
+    : '/data/inventory-review-august.json';
+  const catalogVersion = searchParams.get('v') || '20260824-client-ready-2';
+  const INVENTORY_URL = `${INVENTORY_PATH}?v=${encodeURIComponent(catalogVersion)}`;
   let inventoryPromise;
 
   function assertInventory(products) {
@@ -63,9 +56,7 @@
   }
 
   function isPublicProduct(product) {
-    return Boolean(product?.active) && (
-      IS_ORIGINAL_PREVIEW || IS_AUGUST_REVIEW || !PUBLICLY_BLOCKED_SKUS.has(product.sku)
-    );
+    return Boolean(product?.active);
   }
 
   function getActiveProducts(products) {
@@ -88,8 +79,6 @@
   window.SappaInventory = Object.freeze({
     INVENTORY_URL,
     IS_ENGLISH,
-    IS_AUGUST_REVIEW,
-    IS_ORIGINAL_PREVIEW,
     getActiveProducts,
     getProductBySkuOrHandle,
     isPublicProduct,
