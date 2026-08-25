@@ -250,11 +250,13 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/tpc-13-01.jpg",
-      "/assets/preview-originals/tpc-13-02.jpg"
+      "/assets/preview-originals/tpc-13-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ],
     "imageUrls": [
       "/assets/preview-originals/tpc-13-01.jpg",
-      "/assets/preview-originals/tpc-13-02.jpg"
+      "/assets/preview-originals/tpc-13-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ]
   },
   {
@@ -268,11 +270,13 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/tpc-14-01.jpg",
-      "/assets/preview-originals/tpc-14-02.jpg"
+      "/assets/preview-originals/tpc-14-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ],
     "imageUrls": [
       "/assets/preview-originals/tpc-14-01.jpg",
-      "/assets/preview-originals/tpc-14-02.jpg"
+      "/assets/preview-originals/tpc-14-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ]
   },
   {
@@ -286,11 +290,13 @@
     "status": "draft",
     "images": [
       "/assets/preview-originals/tpc-15-01.jpg",
-      "/assets/preview-originals/tpc-15-02.jpg"
+      "/assets/preview-originals/tpc-15-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ],
     "imageUrls": [
       "/assets/preview-originals/tpc-15-01.jpg",
-      "/assets/preview-originals/tpc-15-02.jpg"
+      "/assets/preview-originals/tpc-15-02.jpg",
+      "/assets/review-august/tpc-shared-rear.png"
     ]
   },
   {

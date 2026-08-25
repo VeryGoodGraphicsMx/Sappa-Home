@@ -105,7 +105,7 @@ function buildReviewInventory(products, language) {
   });
 
   // La vista trasera compartida fue confirmada para estas claves TPC.
-  ['TPC-1', 'TPC-2', 'TPC-3', 'TPC-4', 'TPC-7', 'TPC-8', 'TPC-9', 'TPC-11', 'TPC-12']
+  ['TPC-1', 'TPC-2', 'TPC-3', 'TPC-4', 'TPC-7', 'TPC-8', 'TPC-9', 'TPC-11', 'TPC-12', 'TPC-13', 'TPC-14', 'TPC-15']
     .forEach(sku => {
       updateProduct(review, sku, product => appendImages(product, [asset('tpc-shared-rear.png')]));
     });
