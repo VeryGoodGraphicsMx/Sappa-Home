@@ -117,6 +117,13 @@ function buildReviewInventory(products, language) {
   review.filter(product => product.sku.startsWith('LCZ-') && product.images.length > 1)
     .forEach(product => setImages(product, [...product.images.slice(1), product.images[0]]));
 
+  // LCZ-1: sobre el orden visible anterior, la foto 3 pasa a 1,
+  // la foto 1 pasa a 2 y la foto 2 se retira.
+  updateProduct(review, 'LCZ-1', product => {
+    const [photo1, , photo3, ...remainingPhotos] = product.images;
+    setImages(product, [photo3, photo1, ...remainingPhotos]);
+  });
+
   // LCZ-2: sobre el orden visible anterior, la foto 3 pasa a 1,
   // la foto 1 pasa a 2 y la foto 2 pasa a 3.
   updateProduct(review, 'LCZ-2', product => {

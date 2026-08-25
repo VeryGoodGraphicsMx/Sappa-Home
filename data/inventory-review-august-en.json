@@ -695,15 +695,13 @@
     "active": true,
     "status": "draft",
     "images": [
-      "/assets/review-august/lcz-1-update-01.jpg",
-      "/assets/review-august/lcz-1-update-02.jpg",
       "/assets/review-august/lcz-1-update-03.jpg",
+      "/assets/review-august/lcz-1-update-01.jpg",
       "/assets/preview-originals/lcz-1-01.jpg"
     ],
     "imageUrls": [
-      "/assets/review-august/lcz-1-update-01.jpg",
-      "/assets/review-august/lcz-1-update-02.jpg",
       "/assets/review-august/lcz-1-update-03.jpg",
+      "/assets/review-august/lcz-1-update-01.jpg",
       "/assets/preview-originals/lcz-1-01.jpg"
     ]
   },
