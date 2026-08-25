@@ -45,6 +45,12 @@ function buildReviewInventory(products, language) {
     product.material = language === 'en' ? 'Fine woven cellulose.' : 'Celulosa, tejido fino.';
   });
 
+  // LI-1: las fotos 1, 2 y 3 no corresponden al modelo Lino Indiana.
+  // Se conservan solamente las vistas 4, 5 y 6 dentro de la propuesta nueva.
+  updateProduct(review, 'LI-1', product => {
+    setImages(product, [4, 5, 6].map(index => `/assets/preview-originals/li-1-0${index}.jpg`));
+  });
+
   // LAC-1 queda visible como pendiente hasta confirmar la fotografia correcta.
   updateProduct(review, 'LAC-1', product => {
     product.status = 'pending-photo';
@@ -100,4 +106,3 @@ for (const language of Object.keys(sourceFiles)) {
   const review = buildReviewInventory(source, language);
   await writeFile(outputFiles[language], `${JSON.stringify(review, null, 2)}\n`, 'utf8');
 }
-

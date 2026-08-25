@@ -561,17 +561,11 @@
     "active": true,
     "status": "draft",
     "images": [
-      "/assets/preview-originals/li-1-01.jpg",
-      "/assets/preview-originals/li-1-02.jpg",
-      "/assets/preview-originals/li-1-03.jpg",
       "/assets/preview-originals/li-1-04.jpg",
       "/assets/preview-originals/li-1-05.jpg",
       "/assets/preview-originals/li-1-06.jpg"
     ],
     "imageUrls": [
-      "/assets/preview-originals/li-1-01.jpg",
-      "/assets/preview-originals/li-1-02.jpg",
-      "/assets/preview-originals/li-1-03.jpg",
       "/assets/preview-originals/li-1-04.jpg",
       "/assets/preview-originals/li-1-05.jpg",
       "/assets/preview-originals/li-1-06.jpg"

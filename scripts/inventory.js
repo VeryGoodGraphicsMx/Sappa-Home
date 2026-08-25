@@ -5,11 +5,15 @@
   const IS_ORIGINAL_PREVIEW = searchParams.get('preview') === 'originals';
   const IS_AUGUST_REVIEW = searchParams.get('preview') === 'august-review';
   const IS_ENGLISH = searchParams.get('lang') === 'en';
-  const INVENTORY_URL = IS_AUGUST_REVIEW
+  const INVENTORY_PATH = IS_AUGUST_REVIEW
     ? (IS_ENGLISH ? '/data/inventory-review-august-en.json' : '/data/inventory-review-august.json')
     : IS_ORIGINAL_PREVIEW
       ? (IS_ENGLISH ? '/data/inventory-preview-originals-en.json' : '/data/inventory-preview-originals.json')
       : '/data/inventory.json';
+  const previewVersion = searchParams.get('v');
+  const INVENTORY_URL = previewVersion
+    ? `${INVENTORY_PATH}?v=${encodeURIComponent(previewVersion)}`
+    : INVENTORY_PATH;
   const PUBLICLY_BLOCKED_SKUS = new Set(['TPC-3', 'LCZ-5']);
   let inventoryPromise;
 
