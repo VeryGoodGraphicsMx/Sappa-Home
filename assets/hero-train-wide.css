@@ -1,0 +1,9 @@
+/* Horizontal background from the train photograph; mobile keeps the original. */
+@media(min-width:801px) {
+  .hero { height:100svh; min-height:660px; }
+  .hero-train img { width:100%; height:100%; object-fit:cover; object-position:70% 55%; }
+  .hero .hero-content { width:47%; max-width:760px; padding:104px 32px 64px clamp(32px,5vw,80px); }
+  .hero .hero-overlay { display:block; background:linear-gradient(90deg,rgba(10,9,6,.76),rgba(10,9,6,.52) 32%,rgba(10,9,6,.08) 53%,transparent 67%); }
+  .hero .hero-title { font-size:clamp(48px,6vw,84px); }
+  .hero .hero-sub { color:#f0ece6; }
+}

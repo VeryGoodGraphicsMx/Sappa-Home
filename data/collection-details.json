@@ -1,0 +1,36 @@
+{
+  "groups": {
+    "TPC": {"brimCm":5.5,"crownCm":10,"texture":"semi-soft"},
+    "TPI": {"brimCm":7,"crownCm":10,"texture":"semi-soft"},
+    "LC": {"brimCm":5,"crownCm":10,"texture":"rigid"},
+    "LI": {"brimCm":6.5,"crownCm":10,"texture":"rigid"},
+    "LCZ": {"brimCm":4.8,"crownCm":10,"texture":"semi-soft"},
+    "LAC": {"brimCm":5,"crownCm":10,"texture":"semi-soft"},
+    "LAI": {"brimCm":6.5,"crownCm":10,"texture":"semi-soft"},
+    "LP": {"brimCm":8.3,"crownCm":10,"texture":"rigid"},
+    "LMP": {"brimCm":8.3,"crownCm":10,"texture":"rigid"},
+    "LMI": {"brimCm":6.5,"crownCm":10,"texture":"rigid"},
+    "H": {"brimCm":5.4,"crownCm":10,"texture":"semi-soft"},
+    "MMC": {"brimCm":5.4,"crownCm":10,"texture":"rigid"},
+    "MMI": {"brimCm":7.5,"crownCm":10,"texture":"rigid"},
+    "TCC": {"brimCm":5.4,"crownCm":10,"texture":"semi-soft"},
+    "TCI": {"brimCm":7.5,"crownCm":10,"texture":"semi-soft"},
+    "VVC": {"brimCm":5.4,"crownCm":10,"texture":"semi-soft"},
+    "VVP": {"brimCm":5.4,"crownCm":10,"texture":"semi-soft"},
+    "TMC": {"brimCm":5.4,"crownCm":10,"texture":"rigid"}
+  },
+  "products": {
+    "VL-1": {"brimCm":10.5,"crownCm":10,"texture":"rigid"},
+    "VM-2": {"crownCm":10,"texture":"rigid"},
+    "VMM-1": {"brimCm":10.5,"crownCm":10,"texture":"rigid"},
+    "VB-1": {"brimCm":10.5,"crownCm":10,"texture":"semi-soft"},
+    "VE-1": {"brimCm":9,"crownCm":10,"texture":"rigid"},
+    "VE-2": {"brimCm":9,"crownCm":10,"texture":"rigid"},
+    "VE-3": {"brimCm":10.8,"crownCm":10.5,"texture":"rigid"},
+    "CCN-1": {"brimCm":4.8,"crownCm":10,"texture":"semi-soft"},
+    "CCQ-1": {"brimCm":4.8,"crownCm":10,"texture":"semi-soft"},
+    "CPF-1": {"brimCm":8.3,"crownCm":10,"texture":"semi-soft"},
+    "CI-1": {"brimCm":6.5,"crownCm":10,"texture":"semi-soft"},
+    "CF-1": {"brimCm":8.5,"crownCm":10,"texture":"semi-soft"}
+  }
+}

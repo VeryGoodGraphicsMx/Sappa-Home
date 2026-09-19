@@ -1180,6 +1180,9 @@
     .gallery-header { flex-direction: column; align-items: flex-start; gap: 20px; }
   }
 </style>
+<link rel="stylesheet" href="/assets/home-refinement.css?v=20260919-train-only">
+<link rel="stylesheet" href="/assets/hero-train-wide.css?v=20260919-1">
+<link rel="stylesheet" href="/assets/home-parity.css?v=20260919-1">
 </head>
 <body>
 
@@ -1194,6 +1197,7 @@
     <li><a href="#nosotros">Nuestra Historia</a></li>
     <li><a href="#galeria">Lookbook</a></li>
     <li><a href="#contacto">Contacto</a></li>
+    <li><a href="/en/" lang="en" aria-label="English version">EN</a></li>
   </ul>
   <a href="#colecciones" class="nav-cta">Explorar</a>
   <div class="hamburger" id="hamburger">
@@ -1206,11 +1210,12 @@
   <a href="#galeria">Lookbook</a>
   <a href="#contacto">Contacto</a>
   <a href="/sappa-catalogo.html">Catálogo completo</a>
+  <a href="/en/" lang="en">EN</a>
 </div>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg hero-train"><picture><source media="(min-width:801px)" srcset="/assets/review-september/home-tren-horizontal-v1.png" width="1672" height="941"><img src="/assets/review-september/home-tren.jpg" alt="Sombrero SAPPA blanco con banda negra y moño blanco frente al tren de montaña" width="1200" height="1600" fetchpriority="high"></picture></div>
   <div class="hero-overlay"></div>
   <div class="hero-noise"></div>
   <div class="hero-content">
@@ -1264,7 +1269,7 @@
     <!-- Línea A -->
     <div class="collection-card collection-card--line-a reveal reveal-delay-1">
       <div class="collection-card-img">
-        <img src="/assets/linea-a-composicion-v2.webp" alt="Sombreros SAPPA Línea A entre Bellas Artes y un atardecer frente al mar" loading="lazy" decoding="async">
+        <img src="/assets/linea-a-atardecer.jpg" alt="Sombrero SAPPA Línea A frente al mar al atardecer" loading="lazy" decoding="async">
       </div>
       <div class="collection-card-overlay"></div>
       <div class="collection-card-body">
@@ -1277,7 +1282,7 @@
     <!-- Línea B -->
     <div class="collection-card collection-card--upcoming reveal reveal-delay-2">
       <div class="collection-card-img">
-        <img src="https://static.wixstatic.com/media/65fb71_8fad3c7abdbb4d17884c8d0306266db0~mv2.png" alt="Línea B" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Línea B</div>'">
+        <img src="/assets/review-september/linea-b-presentacion.jpg" alt="Línea B" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Línea B</div>'">
       </div>
       <div class="collection-card-overlay"></div>
       <div class="collection-card-body">
@@ -1373,7 +1378,7 @@
 <!-- FEATURED PRODUCT -->
 <div class="featured" id="linea-a">
   <div class="featured-visual reveal">
-    <span class="featured-label-vertical">Línea A — Featured</span>
+    <span class="featured-label-vertical">Línea A — Destacada</span>
     <img src="https://static.wixstatic.com/media/65fb71_8af92e0e977244eeb1ea07a234b268b5~mv2.png" alt="Línea A Featured" onerror="this.innerHTML='<div class=\'img-placeholder\' style=\'height:100%\'>Línea A</div>'">
   </div>
   <div class="featured-content reveal reveal-delay-2">
@@ -1547,6 +1552,14 @@
   </div>
 </footer>
 
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/13058010988" class="whatsapp-float" target="_blank" aria-label="Chatea con Sappa en WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+    <path d="M19.11 17.41c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.15-1.35-.79-.71-1.33-1.59-1.49-1.86-.16-.27-.02-.42.12-.56.13-.13.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.98 2.64 1.11 2.82.14.18 1.92 2.94 4.66 4.12.65.28 1.16.44 1.56.56.66.21 1.27.18 1.74.11.53-.08 1.6-.65 1.82-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z"/>
+    <path d="M16.01 3C8.84 3 3 8.84 3 16c0 2.53.74 4.98 2.13 7.08L3 29l6.09-2.06A12.94 12.94 0 0 0 16.01 29C23.16 29 29 23.16 29 16S23.16 3 16.01 3zm0 23.64c-2.14 0-4.24-.58-6.06-1.68l-.43-.25-3.61 1.22 1.18-3.52-.28-.46A10.59 10.59 0 0 1 5.36 16c0-5.87 4.78-10.65 10.65-10.65S26.66 10.13 26.66 16 21.88 26.64 16.01 26.64z"/>
+  </svg>
+</a>
+
 <script>
   // Custom cursor
   const cursor = document.getElementById('cursor');
@@ -1585,7 +1598,9 @@
   // Smooth scroll for nav links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const href = a.getAttribute('href');
+      if (href === '#') { e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); return; }
+      const target = document.querySelector(href);
       if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
     });
   });
@@ -1617,9 +1632,10 @@
       return;
     }
     const subscriber = emailInput.value.trim();
-    const subject = encodeURIComponent('Suscripción a novedades Sappa Headwear');
-    const body = encodeURIComponent(`Hola Sappa, quiero recibir novedades y lanzamientos en este correo: ${subscriber}`);
-    emailStatus.textContent = 'Abriendo tu aplicación de correo…';
+    const english = document.documentElement.lang === 'en';
+    const subject = encodeURIComponent(english ? 'Sappa Headwear news subscription' : 'Suscripción a novedades Sappa Headwear');
+    const body = encodeURIComponent(english ? `Hello Sappa, I would like to receive news and launches at this email: ${subscriber}` : `Hola Sappa, quiero recibir novedades y lanzamientos en este correo: ${subscriber}`);
+    emailStatus.textContent = english ? 'Opening your email app…' : 'Abriendo tu aplicación de correo…';
     window.location.href = `mailto:sappaheadwear@gmail.com?subject=${subject}&body=${body}`;
   });
 

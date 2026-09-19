@@ -62,6 +62,7 @@
   };
 
   let inventory = [];
+  let collectionDetails = {};
   let activeCategory = 'all';
   let openProduct = null;
   let openImageIndex = 0;
@@ -210,6 +211,28 @@
     return [...groups.entries()];
   }
 
+  function productDetails(product) {
+    return collectionDetails.products?.[product.sku] || collectionDetails.groups?.[product.sku.split('-')[0]] || {};
+  }
+
+  function specificationMarkup(products) {
+    const details = products.filter(p => p.status !== 'comparison').map(productDetails);
+    const pending = isEnglish ? 'Please inquire' : 'Consultar';
+    const measurement = key => {
+      const values = [...new Set(details.map(d => d[key]))];
+      if (values.length !== 1) return isEnglish ? 'Varies by model · view details' : 'Según modelo · ver detalle';
+      const cm = values[0];
+      return Number.isFinite(cm) ? `${cm} cm / ≈ ${(cm / 2.54).toFixed(2)} in` : pending;
+    };
+    const textures = [...new Set(details.map(d => d.texture))];
+    const texture = textures.length > 1 ? (isEnglish ? 'Varies by model' : 'Según modelo')
+      : textures[0] === 'semi-soft' ? (isEnglish ? 'Semi-soft' : 'Semisuave')
+      : textures[0] === 'rigid' ? (isEnglish ? 'Sturdy' : 'Rígido') : pending;
+    return `<div><dt>${isEnglish ? 'Brim width' : 'Ancho del ala'}</dt><dd>${measurement('brimCm')}</dd></div>
+      <div><dt>${isEnglish ? 'Crown height' : 'Altura de copa'}</dt><dd>${measurement('crownCm')}</dd></div>
+      <div><dt>${isEnglish ? 'Texture' : 'Textura'}</dt><dd>${texture}</dd></div>`;
+  }
+
   function modelGroup([category, products]) {
     const materials = [...new Set(products.map(product => product.material).filter(Boolean))];
     const description = materials.join(' · ');
@@ -222,6 +245,9 @@
             <div class="model-group-label">${copy.familyLabel}</div>
             <h2 class="model-group-title" id="group-${escapeHtml(products[0].handle)}">${escapeHtml(category)}</h2>
             ${description && !isCowboy ? `<p class="model-group-description"><strong>${copy.material}:</strong> ${escapeHtml(description)}</p>` : ''}
+            <dl class="collection-specs">
+              ${specificationMarkup(products)}
+            </dl>
           </div>
           <div class="model-group-count">${copy.variant(variantCount)}</div>
         </header>
@@ -273,6 +299,7 @@
         <div class="modal-sku">${copy.familyLabel} ${escapeHtml(openProduct.category)}</div>
         <dl class="product-facts">
           ${reviewFacts}
+          ${specificationMarkup([openProduct])}
         </dl>
         ${openProduct.images.length ? '' : `<p class="pending-image-note">${copy.pendingPhoto}</p>`}
         <a class="modal-consult" href="${consultationLink(openProduct)}">${copy.consult}</a>
@@ -395,7 +422,14 @@
 
   async function initialize() {
     try {
-      const allProducts = await window.SappaInventory.loadInventory();
+      const [allProducts, details] = await Promise.all([
+        window.SappaInventory.loadInventory(),
+        fetch('/data/collection-details.json?v=20260919').then(response => {
+          if (!response.ok) throw new Error('Collection details unavailable');
+          return response.json();
+        })
+      ]);
+      collectionDetails = details;
       inventory = window.SappaInventory.getActiveProducts(allProducts);
       const variantCount = inventory.filter(product => product.status !== 'comparison').length;
       pillTotal.textContent = copy.total(variantCount, new Set(inventory.map(product => product.category)).size);

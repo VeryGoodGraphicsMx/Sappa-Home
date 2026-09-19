@@ -169,7 +169,7 @@
     inset: 0;
     background:
       radial-gradient(ellipse 60% 80% at 60% 40%, rgba(40,30,18,0.8) 0%, transparent 70%),
-      url('https://static.wixstatic.com/media/65fb71_eeb3b906c12941a584c75663ccac615a~mv2.png') center/cover no-repeat;
+      url('https://static.wixstatic.com/media/65fb71_90c48528cc8a48429d7b3b10033e1378~mv2.png') center/cover no-repeat;
     transform: scale(1.05);
     animation: heroZoom 12s ease-out forwards;
   }
@@ -1058,91 +1058,33 @@
   }
   .footer-legal a:hover { color: rgba(245,240,232,0.5); }
 
-
-
-  /* ─── COMMERCIAL CTA STRIP ─── */
-  .cta-strip {
-    background: #111;
-    border-top: 1px solid rgba(245,240,232,0.06);
-    border-bottom: 1px solid rgba(245,240,232,0.06);
-    padding: 90px 80px;
-  }
-  .cta-strip-inner {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-  }
-  .cta-copy { max-width: 720px; }
-  .cta-mini {
-    display: block;
-    margin-bottom: 18px;
-    font-family: var(--ff-cond);
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--gold);
-  }
-  .cta-copy h2 {
-    font-family: var(--ff-display);
-    font-size: clamp(38px, 4vw, 62px);
-    font-weight: 900;
-    line-height: 1.05;
-    color: var(--white);
-    margin-bottom: 18px;
-  }
-  .cta-copy h2 em { font-style: italic; color: var(--sand); }
-  .cta-copy p {
-    color: rgba(245,240,232,0.58);
-    line-height: 1.8;
-    max-width: 560px;
-    font-weight: 300;
-  }
-  .cta-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    min-width: 280px;
-  }
-  .cta-actions .btn-primary,
-  .cta-actions .btn-secondary { text-align: center; }
-
-  /* ─── FEATURED COLLECTION VARIANTS ─── */
-  .featured.reverse .featured-visual { order: 2; }
-  .featured.reverse .featured-content { order: 1; }
-  .featured .featured-actions {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-  }
-  .featured .featured-actions .btn-primary,
-  .featured .featured-actions .btn-secondary { flex: 1; min-width: 190px; text-align: center; }
-
-  /* ─── WHATSAPP FLOAT ─── */
-  .whatsapp-float {
+  /* ─── MOBILE MENU ─── */
+  .mobile-menu {
     position: fixed;
-    right: 28px;
-    bottom: 28px;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background: var(--sand);
-    color: var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    box-shadow: 0 18px 40px rgba(0,0,0,0.35);
-    transition: transform 0.25s ease, background 0.25s ease;
+    inset: 60px 0 auto 0;
+    z-index: 99;
+    background: rgba(10,9,6,0.98);
+    border-bottom: 1px solid rgba(184,137,74,0.2);
+    padding: 20px 24px 28px;
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    backdrop-filter: blur(14px);
   }
-  .whatsapp-float:hover {
-    transform: translateY(-4px) scale(1.05);
-    background: var(--gold);
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    color: var(--cream);
+    text-decoration: none;
+    font-family: var(--ff-cond);
+    font-size: 16px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(245,240,232,.08);
   }
-  .whatsapp-float svg { width: 28px; height: 28px; }
+  .hamburger.active span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .hamburger.active span:nth-child(2) { opacity: 0; }
+  .hamburger.active span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
   /* ─── MOBILE HAMBURGER (basic) ─── */
   .hamburger {
@@ -1236,16 +1178,11 @@
     .collections { padding: 72px 24px; }
     .collections-header { flex-direction: column; align-items: flex-start; gap: 24px; }
     .gallery-header { flex-direction: column; align-items: flex-start; gap: 20px; }
-
-    .cta-strip { padding: 72px 24px; }
-    .cta-strip-inner { flex-direction: column; align-items: flex-start; }
-    .cta-actions { width: 100%; }
-    .cta-actions a { width: 100%; text-align: center; }
-    .featured.reverse .featured-visual { order: 1; }
-    .featured.reverse .featured-content { order: 2; }
-    .whatsapp-float { width: 56px; height: 56px; right: 18px; bottom: 18px; }
   }
 </style>
+<link rel="stylesheet" href="/assets/home-refinement.css?v=20260919-train-only">
+<link rel="stylesheet" href="/assets/hero-train-wide.css?v=20260919-1">
+<link rel="stylesheet" href="/assets/home-parity.css?v=20260919-1">
 </head>
 <body>
 
@@ -1254,35 +1191,38 @@
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="/" class="nav-logo">SAPPA <span>·</span> HEADWEAR</a>
+  <a href="#" class="nav-logo">SAPPA <span>·</span> HEADWEAR</a>
   <ul class="nav-links">
-    <li><a href="/">Home</a></li>
     <li><a href="#colecciones">Collections</a></li>
-    <li><a href="/sappa-catalogo.html">Catalog</a></li>
     <li><a href="#nosotros">Our Story</a></li>
     <li><a href="#galeria">Lookbook</a></li>
     <li><a href="#contacto">Contact</a></li>
-    <li><a href="/es/Index.html">ES</a></li>
+    <li><a href="/es/" lang="es" aria-label="Versión en español">ES</a></li>
   </ul>
-  <a href="/sappa-catalogo.html" class="nav-cta">Explore Inventory</a>
+  <a href="#colecciones" class="nav-cta">Explore</a>
   <div class="hamburger" id="hamburger">
     <span></span><span></span><span></span>
   </div>
 </nav>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <a href="#colecciones">Collections</a>
+  <a href="#nosotros">Our Story</a>
+  <a href="#galeria">Lookbook</a>
+  <a href="#contacto">Contact</a>
+  <a href="/sappa-catalogo.html?lang=en">Full catalog</a>
+  <a href="/es/" lang="es">ES</a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg hero-train"><picture><source media="(min-width:801px)" srcset="/assets/review-september/home-tren-horizontal-v1.png" width="1672" height="941"><img src="/assets/review-september/home-tren.jpg" alt="White SAPPA hat with a black band and white bow in front of a mountain train" width="1200" height="1600" fetchpriority="high"></picture></div>
   <div class="hero-overlay"></div>
   <div class="hero-noise"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Collection 2025</div>
-    <h1 class="hero-title">Crafted for<br><em>Presence.</em></h1>
-    <p class="hero-sub">Resort-inspired premium headwear crafted for those who understand elegance, confidence, and timeless character.</p>
-    <div class="hero-actions">
-      <a href="/sappa-catalogo.html" class="btn-primary">Explore Inventory</a>
-      <a href="https://wa.me/13058010988" target="_blank" class="btn-secondary">WhatsApp Concierge</a>
-    </div>
+    <div class="hero-eyebrow">Collection 2026</div>
+    <h1 class="hero-title">Crown Your<br><em>Character.</em></h1>
+    <p class="hero-sub">Premium hats designed for those who understand that style is a statement of identity. Craftsmanship without compromise.</p>
+    <div class="hero-actions"><a href="#colecciones" class="btn-primary">View Collections</a><a href="#nosotros" class="btn-secondary">Our Story</a></div>
   </div>
   <div class="hero-scroll">
     <div class="hero-scroll-line"></div>
@@ -1320,26 +1260,26 @@
       <div class="section-label">Our Collections</div>
       <h2 class="section-title">Three <em>tiers</em>,<br>one standard.</h2>
     </div>
-    <a href="/sappa-catalogo.html" class="btn-secondary" style="white-space: nowrap;">View Full Catalog</a>
+    <a href="/sappa-catalogo.html?lang=en" class="btn-secondary" style="white-space: nowrap;">View Full Catalog</a>
   </div>
   <div class="collections-grid">
     <!-- Collection A -->
     <div class="collection-card collection-card--line-a reveal reveal-delay-1">
       <div class="collection-card-img">
-        <img src="/assets/linea-a-composicion-v2.webp" alt="SAPPA Collection A hats between Bellas Artes and a seaside sunset" loading="lazy" decoding="async">
+        <img src="/assets/linea-a-atardecer.jpg" alt="SAPPA Collection A hat at a seaside sunset" loading="lazy" decoding="async">
       </div>
       <div class="collection-card-overlay"></div>
       <div class="collection-card-body">
         <div class="collection-tag">Exclusive</div>
         <div class="collection-name">Collection A</div>
         <p class="collection-desc">Select fibers, superior finishes. Built for those who settle for nothing less than the best.</p>
-        <a href="/sappa-catalogo.html" class="collection-link">Discover <span class="arrow-right"></span></a>
+        <a href="/sappa-catalogo.html?lang=en" class="collection-link">Discover <span class="arrow-right"></span></a>
       </div>
     </div>
     <!-- Collection B -->
     <div class="collection-card collection-card--upcoming reveal reveal-delay-2">
       <div class="collection-card-img">
-        <img src="https://static.wixstatic.com/media/65fb71_8fad3c7abdbb4d17884c8d0306266db0~mv2.png" alt="Collection B" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Collection B</div>'">
+        <img src="/assets/review-september/linea-b-presentacion.jpg" alt="Collection B" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Collection B</div>'">
       </div>
       <div class="collection-card-overlay"></div>
       <div class="collection-card-body">
@@ -1359,21 +1299,6 @@
         <div class="collection-name">Collection C</div>
         <div class="collection-status">In preparation</div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA STRIP -->
-<section class="cta-strip">
-  <div class="cta-strip-inner">
-    <div class="cta-copy reveal">
-      <span class="cta-mini">Premium Inventory</span>
-      <h2>Explore the full <em>Sappa</em> catalog.</h2>
-      <p>All collections now lead to one curated inventory experience powered by Shopify. Browse the complete range today; product details and checkout will be enabled once prices and availability are approved.</p>
-    </div>
-    <div class="cta-actions reveal reveal-delay-2">
-      <a href="/sappa-catalogo.html" class="btn-primary">View Full Inventory</a>
-      <a href="https://wa.me/13058010988" target="_blank" class="btn-secondary">Contact via WhatsApp</a>
     </div>
   </div>
 </section>
@@ -1454,7 +1379,7 @@
     <img src="https://static.wixstatic.com/media/65fb71_8af92e0e977244eeb1ea07a234b268b5~mv2.png" alt="Collection A Featured" onerror="this.innerHTML='<div class=\'img-placeholder\' style=\'height:100%\'>Collection A</div>'">
   </div>
   <div class="featured-content reveal reveal-delay-2">
-    <div class="featured-tag">Featured Piece — 2025</div>
+    <div class="featured-tag">Featured Piece — 2026</div>
     <h2 class="featured-title">Collection A.<br><em>Unmatched.</em></h2>
     <p class="featured-body">Our most exclusive line. Made for those who demand the best from every material and every process. A presence felt before it's seen.</p>
     <div class="featured-specs">
@@ -1475,83 +1400,9 @@
         <div class="spec-value">Limited Edition</div>
       </div>
     </div>
-    <div class="featured-actions">
-      <a href="/sappa-catalogo.html" class="btn-primary">Shop Collection A</a>
-      <a href="https://wa.me/13058010988" target="_blank" class="btn-secondary">Ask Concierge</a>
-    </div>
+    <a href="/sappa-catalogo.html?lang=en" class="btn-primary">View Full Collection A</a>
   </div>
 </div>
-
-<!-- FEATURED COLLECTION B -->
-<div class="featured reverse" id="linea-b">
-  <div class="featured-visual reveal">
-    <span class="featured-label-vertical">Collection B — Versatile</span>
-    <img src="https://static.wixstatic.com/media/65fb71_8fad3c7abdbb4d17884c8d0306266db0~mv2.png" alt="Collection B Featured" onerror="this.innerHTML='<div class=\'img-placeholder\' style=\'height:100%\'>Collection B</div>'">
-  </div>
-  <div class="featured-content reveal reveal-delay-2">
-    <div class="featured-tag">Everyday Elegance — 2025</div>
-    <h2 class="featured-title">Collection B.<br><em>Effortless.</em></h2>
-    <p class="featured-body">A refined balance between comfort, function, and timeless presence. Designed for everyday wear without losing the elevated Sappa character.</p>
-    <div class="featured-specs">
-      <div class="spec-item">
-        <div class="spec-label">Material</div>
-        <div class="spec-value">Balanced Premium Fibers</div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-label">Category</div>
-        <div class="spec-value">Versatile Line</div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-label">Use</div>
-        <div class="spec-value">Daily / Resort / Travel</div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-label">Availability</div>
-        <div class="spec-value">Catalog Selection</div>
-      </div>
-    </div>
-    <div class="featured-actions">
-      <a href="/sappa-catalogo.html" class="btn-primary">Shop Collection B</a>
-      <a href="https://wa.me/13058010988" target="_blank" class="btn-secondary">Ask Concierge</a>
-    </div>
-  </div>
-</div>
-
-<!-- FEATURED COLLECTION C -->
-<div class="featured" id="linea-c">
-  <div class="featured-visual reveal">
-    <span class="featured-label-vertical">Collection C — Active</span>
-    <img src="https://static.wixstatic.com/media/65fb71_8d17957583574af189d31d790ba001a4~mv2.png" alt="Collection C Featured" onerror="this.innerHTML='<div class=\'img-placeholder\' style=\'height:100%\'>Collection C</div>'">
-  </div>
-  <div class="featured-content reveal reveal-delay-2">
-    <div class="featured-tag">Built for Movement — 2025</div>
-    <h2 class="featured-title">Collection C.<br><em>Enduring.</em></h2>
-    <p class="featured-body">Lightweight, durable, and ready for active environments. A performance-minded expression of the Sappa aesthetic.</p>
-    <div class="featured-specs">
-      <div class="spec-item">
-        <div class="spec-label">Material</div>
-        <div class="spec-value">Durable Lightweight Build</div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-label">Category</div>
-        <div class="spec-value">Performance Line</div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-label">Use</div>
-        <div class="spec-value">Outdoor / Travel / Active</div>
-      </div>
-      <div class="spec-item">
-        <div class="spec-label">Availability</div>
-        <div class="spec-value">Catalog Selection</div>
-      </div>
-    </div>
-    <div class="featured-actions">
-      <a href="/sappa-catalogo.html" class="btn-primary">Shop Collection C</a>
-      <a href="https://wa.me/13058010988" target="_blank" class="btn-secondary">Ask Concierge</a>
-    </div>
-  </div>
-</div>
-
 
 <!-- GALLERY -->
 <section class="gallery" id="galeria">
@@ -1588,8 +1439,8 @@
       </div>
     </div>
     <div class="gallery-item reveal reveal-delay-4">
-      <div class="gallery-item-inner" style="background: var(--mid);">
-        <div class="img-placeholder">Lookbook 05</div>
+      <div class="gallery-item-inner">
+        <img src="https://static.wixstatic.com/media/65fb71_41e2acb25c744e63b6528c515f666581~mv2.png" alt="Sappa — own your style" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Sappa Headwear</div>'">
         <div class="gallery-item-caption">Sappa — Own Your Style</div>
       </div>
     </div>
@@ -1599,36 +1450,24 @@
 <!-- TESTIMONIALS -->
 <section class="testimonials">
   <div class="testimonials-header reveal">
-    <div class="section-label">What They Say</div>
-    <h2 class="section-title">Character <em>speaks</em>.</h2>
+    <div class="section-label">The Sappa promise</div>
+    <h2 class="section-title">Character in every <em>detail</em>.</h2>
   </div>
   <div class="testimonials-grid">
     <div class="testimonial-card reveal reveal-delay-1">
-      <div class="testimonial-quote">"</div>
-      <p class="testimonial-text">Ever since I got my Collection A, people stop me everywhere asking where I got it. This hat starts conversations on its own.</p>
-      <div class="testimonial-stars">★★★★★</div>
-      <div class="testimonial-author">
-        <strong>Carlos M.</strong>
-        Miami, FL
-      </div>
+      <div class="testimonial-quote">01</div>
+      <p class="testimonial-text">Design that complements your identity, rather than following passing trends.</p>
+      <div class="testimonial-author"><strong>Intentional design</strong>Aesthetics that communicate</div>
     </div>
     <div class="testimonial-card reveal reveal-delay-2">
-      <div class="testimonial-quote">"</div>
-      <p class="testimonial-text">The build quality is outstanding. I've owned hats from luxury brands and Sappa is right there with them — no question.</p>
-      <div class="testimonial-stars">★★★★★</div>
-      <div class="testimonial-author">
-        <strong>Diego R.</strong>
-        Mexico City
-      </div>
+      <div class="testimonial-quote">02</div>
+      <p class="testimonial-text">Carefully selected materials, finishes, and proportions to create pieces with presence.</p>
+      <div class="testimonial-author"><strong>Visible quality</strong>Materials and finishes</div>
     </div>
     <div class="testimonial-card reveal reveal-delay-3">
-      <div class="testimonial-quote">"</div>
-      <p class="testimonial-text">I picked up Collection B for everyday wear and now I never leave without it. The balance of comfort and style is perfect.</p>
-      <div class="testimonial-stars">★★★★★</div>
-      <div class="testimonial-author">
-        <strong>Andrés V.</strong>
-        Bogotá, CO
-      </div>
+      <div class="testimonial-quote">03</div>
+      <p class="testimonial-text">Three lines with distinct personalities and one goal: to project confidence and authenticity.</p>
+      <div class="testimonial-author"><strong>Individual character</strong>A line for every style</div>
     </div>
   </div>
 </section>
@@ -1644,13 +1483,13 @@
     <p>Exclusive drops, limited editions, and early access — for those who are part of the Sappa community.</p>
   </div>
   <div class="reveal reveal-delay-2">
-    <div class="email-form">
+    <form class="email-form" id="email-form">
       <div class="email-input-row">
-        <input type="email" class="email-input" placeholder="your@email.com">
-        <button class="email-btn">Subscribe</button>
+        <input type="email" id="email-input" class="email-input" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
+        <button class="email-btn" type="submit">Subscribe</button>
       </div>
-      <p class="email-note">No spam. Only what's worth your time. Unsubscribe whenever you want.</p>
-    </div>
+      <p class="email-note" id="email-status" aria-live="polite">Submitting opens your email app to confirm the request.</p>
+    </form>
   </div>
 </div>
 
@@ -1658,7 +1497,7 @@
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <a href="/" class="nav-logo">SAPPA <span>·</span> HEADWEAR</a>
+      <a href="#" class="nav-logo">SAPPA <span>·</span> HEADWEAR</a>
       <p>Premium hats designed to project character, elegance, and authenticity. Crown your character.</p>
       <div class="footer-social">
         <a href="https://www.instagram.com/sappa_headwear" target="_blank" class="social-link" title="Instagram">
@@ -1675,10 +1514,10 @@
     <div class="footer-col">
       <h4>Collections</h4>
       <ul>
-        <li><a href="/sappa-catalogo.html">Collection A</a></li>
-        <li><a href="/sappa-catalogo.html">Collection B</a></li>
-        <li><a href="/sappa-catalogo.html">Collection C</a></li>
-        <li><a href="/sappa-catalogo.html">Full Catalog</a></li>
+        <li><a href="/sappa-catalogo.html?lang=en">Collection A</a></li>
+        <li><a href="/sappa-catalogo.html?lang=en">Collection B</a></li>
+        <li><a href="/sappa-catalogo.html?lang=en">Collection C</a></li>
+        <li><a href="/sappa-catalogo.html?lang=en">Full Catalog</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -1686,15 +1525,14 @@
       <ul>
         <li><a href="#nosotros">About Us</a></li>
         <li><a href="#contacto">Contact</a></li>
-        <li><a href="https://wa.me/13058010988" target="_blank">Wholesale</a></li>
-        <li><a href="mailto:sappaheadwear@gmail.com?subject=Press%20Inquiry%20Sappa">Press</a></li>
+        <li><a href="mailto:sappaheadwear@gmail.com?subject=Wholesale%20Inquiry%20Sappa">Wholesale</a></li>
+        <li><a href="mailto:sappaheadwear@gmail.com?subject=Press%20y%20colaboraciones%20Sappa">Press</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Contact</h4>
       <ul>
         <li><a href="tel:+13058010988">+1 305-801-0988</a></li>
-        <li><a href="https://wa.me/13058010988" target="_blank">WhatsApp Concierge</a></li>
         <li><a href="mailto:sappaheadwear@gmail.com">sappaheadwear@gmail.com</a></li>
         <li style="color: rgba(245,240,232,0.2); font-size: 13px; margin-top: 8px;">Instagram</li>
         <li><a href="https://www.instagram.com/sappa_headwear" target="_blank">@sappa_headwear</a></li>
@@ -1702,11 +1540,11 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p class="footer-copy">© 2025 Sappa Headwear. All rights reserved.</p>
+    <p class="footer-copy">© 2026 Sappa Headwear. All rights reserved.</p>
     <div class="footer-legal">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
-      <a href="#">Shipping & Returns</a>
+      <a href="#contacto">Contact</a>
+      <a href="/sappa-catalogo.html?lang=en">Catalog</a>
+      <a href="mailto:sappaheadwear@gmail.com?subject=Shipping%20and%20returns%20inquiry">Shipping and returns</a>
     </div>
   </div>
 </footer>
@@ -1758,10 +1596,47 @@
   // Smooth scroll for nav links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const href = a.getAttribute('href');
+      if (href === '#') { e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); return; }
+      const target = document.querySelector(href);
       if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
     });
   });
+
+  // Mobile navigation
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('active', isOpen);
+    mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+  });
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+    });
+  });
+
+  // Email signup: opens the visitor's email client with a prefilled request.
+  const emailForm = document.getElementById('email-form');
+  const emailInput = document.getElementById('email-input');
+  const emailStatus = document.getElementById('email-status');
+  emailForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!emailInput.checkValidity()) {
+      emailInput.reportValidity();
+      return;
+    }
+    const subscriber = emailInput.value.trim();
+    const english = document.documentElement.lang === 'en';
+    const subject = encodeURIComponent(english ? 'Sappa Headwear news subscription' : 'Suscripción a novedades Sappa Headwear');
+    const body = encodeURIComponent(english ? `Hello Sappa, I would like to receive news and launches at this email: ${subscriber}` : `Hola Sappa, quiero recibir novedades y lanzamientos en este correo: ${subscriber}`);
+    emailStatus.textContent = english ? 'Opening your email app…' : 'Abriendo tu aplicación de correo…';
+    window.location.href = `mailto:sappaheadwear@gmail.com?subject=${subject}&body=${body}`;
+  });
+
 </script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+.hero { align-items:center; }
+.hero-bg.hero-train { background:none; transform:none; animation:none; }
+.hero-train img { display:block; position:absolute; right:0; width:55%; height:100%; object-fit:contain; object-position:center; }
+.hero .hero-content { width:49%; max-width:700px; padding:100px 32px 64px 64px; }
+.hero .hero-title { font-size:clamp(48px,6vw,84px); }
+.hero .hero-overlay, .hero .hero-noise { display:none; }
+.hero .hero-sub { color:#d8d2c8; }
+.hero .hero-actions { flex-wrap:wrap; }
+.collections-grid { gap:24px; }
+.collection-card--line-a .collection-card-img img { object-position:center 65%; }
+@media(max-width:600px) {
+  .footer-top { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+  .footer-top > * { min-width:0; overflow-wrap:anywhere; }
+  .footer-brand { grid-column:1 / -1; }
+  .collections-grid { gap:16px; }
+}
+@media(max-width:800px) {
+  .hero { display:block; height:auto; min-height:0; padding-top:72px; }
+  .hero-bg.hero-train { position:relative; inset:auto; width:100%; }
+  .hero-train img { position:static; width:100%; height:auto; max-height:70svh; object-fit:contain; }
+  .hero .hero-content { width:100%; max-width:none; padding:32px 24px 48px; }
+  .hero .hero-title { font-size:clamp(42px,10vw,64px); }
+  .hero .hero-scroll { display:none; }
+}
