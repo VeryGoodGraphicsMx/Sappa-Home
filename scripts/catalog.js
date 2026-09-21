@@ -119,7 +119,7 @@
     const query = normalize(searchInput.value.trim());
     return inventory.filter(product => {
       const matchesCategory = activeCategory === 'all' || product.category === activeCategory;
-      const searchable = normalize(`${product.name} ${product.sku} ${product.category} ${product.material}`);
+      const searchable = normalize(`${product.name} ${product.sku} ${product.category} ${product.material} ${product.comparisonLabels?.left || ''} ${product.comparisonLabels?.right || ''}`);
       return matchesCategory && (!query || searchable.includes(query));
     });
   }
@@ -168,8 +168,9 @@
               decoding="async"
             >
           </div>
+          ${comparisonLabels(product, images[0])}
           <div class="card-body">
-            <div class="card-sku">${escapeHtml(product.sku)}</div>
+            <div class="card-sku">${escapeHtml(product.name)}</div>
           </div>
         </article>`;
     }

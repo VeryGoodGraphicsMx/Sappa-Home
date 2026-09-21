@@ -698,14 +698,12 @@
     "images": [
       "/assets/catalog-cutouts-20260919-v3/096.webp",
       "/assets/catalog-cutouts-20260919-v3/097.webp",
-      "/assets/catalog-cutouts-20260919-v3/098.webp",
-      "/assets/catalog-cutouts-20260919-v3/099.webp"
+      "/assets/catalog-cutouts-20260919-v3/098.webp"
     ],
     "imageUrls": [
       "/assets/catalog-cutouts-20260919-v3/096.webp",
       "/assets/catalog-cutouts-20260919-v3/097.webp",
-      "/assets/catalog-cutouts-20260919-v3/098.webp",
-      "/assets/catalog-cutouts-20260919-v3/099.webp"
+      "/assets/catalog-cutouts-20260919-v3/098.webp"
     ]
   },
   {
@@ -738,14 +736,10 @@
     "active": true,
     "status": "draft",
     "images": [
-      "/assets/catalog-cutouts-20260919-v3/103.webp",
-      "/assets/catalog-cutouts-20260919-v3/104.webp",
-      "/assets/catalog-cutouts-20260919-v3/105.webp"
+      "/assets/catalog-cutouts-20260919-v3/103.webp"
     ],
     "imageUrls": [
-      "/assets/catalog-cutouts-20260919-v3/103.webp",
-      "/assets/catalog-cutouts-20260919-v3/104.webp",
-      "/assets/catalog-cutouts-20260919-v3/105.webp"
+      "/assets/catalog-cutouts-20260919-v3/103.webp"
     ]
   },
   {
@@ -824,20 +818,13 @@
     "images": [
       "/assets/catalog-cutouts-20260919-v3/117.webp",
       "/assets/catalog-cutouts-20260919-v3/118.webp",
-      "/assets/catalog-cutouts-20260919-v3/119.webp",
-      "/assets/catalog-cutouts-20260919-v3/120.webp"
+      "/assets/catalog-cutouts-20260919-v3/119.webp"
     ],
     "imageUrls": [
       "/assets/catalog-cutouts-20260919-v3/117.webp",
       "/assets/catalog-cutouts-20260919-v3/118.webp",
-      "/assets/catalog-cutouts-20260919-v3/119.webp",
-      "/assets/catalog-cutouts-20260919-v3/120.webp"
-    ],
-    "comparisonLabels": {
-      "image": "/assets/catalog-cutouts-20260919-v3/120.webp",
-      "left": "LAI-1",
-      "right": "LAC-2"
-    }
+      "/assets/catalog-cutouts-20260919-v3/119.webp"
+    ]
   },
   {
     "id": "LAC-3",
@@ -880,6 +867,27 @@
     ]
   },
   {
+    "id": "LAC-LAI-COMPARATIVA",
+    "sku": "IMAGEN COMPARATIVA",
+    "handle": "lac-lai-comparativa",
+    "name": "Comparativa Catrín e Indiana",
+    "category": "LINO- ALGODÓN CATRIN",
+    "material": "",
+    "active": true,
+    "status": "comparison",
+    "images": [
+      "/assets/catalog-cutouts-20260919-v3/120.webp"
+    ],
+    "imageUrls": [
+      "/assets/catalog-cutouts-20260919-v3/120.webp"
+    ],
+    "comparisonLabels": {
+      "image": "/assets/catalog-cutouts-20260919-v3/120.webp",
+      "left": "LAI-1",
+      "right": "LAC-2"
+    }
+  },
+  {
     "id": "LAI-1",
     "sku": "LAI-1",
     "handle": "lino-algodon-indiana-amarillo",
@@ -890,19 +898,12 @@
     "status": "draft",
     "images": [
       "/assets/catalog-cutouts-20260919-v3/127.webp",
-      "/assets/catalog-cutouts-20260919-v3/128.webp",
-      "/assets/catalog-cutouts-20260919-v3/120.webp"
+      "/assets/catalog-cutouts-20260919-v3/128.webp"
     ],
     "imageUrls": [
       "/assets/catalog-cutouts-20260919-v3/127.webp",
-      "/assets/catalog-cutouts-20260919-v3/128.webp",
-      "/assets/catalog-cutouts-20260919-v3/120.webp"
-    ],
-    "comparisonLabels": {
-      "image": "/assets/catalog-cutouts-20260919-v3/120.webp",
-      "left": "LAI-1",
-      "right": "LAC-2"
-    }
+      "/assets/catalog-cutouts-20260919-v3/128.webp"
+    ]
   },
   {
     "id": "LP-1",
@@ -1635,11 +1636,13 @@
     "status": "draft",
     "images": [
       "/assets/catalog-cutouts-20260919-v3/242.webp",
-      "/assets/catalog-cutouts-20260919-v3/243.webp"
+      "/assets/catalog-cutouts-20260919-v3/243.webp",
+      "/assets/catalog-cutouts-20260920/vvp-2-interior.webp"
     ],
     "imageUrls": [
       "/assets/catalog-cutouts-20260919-v3/242.webp",
-      "/assets/catalog-cutouts-20260919-v3/243.webp"
+      "/assets/catalog-cutouts-20260919-v3/243.webp",
+      "/assets/catalog-cutouts-20260920/vvp-2-interior.webp"
     ]
   },
   {
@@ -1714,20 +1717,13 @@
     "images": [
       "/assets/catalog-cutouts-20260919-v3/253.webp",
       "/assets/catalog-cutouts-20260919-v3/254.webp",
-      "/assets/catalog-cutouts-20260919-v3/255.webp",
-      "/assets/catalog-cutouts-20260919-v3/256.webp"
+      "/assets/catalog-cutouts-20260919-v3/255.webp"
     ],
     "imageUrls": [
       "/assets/catalog-cutouts-20260919-v3/253.webp",
       "/assets/catalog-cutouts-20260919-v3/254.webp",
-      "/assets/catalog-cutouts-20260919-v3/255.webp",
-      "/assets/catalog-cutouts-20260919-v3/256.webp"
-    ],
-    "comparisonLabels": {
-      "image": "/assets/catalog-cutouts-20260919-v3/256.webp",
-      "left": "VM-1",
-      "right": "VM-2"
-    }
+      "/assets/catalog-cutouts-20260919-v3/255.webp"
+    ]
   },
   {
     "id": "VM-2",
@@ -1741,13 +1737,27 @@
     "images": [
       "/assets/catalog-cutouts-20260919-v3/257.webp",
       "/assets/catalog-cutouts-20260919-v3/258.webp",
-      "/assets/catalog-cutouts-20260919-v3/259.webp",
-      "/assets/catalog-cutouts-20260919-v3/256.webp"
+      "/assets/catalog-cutouts-20260919-v3/259.webp"
     ],
     "imageUrls": [
       "/assets/catalog-cutouts-20260919-v3/257.webp",
       "/assets/catalog-cutouts-20260919-v3/258.webp",
-      "/assets/catalog-cutouts-20260919-v3/259.webp",
+      "/assets/catalog-cutouts-20260919-v3/259.webp"
+    ]
+  },
+  {
+    "id": "VM-COMPARATIVA",
+    "sku": "IMAGEN COMPARATIVA",
+    "handle": "vm-comparativa",
+    "name": "Comparativa de tamaños",
+    "category": "VAQUEROS",
+    "material": "",
+    "active": true,
+    "status": "comparison",
+    "images": [
+      "/assets/catalog-cutouts-20260919-v3/256.webp"
+    ],
+    "imageUrls": [
       "/assets/catalog-cutouts-20260919-v3/256.webp"
     ],
     "comparisonLabels": {
@@ -1763,8 +1773,8 @@
     "name": "Vaquero manta mixto hueso",
     "category": "VAQUEROS",
     "material": "Lino, celulosa, algodón y agave con toquillas de vinil.",
-    "active": true,
-    "status": "draft",
+    "active": false,
+    "status": "discontinued",
     "images": [
       "/assets/catalog-cutouts-20260919-v3/260.webp",
       "/assets/catalog-cutouts-20260919-v3/261.webp",
