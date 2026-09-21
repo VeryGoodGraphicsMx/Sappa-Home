@@ -6,7 +6,7 @@
   const INVENTORY_PATH = IS_ENGLISH
     ? '/data/inventory-review-august-en.json'
     : '/data/inventory-review-august.json';
-  const catalogVersion = searchParams.get('v') || '20260921-lai1-interior';
+  const catalogVersion = searchParams.get('v') || '20260921-lai-comparison';
   const INVENTORY_URL = `${INVENTORY_PATH}?v=${encodeURIComponent(catalogVersion)}`;
   let inventoryPromise;
 

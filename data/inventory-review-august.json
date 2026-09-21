@@ -908,6 +908,27 @@
     ]
   },
   {
+    "id": "LAI-LAC-COMPARATIVA",
+    "sku": "IMAGEN COMPARATIVA",
+    "handle": "lai-lac-comparativa",
+    "name": "Comparativa Catrín e Indiana",
+    "category": "LINO- ALGODÓN INDIANA",
+    "material": "",
+    "active": true,
+    "status": "comparison",
+    "images": [
+      "/assets/catalog-cutouts-20260919-v3/120.webp"
+    ],
+    "imageUrls": [
+      "/assets/catalog-cutouts-20260919-v3/120.webp"
+    ],
+    "comparisonLabels": {
+      "image": "/assets/catalog-cutouts-20260919-v3/120.webp",
+      "left": "LAI-1",
+      "right": "LAC-2"
+    }
+  },
+  {
     "id": "LP-1",
     "sku": "LP-1",
     "handle": "lino-plano-negro",
