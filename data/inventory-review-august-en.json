@@ -736,10 +736,14 @@
     "active": true,
     "status": "draft",
     "images": [
-      "/assets/catalog-cutouts-20260919-v3/103.webp"
+      "/assets/catalog-cutouts-20260919-v3/103.webp",
+      "/assets/catalog-cutouts-20260926/lcz-2-lateral.webp",
+      "/assets/catalog-cutouts-20260926/lcz-2-interior-vertical.webp"
     ],
     "imageUrls": [
-      "/assets/catalog-cutouts-20260919-v3/103.webp"
+      "/assets/catalog-cutouts-20260919-v3/103.webp",
+      "/assets/catalog-cutouts-20260926/lcz-2-lateral.webp",
+      "/assets/catalog-cutouts-20260926/lcz-2-interior-vertical.webp"
     ]
   },
   {
